@@ -1,4 +1,4 @@
-# Verzweigungen
+﻿# Verzweigungen
 
 Was du im täglichen Leben unternimmst, hängt oft von gewissen Bedingungen ab. So entscheidest du dich je nach Wetter, wie du in die Schule fährst. Du sagst: "Falls es regnet, fahre ich mit der Bim, sonst mit dem Fahrrad".
 
@@ -85,25 +85,25 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 13
+### 📝 Übung 34
 
 Schreibe ein Programm bei dem der Benutzer seine Punkteanzahl vom 
 SWP-Test eingeben kann. Falls die Punkteanzahl größer oder gleich 16 ist,
 soll "Positive Note" werden.
 Ansonsten soll "Negative Note" ausgegeben werden.
 
-### 📝 Übung 13
+### 📝 Übung 35
 
 Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die Zahl positiv, negativ oder Null ist.
 
 **Tipp:** Du wirst mehr als eine if-Verzweigung brauchen.
 
-### 📝 Übung 13
+### 📝 Übung 36
 Schreibe ein Programm bei dem der Benutzer zwei Ganzzahlen eingeben kann.
 Das Programm soll ausgeben, ob die erste Zahl größer als die zweite Zahl ist.
 
-### 📝 Übung 13
+### 📝 Übung 37
 Schreibe ein Programm bei dem der Benutzer einen String eingeben kann.
 Prüfe ob der eingegebene Wert gleich "Sesam öffne dich" ist.
 Falls ja, soll "Du hast das Passwort erraten" ausgegeben werden.
@@ -132,3 +132,4 @@ else:
     falls Bedingung NICHT erfüllt
 ```
  
+

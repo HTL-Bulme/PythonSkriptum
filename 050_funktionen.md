@@ -1,4 +1,4 @@
-# Funktionen
+﻿# Funktionen
 
 Je größer deine Programme werden, desto wichtiger wird es die Programme zu strukturieren.
 In diesem Kapitel lernst du wie du mit benannten Programmblöcken,
@@ -83,27 +83,27 @@ In Zukunft sollten alle deine Programme eine `main` Funktion haben 😉.
 
 ## Übungen
 
-### 📝 Übung 26
+### 📝 Übung 25
 <img style="float: right; width:33%" src="./images/sechseck.png">
 Definiere eine Funktion sechseck(), mit dem die Turtle ein Sechseck zeichnet. Verwende diese Funktion, um die nebenstehende Figur zu erstellen.
 <div style="clear:both;"></div>
 
-### 📝 Übung 27
+### 📝 Übung 26
 <img style="float: right; width:33%" src="./images/quadrate2.png">
 Definiere eine Funktion für ein Quadrat, das auf der Spitze steht und zeichne damit die nebenstehende Figur.
 <div style="clear:both;"></div>
 
-### 📝 Übung 28
+### 📝 Übung 27
 <img style="float: right; width:33%" src="./images/bogen.png">
 Definiere eine Funktion bogen(), mit der die Turtle einen Bogen zeichnet und sich dabei insgesamt um 90 Grad nach rechts dreht. 
 <div style="clear:both;"></div>
 
-### 📝 Übung 29
+### 📝 Übung 28
 <img style="float: right; width:33%" src="./images/blatt.png">
 Ergänze das Programm mit der Funktion blumenblatt(), welche zwei Bogen zeichnet. Die Turtle sollte am Ende aber wieder in Startrichtung stehen.	 
 <div style="clear:both;"></div>
 
-### 📝 Übung 26
+### 📝 Übung 29
 <img style="float: right; width:33%" src="./images/blume.png">
 Erweitere das Programm mit der Funktion blume() so, dass eine 8-blättrige Blume entsteht. 
 <div style="clear:both;"></div>
@@ -127,3 +127,4 @@ Wir gewöhnen uns daran, die Funktionsdefinitionen
 im Programmkopf anzuordnen, da diese vor ihrem Aufruf definiert sein müssen.
 
 ![Funktionsblöcke](./images/block.png)
+

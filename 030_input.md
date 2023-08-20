@@ -1,4 +1,4 @@
-# Eingabe von Werten
+﻿# Eingabe von Werten
 
 Mit Variablen haben wir unsere Programme bereits flexibler gemacht.
 Jedoch möchten wir noch, dass der Benutzer des Programms,
@@ -76,3 +76,4 @@ Der Benutzer soll zusätzlich die Größe der Fenster eingeben können.
 Unsere Programme können nun Zahlenwerte als Eingabe vom Benutzer entgegennehmen.
 Hierzu nutzen sie die Funktionen `inputInt` und `inputFloat`.
 Dadurch sind die Programme flexibler einsetzbar.
+

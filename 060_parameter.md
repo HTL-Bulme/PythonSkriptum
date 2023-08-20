@@ -1,4 +1,4 @@
-# Funktionen mit Parametern
+﻿# Funktionen mit Parametern
 
 In diesem Kapitel lernst du wie du Funktionen mit **Parametern** definieren kannst.
 Du kennst Parameter bereits von vielen Turtlefunktionen.
@@ -80,7 +80,7 @@ main()
 
 ## Übungen
 
-### 📝 Übung 24
+### 📝 Übung 30
 <img style="float: right; width:33%" src="./images/quadrate.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
@@ -88,20 +88,20 @@ Die Turtle soll 10 Quadrate zeichnen. Die Seitenlänge des ersten Quadrats ist 8
 <div style="clear:both;"></div>
 
 
-### 📝 Übung 25
+### 📝 Übung 31
 <img style="float: right; width:33%" src="./images/quadrate_schief.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
 Du kannst in einer Dialogbox die Seitenlänge des grössten Quadrats eingeben. Die Turtle zeichnet dann 20 Quadrate. Nach jedem Quadrat wird die Seitenlänge um den Faktor 0.9 kleiner und die Turtle dreht um den Winkel 10° nach links. 
 <div style="clear:both;"></div>
 
-### 📝 Übung 25
+### 📝 Übung 32
 
 <img style="float: right; width:33%" src="./images/trompete.png">
 Du definiert eine Funktion circle(s), die einen Kreis zeichnet. Die nebenstehende Figur entsteht, indem du 30 Kreise zeichnest, s nach jedem gezeichneten Kreis verkleinerst (s = s *0.9) und die Turtle 5 Schritte vorwärts bewegst.
 <div style="clear:both;"></div>	
 
-### 📝 Übung 26	
+### 📝 Übung 33	
 <img style="float: right; width:33%" src="./images/circles.png">
 Definiere eine Funktion circle(s, c), mit dem die Turtle gefüllte Kreise mit gegebener Füllfarbe zeichnet und erstelle damit die nebenstehende Zeichnung.
 
@@ -112,6 +112,7 @@ repeat 120:
     right(3) 
 ```
 <div style="clear:both;"></div>
+
 
 
 

@@ -1,4 +1,4 @@
-# Grafik mit der Turtle 🐢
+﻿# Grafik mit der Turtle 🐢
 
 Die Turtle ist eine kleine Schildkröte, die eine Spur zeichnet, wenn sie
 sich bewegt. Du kannst ihr sagen, sie soll vorwärts gehen oder sich nach
@@ -105,3 +105,4 @@ beispielsweise die Anzahl der Pixel bei der Funktion `fd`
 
 Im nächsten Abschnitt sollst du selbst Programme schreiben,
 um vorgegebene Grafiken zu erzeugen.
+

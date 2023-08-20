@@ -1,4 +1,4 @@
-# Rechnen mit Python
+﻿# Rechnen mit Python
 
 In diesem Kapitel veralssen wir WebTigerJython und
 wenden uns der professionellen Umgebung "Visual Studio Code" zu.
@@ -21,4 +21,5 @@ In den folgenden Kapiteln lernst du zuerst wie du
 Visual Studio Code und Python installierst.
 Danach folgen die Verzweigung, die while-Schleife
 und viele weitere Beispiele für Berechnungen.
+
 

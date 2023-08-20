@@ -1,4 +1,4 @@
-# Grafische Darstellung von Programmen
+﻿# Grafische Darstellung von Programmen
 
 Programme werden durch den Programmcode vollständig definiert.
 Es ist aber auch möglich Programme grafisch darzustellen.
