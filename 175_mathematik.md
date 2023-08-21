@@ -124,3 +124,4 @@ Schreibe ein Programm, bei dem der Benutzer die Wurzel einer Zahl berechnen kann
 Zuerst soll die Zahl vom Benutzer eingegeben werden.
 Falls die Zahl kleiner als `0` ist, so soll eine Fehlermeldung ausgegeben werden.
 Ansonsten soll die Wurzel mit der `sqrt`-Funktion berechnet und ausgegeben werden.
+

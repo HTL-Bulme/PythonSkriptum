@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Eingabe von Werten · HonKit</title>
+        <title>Wiederholungen mit While Schleifen · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="035_variablen_rechnen.html" />
+    <link rel="next" href="185_debugging.html" />
     
     
-    <link rel="prev" href="020_variablen.html" />
+    <link rel="prev" href="175_mathematik.html" />
     
 
     </head>
@@ -154,7 +154,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4" data-path="030_input.html">
+        <li class="chapter " data-level="1.2.4" data-path="030_input.html">
             
                 <a href="030_input.html">
             
@@ -342,7 +342,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="180_whileloops.html">
+        <li class="chapter active" data-level="1.3.8" data-path="180_whileloops.html">
             
                 <a href="180_whileloops.html">
             
@@ -468,7 +468,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Eingabe von Werten</a>
+        <a href="." >Wiederholungen mit While Schleifen</a>
     </h1>
 </div>
 
@@ -483,62 +483,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="eingabe-von-werten">Eingabe von Werten</h1>
-<p>Mit Variablen haben wir unsere Programme bereits flexibler gemacht.
-Jedoch möchten wir noch, dass der Benutzer des Programms,
-jdes mal andere Variablenwerte verwenden kann.</p>
-<p>In diesem Kapitel sehen wir uns an, wie Benutzer Werte für Variablen eingeben können.</p>
-<h2 id="eingabe-mit-der-input-funktion">Eingabe mit der <code>input</code> Funktion</h2>
-<p>Bevor wir den Benutzer nach einem Wert für eine Variable fragen, müssen wir uns
-Gedanken machen, welchen <strong>Typ</strong> die Variable haben soll.
-Der Benutzer kann über die Tastatur beliebige Texte eingeben,
-also ist die Benutzereingabe zunächst immer vom Typ <strong>String</strong>.</p>
-<p>Möchten wir etwas anderes als einen String, also einen Integer (Ganzzahl)
-oder einen Float (Gleitkommazahl), so müssen wir den Wert in den richtigen Typ umwandeln.
-Hierfür gibt es die beiden Funktionen <code>int()</code> und <code>float()</code>.</p>
-<p>Es gibt also drei Möglichkeiten um eine Eingabe vom Benutzer zu erhalten:</p>
+                                <h1 id="wiederholungen-mit-while-schleifen">Wiederholungen mit While Schleifen</h1>
+<p>Du hast bereits die <code>for</code>-Schleife kennengelernt, mit der du einen Codeblock mehrmals wiederholen kannst. Die <code>for</code>-Schleife setzt du dann ein, wenn du schon vorher weißt,
+wie oft der Codeblock wiederholt werden soll.</p>
+<p>Häufig weiß man aber das im vorhinein nicht. Nehmen wir zum Beispiel eine Passwortabfrage.
+Wir möchten den Benutzer nach dem Passwort fragen, bis er es richtig eingibt.
+Hier weiß man im vorhinein nicht wie viele Anläufe der Benutzer benötigt.</p>
+<p>In Fällen in denen wir einen Codeblock wiederholen solange eine Bedingung gilt, verwenden wir die <code>while</code>-Schleife.</p>
+<h2 id="💡-beispiel-eingabe-einer-geheimzahl">💡 Beispiel: Eingabe einer Geheimzahl</h2>
+<p>Nehmen wir an wir möchten ein Programm schreiben,
+bei dem der Benutzer beliebig oft eine Zahl eingeben kann,
+bis er die Geheimzahl erraten hat.</p>
+<p>Zuerst brauchen wir die sogenannte Schleifenbedingung.
+Solange diese Bedingung gilt, wird die Schleife wiederholt.
+Nehmen wir an unsere Geheimzahl ist 13, dann wäre die Bedingung: <code>not (eingabe == 13)</code>
+oder in Kurzschreibweise: <code>eingabe != 13</code>.</p>
+<pre><code class="lang-python">eingabe = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">while</span> (eingabe != <span class="hljs-number">13</span>):
+    eingabe = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Raten sie die Geheimzahl: &quot;</span>))
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Sie haben die Zahl erraten&quot;</span>)
+</code></pre>
+<p>Die <code>while</code>-Schleife wird mit dem Schlüsselwort while eingeleitet, gefolgt von einer Schleifenbedingung. Die Anweisungen im Codeblock werden wiederholt, so lange die Bedingung erfüllt ist. Nach Ende der Wiederholungen wird das Programm mit der nächsten Anweisung nach dem Schleifenblock fortgesetzt.</p>
+<h2 id="💡-beispiel-mit-while-schleife-zählen">💡 Beispiel: Mit while-Schleife zählen</h2>
+<p>Wir wollen nun die while schleife benutzen, um eine
+Variable so lange um 1 zu erhöhen, solange sie kleiner als 100 ist.</p>
+<p>Nehmen wir an die Variable heißt <code>i</code>, dann lautet die Schleifenbedingung <code>i &lt; 100</code>.</p>
+<pre><code class="lang-python">i = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">100</span>):
+    <span class="hljs-built_in">print</span>(i)
+    i += <span class="hljs-number">1</span>
+</code></pre>
+<p>Diese Schleife wird 100 mal wiederholt, da zur Zahl <code>0</code> solange <code>1</code> dazuaddiert wird,
+solange die Zahl kleiner 100 ist. In diesem Beispiel haben wir also
+das Verhalten einer <code>for</code>-Schleife mit einer <code>while</code>-Schleife nachprogrammiert.</p>
+<h2 id="ähnlichkeit-zur-verzweigung">Ähnlichkeit zur Verzweigung</h2>
+<p>Die <code>while</code>-Schleife hat eine gewisse Ähnlichkeit zur <code>if</code>-Verzweigung.</p>
 <ul>
-<li><code>x = input(&quot;Etwas eingeben!&quot;)</code> - um <strong>String</strong> (Text) Werte einzulesen</li>
-<li><code>x = int(input(&quot;Etwas eingeben!&quot;))</code> - um <strong>Integer</strong> (Ganzzahl) Werte einzulesen</li>
-<li><code>x = float(input(&quot;Etwas eingeben!&quot;))</code> - um <strong>Float</strong> (Gleitkommazahl) Werte einzulesen</li>
+<li>Die <code>if</code>-Verzweigung wird <strong>ein Mal</strong> ausgeführt, <strong>falls</strong> die Bedingung erfüllt ist</li>
+<li>Die <code>while</code>-Schleife wird <strong>solange</strong> ausgeführt, <strong>solange</strong> die Bedingung erfüllt ist</li>
 </ul>
-<p>Auf der linken Seite des Zeichens <code>=</code> steht der Name der Variablen,
-der ein neuer Wert zugewiesen werden soll.
-Auf der rechten Seite hatten wir bis jetzt immer einen fixen Wert.
-Statt dem fixen Wert steht jetzt der Funktionsaufruf von <code>input</code> mit einem Argument.
-Das Argument ist der Text der dem Benutzer angezeigt wird,
-wenn er einen Wert eingeben soll.</p>
-<p>Bei der Eingabe von Integer oder Float Werten, wird um den
-Funktionsaufruf von <code>input</code> herum, die Funktion <code>int</code> bzw. die Funktion
-<code>float</code> geschrieben um den String in Integer bzw. Float umzuwandeln.</p>
-<p>In den ersten Kapiteln beschäftigen wir uns ausschließlich mit den beiden
-Typen Integer und Float. Für Strings gibt es später ein eigenes Kapitel.</p>
-<p>In der folgenden Abbildung ist das Eingabefenster zu sehen:</p>
-<p><img src="images/input.png" alt="Eingabe eines Werts"></p>
-<p><strong>Wichtig:</strong> Falls der Benutzer keine Zahl eingibt und
-wir versuchen dennoch den String mit <code>int</code> oder <code>float</code>
-umzuwandeln gibt stürzt das Programm mit einer Fehlermeldung ab.
-Im Kapitel über Strings werden wir dieses Problem beheben.
-Bis dahin müssen wir davon ausgehen, dass der Benutzer nur gültige Werte eingibt.</p>
+<h2 id="die-endlosschleife">Die Endlosschleife</h2>
 <h2 id="übungen">Übungen</h2>
-<h3 id="📝-übung-11">📝 Übung 11</h3>
-<p>Schreibe ein Programm, welches ein gleichseitiges Dreieck zeichnet.
-Die Länge a des Dreiecks soll der Benutzer selbst eingeben.
-Der Typ der Eingabe soll Float sein, damit der Benutzer beispielsweise 20.5 
-eingeben kann.</p>
-<h3 id="📝-übung-12">📝 Übung 12</h3>
-<p>Schreibe ein Programm, welches ein Haus zeichnet.
-Die Höhe des Hauses soll vom Benutzer eingegeben werden können.
-Im folgenden Bild siehst du drei mögliche Ergebnisse.
-Je nachdem welchen Wert der Benutzer eingibt, kommt ein anderes Haus dabei raus.</p>
-<p><img src="images/house.png" alt="Haus mit verschiedenen Höhen"></p>
-<h3 id="📝-übung-13">📝 Übung 13</h3>
-<p>Erweitere das Programm von Übung 12 um eine weitere Eingabe.
-Der Benutzer soll zusätzlich die Größe der Fenster eingeben können.</p>
-<h2 id="zusammenfassung">Zusammenfassung</h2>
-<p>Unsere Programme können nun Zahlenwerte als Eingabe vom Benutzer entgegennehmen.
-Hierzu nutzen sie die Funktionen <code>inputInt</code> und <code>inputFloat</code>.
-Dadurch sind die Programme flexibler einsetzbar.</p>
+<h3 id="📝-übung-49">📝 Übung 49</h3>
 
                                 
                                 </section>
@@ -566,12 +555,12 @@ Dadurch sind die Programme flexibler einsetzbar.</p>
 
             
                 
-                <a href="020_variablen.html" class="navigation navigation-prev " aria-label="Previous page: Variablen">
+                <a href="175_mathematik.html" class="navigation navigation-prev " aria-label="Previous page: Weitere mathematische Funktionen">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="035_variablen_rechnen.html" class="navigation navigation-next " aria-label="Next page: Rechnen mit Variablen">
+                <a href="185_debugging.html" class="navigation navigation-next " aria-label="Next page: Fehler in Programmen finden">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -582,7 +571,7 @@ Dadurch sind die Programme flexibler einsetzbar.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Eingabe von Werten","level":"1.2.4","depth":2,"next":{"title":"Rechnen mit Variablen","level":"1.2.5","depth":2,"path":"035_variablen_rechnen.md","ref":"035_variablen_rechnen.md","articles":[]},"previous":{"title":"Variablen","level":"1.2.3","depth":2,"path":"020_variablen.md","ref":"020_variablen.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"030_input.md","mtime":"2023-08-21T18:12:07.795Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Wiederholungen mit While Schleifen","level":"1.3.8","depth":2,"next":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"path":"185_debugging.md","ref":"185_debugging.md","articles":[]},"previous":{"title":"Weitere mathematische Funktionen","level":"1.3.7","depth":2,"path":"175_mathematik.md","ref":"175_mathematik.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"180_whileloops.md","mtime":"2023-08-21T19:12:05.360Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

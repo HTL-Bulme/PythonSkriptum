@@ -1,7 +1,7 @@
 # Summary
 
 * [Einführung ✨](README.md)
-* [Grafik mit der Turtle 🎨](010_turtle.md)
+* [Grafik mit der Turtle 🐢](010_turtle.md)
 	* [Übungen mit der Turtle](015_turtle_lines.md)
 	* [Farben verwenden](017_turtle_colors.md)	
 	* [Variablen](020_variablen.md)
@@ -19,6 +19,10 @@
 	* [Verschachtelung von Verzweigungen](160_verschachtelung.md)
 	* [Mehrfachverzweigungen](170_mehrfachverzweigung.md)
 	* [Weitere mathematische Funktionen](175_mathematik.md)
+	* [Wiederholungen mit While Schleifen](180_whileloops.md)
+	* [Fehler in Programmen finden](185_debugging.md)
+	* [Kapiteltest](190_kapiteltest.md)
 * [Listen 📜](210_Listen.md)
 * [Texte in Python 🔤](310_Strings.md)
 * [Grafische Benutzeroberflächen (GUI) 🖱️](410_GUI.md)
+* [Lösungen der Übungsbeispiele](510_Loesungen.md)

@@ -11,7 +11,7 @@ Die Parametrisierung von Funktionen ist von großer Wichtigkeit,
 denn damit erhalten die Funktionen erst die
 Flexibilität, sich "anpasst" zu verhalten.
 
-##Beispiel mit einem Parameter
+## Beispiel mit einem Parameter
 
 Im vorherigen Kapitel hast du eine Funktion `square()` definiert, die ein Quadrat mit fixer Seitenlänge 60 zeichnet. Man sagt anschaulich, dass die Seitenlänge 60 im Programm "fest verdrahtet" oder "hard coded" sei.
 
@@ -39,7 +39,7 @@ def main():
 main()
 ```
 
-##Beispiel mit mehreren Parametern
+## Beispiel mit mehreren Parametern
 
 Eine Funktion kann auch mehrere Parameter haben.
 Die einzelnen Parameter müssen dann mit einem Beistrich getrennt werden.
@@ -112,6 +112,7 @@ repeat 120:
     right(3) 
 ```
 <div style="clear:both;"></div>
+
 
 
 

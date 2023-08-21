@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Eingabe von Werten · HonKit</title>
+        <title>Lösungen der Übungsbeispiele · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -56,10 +56,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="035_variablen_rechnen.html" />
     
-    
-    <link rel="prev" href="020_variablen.html" />
+    <link rel="prev" href="410_GUI.html" />
     
 
     </head>
@@ -154,7 +152,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4" data-path="030_input.html">
+        <li class="chapter " data-level="1.2.4" data-path="030_input.html">
             
                 <a href="030_input.html">
             
@@ -425,7 +423,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="510_Loesungen.html">
+        <li class="chapter active" data-level="1.7" data-path="510_Loesungen.html">
             
                 <a href="510_Loesungen.html">
             
@@ -468,7 +466,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Eingabe von Werten</a>
+        <a href="." >Lösungen der Übungsbeispiele</a>
     </h1>
 </div>
 
@@ -483,62 +481,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="eingabe-von-werten">Eingabe von Werten</h1>
-<p>Mit Variablen haben wir unsere Programme bereits flexibler gemacht.
-Jedoch möchten wir noch, dass der Benutzer des Programms,
-jdes mal andere Variablenwerte verwenden kann.</p>
-<p>In diesem Kapitel sehen wir uns an, wie Benutzer Werte für Variablen eingeben können.</p>
-<h2 id="eingabe-mit-der-input-funktion">Eingabe mit der <code>input</code> Funktion</h2>
-<p>Bevor wir den Benutzer nach einem Wert für eine Variable fragen, müssen wir uns
-Gedanken machen, welchen <strong>Typ</strong> die Variable haben soll.
-Der Benutzer kann über die Tastatur beliebige Texte eingeben,
-also ist die Benutzereingabe zunächst immer vom Typ <strong>String</strong>.</p>
-<p>Möchten wir etwas anderes als einen String, also einen Integer (Ganzzahl)
-oder einen Float (Gleitkommazahl), so müssen wir den Wert in den richtigen Typ umwandeln.
-Hierfür gibt es die beiden Funktionen <code>int()</code> und <code>float()</code>.</p>
-<p>Es gibt also drei Möglichkeiten um eine Eingabe vom Benutzer zu erhalten:</p>
-<ul>
-<li><code>x = input(&quot;Etwas eingeben!&quot;)</code> - um <strong>String</strong> (Text) Werte einzulesen</li>
-<li><code>x = int(input(&quot;Etwas eingeben!&quot;))</code> - um <strong>Integer</strong> (Ganzzahl) Werte einzulesen</li>
-<li><code>x = float(input(&quot;Etwas eingeben!&quot;))</code> - um <strong>Float</strong> (Gleitkommazahl) Werte einzulesen</li>
-</ul>
-<p>Auf der linken Seite des Zeichens <code>=</code> steht der Name der Variablen,
-der ein neuer Wert zugewiesen werden soll.
-Auf der rechten Seite hatten wir bis jetzt immer einen fixen Wert.
-Statt dem fixen Wert steht jetzt der Funktionsaufruf von <code>input</code> mit einem Argument.
-Das Argument ist der Text der dem Benutzer angezeigt wird,
-wenn er einen Wert eingeben soll.</p>
-<p>Bei der Eingabe von Integer oder Float Werten, wird um den
-Funktionsaufruf von <code>input</code> herum, die Funktion <code>int</code> bzw. die Funktion
-<code>float</code> geschrieben um den String in Integer bzw. Float umzuwandeln.</p>
-<p>In den ersten Kapiteln beschäftigen wir uns ausschließlich mit den beiden
-Typen Integer und Float. Für Strings gibt es später ein eigenes Kapitel.</p>
-<p>In der folgenden Abbildung ist das Eingabefenster zu sehen:</p>
-<p><img src="images/input.png" alt="Eingabe eines Werts"></p>
-<p><strong>Wichtig:</strong> Falls der Benutzer keine Zahl eingibt und
-wir versuchen dennoch den String mit <code>int</code> oder <code>float</code>
-umzuwandeln gibt stürzt das Programm mit einer Fehlermeldung ab.
-Im Kapitel über Strings werden wir dieses Problem beheben.
-Bis dahin müssen wir davon ausgehen, dass der Benutzer nur gültige Werte eingibt.</p>
-<h2 id="übungen">Übungen</h2>
-<h3 id="📝-übung-11">📝 Übung 11</h3>
-<p>Schreibe ein Programm, welches ein gleichseitiges Dreieck zeichnet.
-Die Länge a des Dreiecks soll der Benutzer selbst eingeben.
-Der Typ der Eingabe soll Float sein, damit der Benutzer beispielsweise 20.5 
-eingeben kann.</p>
-<h3 id="📝-übung-12">📝 Übung 12</h3>
-<p>Schreibe ein Programm, welches ein Haus zeichnet.
-Die Höhe des Hauses soll vom Benutzer eingegeben werden können.
-Im folgenden Bild siehst du drei mögliche Ergebnisse.
-Je nachdem welchen Wert der Benutzer eingibt, kommt ein anderes Haus dabei raus.</p>
-<p><img src="images/house.png" alt="Haus mit verschiedenen Höhen"></p>
-<h3 id="📝-übung-13">📝 Übung 13</h3>
-<p>Erweitere das Programm von Übung 12 um eine weitere Eingabe.
-Der Benutzer soll zusätzlich die Größe der Fenster eingeben können.</p>
-<h2 id="zusammenfassung">Zusammenfassung</h2>
-<p>Unsere Programme können nun Zahlenwerte als Eingabe vom Benutzer entgegennehmen.
-Hierzu nutzen sie die Funktionen <code>inputInt</code> und <code>inputFloat</code>.
-Dadurch sind die Programme flexibler einsetzbar.</p>
+                                <h1 id="lösungen-der-übungsbeispiele">Lösungen der Übungsbeispiele</h1>
 
                                 
                                 </section>
@@ -566,14 +509,10 @@ Dadurch sind die Programme flexibler einsetzbar.</p>
 
             
                 
-                <a href="020_variablen.html" class="navigation navigation-prev " aria-label="Previous page: Variablen">
+                <a href="410_GUI.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Grafische Benutzeroberflächen (GUI) 🖱️">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="035_variablen_rechnen.html" class="navigation navigation-next " aria-label="Next page: Rechnen mit Variablen">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -582,7 +521,7 @@ Dadurch sind die Programme flexibler einsetzbar.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Eingabe von Werten","level":"1.2.4","depth":2,"next":{"title":"Rechnen mit Variablen","level":"1.2.5","depth":2,"path":"035_variablen_rechnen.md","ref":"035_variablen_rechnen.md","articles":[]},"previous":{"title":"Variablen","level":"1.2.3","depth":2,"path":"020_variablen.md","ref":"020_variablen.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"030_input.md","mtime":"2023-08-21T18:12:07.795Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lösungen der Übungsbeispiele","level":"1.7","depth":1,"previous":{"title":"Grafische Benutzeroberflächen (GUI) 🖱️","level":"1.6","depth":1,"path":"410_GUI.md","ref":"410_GUI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"510_Loesungen.md","mtime":"2023-08-21T18:20:22.742Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
