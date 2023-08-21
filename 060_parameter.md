@@ -1,4 +1,4 @@
-﻿# Funktionen mit Parametern
+# Funktionen mit Parametern
 
 In diesem Kapitel lernst du wie du Funktionen mit **Parametern** definieren kannst.
 Du kennst Parameter bereits von vielen Turtlefunktionen.
@@ -112,6 +112,7 @@ repeat 120:
     right(3) 
 ```
 <div style="clear:both;"></div>
+
 
 
 

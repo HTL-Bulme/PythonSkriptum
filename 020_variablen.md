@@ -1,4 +1,4 @@
-﻿# Variablen 
+# Variablen 
 
 Bis jetzt haben wir schon einige Programme geschrieben, welche Grafiken gezeichnet haben.
 Jedoch sehen diese Grafiken immer gleich aus. 
@@ -149,4 +149,5 @@ Nach der Variablendefinition soll ein Rechteck mit den Seitenlängen
 + Dabei steht der Name der Variablen immer links vom Gleichheitszeichen = und der Wert rechts davon. Beispiel `seite_a = 23`
 + Variablen haben drei Eigenschaften: Name, Typ und Wert
 + Typen sind bspw. Integer (Ganzzahl), Float (Gleitkommazahl) und String (Text)
+
 

@@ -1,4 +1,4 @@
-﻿# Kapiteltest
+# Kapiteltest
 
 
 ### ✅ Aufgabe 1
@@ -63,4 +63,5 @@ Schreiben Sie ein Programm, bei dem der Benutzer die Anzahl
 der Blütenblätter und die Anzahl der Blumen eingeben kann.
 Falls er beispielsweise 20 und 6 eingibt, werden sechs Blumen mit zwanzig Blütenblättern
 nebeneinander gezeichnet.
+
 

@@ -1,4 +1,4 @@
-﻿# Farben verwenden
+# Farben verwenden
 
 In diesem Abschnitt lernst du wie man mit der Turtle bunte Bilder zeichnen kann.
 Die Turtle kann sowohl farbige Linien als auch farbige Flächen zeichnen.
@@ -61,5 +61,6 @@ fillPath()
 Das Programm erzeugt folgende Grafik:
 
 ![Ergebnis des Programms](./images/triangle.png)
+
 
 

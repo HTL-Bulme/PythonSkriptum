@@ -1,4 +1,4 @@
-﻿# Grafische Darstellung von Programmen
+# Grafische Darstellung von Programmen
 
 Programme werden durch den Programmcode vollständig definiert.
 Es ist aber auch möglich Programme grafisch darzustellen.
@@ -73,3 +73,4 @@ Ist die Seite größer oder gleich `0`, soll die Fläche berechnet
 werden und danach ausgegeben werden. 
 
 ![Flussdiagramm der Flächenberechnung](./images/beispiel3.png)
+

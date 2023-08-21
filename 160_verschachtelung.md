@@ -1,4 +1,4 @@
-﻿# Verschachtelung von Verzweigungen
+# Verschachtelung von Verzweigungen
 
 Mit logischen Operatoren können wir mehrere Bedingungen zu einer zusammenfassen.
 Diese Bedingung können wir mit einer `if`-Verzweigung überprüfen.
@@ -11,4 +11,5 @@ Wir nennen das eine verschachtelte Verzweigung.
 Flussdiagramme, die wir im letzten Kapitel kennengelernt haben,
 helfen uns jetzt Verschachtelungen schön darzustellen und
 damit leichter zu verstehen.
+
 

@@ -1,4 +1,4 @@
-﻿# Wiederholen von Codeblöcken
+# Wiederholen von Codeblöcken
 
 Häufig haben wir beim Programmieren die Situation,
 dass wir einen gewissen Codeblock, also eine Folge von Anweisungen,
@@ -118,4 +118,5 @@ for i in range(anzahl):
     wiederholt
     werden sollen 
 ```
+
 

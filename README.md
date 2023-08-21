@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bulme Python Skriptum"
 author: [HTL BULME]
 date: "2023-08-20"
@@ -79,6 +79,7 @@ und wie du interessante Grafiken mit der Turtle zeichnen kannst.
 ## Quellen
 * https://python-online.ch
 * https://programmierkonzepte.ch
+
 
 
 

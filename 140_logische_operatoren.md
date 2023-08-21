@@ -1,4 +1,4 @@
-﻿# Logische Operatoren
+# Logische Operatoren
 
 Mit der `if`-Verzweigung haben wir geprüft, ob eine Bedingung zutrifft.
 Doch was, wenn wir prüfen möchten, ob bei zwei Bedingungen, beide erfüllt sind.
@@ -155,4 +155,5 @@ Die Regel ist die folgende:
 * Die durch 4 ganzzahlig teilbaren Jahre sind, abgesehen von den folgenden Ausnahmen, Schaltjahre.
 * Säkularjahre, also die Jahre, die ein Jahrhundert abschließen (z. B. 1800, 1900, 2100 und 2200), sind, abgesehen von der folgenden Ausnahme, keine Schaltjahre.
 * Die durch 400 ganzzahlig teilbaren Säkularjahre, zum Beispiel das Jahr 2000, sind jedoch Schaltjahre.
+
 

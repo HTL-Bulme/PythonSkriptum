@@ -1,4 +1,4 @@
-﻿# Verzweigungen
+# Verzweigungen
 
 Was du im täglichen Leben unternimmst, hängt oft von gewissen Bedingungen ab. So entscheidest du dich je nach Wetter, wie du in die Schule fährst. Du sagst: "Falls es regnet, fahre ich mit der Bim, sonst mit dem Fahrrad".
 
@@ -132,4 +132,5 @@ else:
     falls Bedingung NICHT erfüllt
 ```
  
+
 

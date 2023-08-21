@@ -1,4 +1,4 @@
-﻿# Übungen mit der Turtle 
+# Übungen mit der Turtle 
 
 
 ## 📝 Übung 2
@@ -58,5 +58,6 @@ Zeichne das Haus vom Nikolaus mithilfe der Turtle.
 <img style="float: right; width:33%" src="./images/bsp08.png">
 Zeichne die Schneeflocke, wie rechts abgebildet.
 <div style="clear:both;"></div>
+
 
 

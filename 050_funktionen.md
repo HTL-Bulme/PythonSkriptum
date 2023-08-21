@@ -1,4 +1,4 @@
-﻿# Funktionen
+# Funktionen
 
 Je größer deine Programme werden, desto wichtiger wird es die Programme zu strukturieren.
 In diesem Kapitel lernst du wie du mit benannten Programmblöcken,
@@ -127,4 +127,5 @@ Wir gewöhnen uns daran, die Funktionsdefinitionen
 im Programmkopf anzuordnen, da diese vor ihrem Aufruf definiert sein müssen.
 
 ![Funktionsblöcke](./images/block.png)
+
 

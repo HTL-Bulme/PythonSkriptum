@@ -1,4 +1,4 @@
-﻿# Rechnen mit Variablen 
+# Rechnen mit Variablen 
 
 Variablen sind benannte Speicherplätze für Werte.
 Bis jetzt haben wir die Werte von Variablen
@@ -151,4 +151,5 @@ Du kannst ihren Wert jederzeit durch eine neue Zuweisung ändern und dabei sogar
 Eine Zuweisung wird in der Form `Variable = Ausdruck` geschrieben,
 wobei der Ausdruck eine Variable,
 eine Zahl, eine Berechnung oder ein Funktionsaufruf sein kann.
+
 
