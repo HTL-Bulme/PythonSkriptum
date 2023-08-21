@@ -78,3 +78,7 @@ Hierzu nutzen sie die Funktionen `inputInt` und `inputFloat`.
 Dadurch sind die Programme flexibler einsetzbar.
 
 
+
+
+
+

@@ -100,3 +100,7 @@ ist sehr gering, weshalb du fast immer Hilfestellungen im Internet findest.
 Falls auch das nicht weiterhilft, dann darst du gerne deinen Lehrer fragen. 😉
 
 
+
+
+
+

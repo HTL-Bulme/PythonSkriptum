@@ -17,6 +17,8 @@
 	* [Logische Operatoren](140_logische_operatoren.md)
 	* [Grafische Darstellung von Programmen](150_flowcharts.md)
 	* [Verschachtelung von Verzweigungen](160_verschachtelung.md)
+	* [Mehrfachverzweigungen](170_mehrfachverzweigung.md)
+	* [Weitere mathematische Funktionen](175_mathematik.md)
 * [Listen 📜](210_Listen.md)
 * [Texte in Python 🔤](310_Strings.md)
 * [Grafische Benutzeroberflächen (GUI) 🖱️](410_GUI.md)

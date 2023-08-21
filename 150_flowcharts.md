@@ -43,7 +43,7 @@ Der Pfeil verbindet die Symbole untereinander.
 <div style="clear:both;"></div>
 
 
-## Beispiele
+## 💡 Beispiele
 
 
 
@@ -73,4 +73,8 @@ Ist die Seite größer oder gleich `0`, soll die Fläche berechnet
 werden und danach ausgegeben werden. 
 
 ![Flussdiagramm der Flächenberechnung](./images/beispiel3.png)
+
+
+
+
 

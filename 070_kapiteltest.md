@@ -65,3 +65,7 @@ Falls er beispielsweise 20 und 6 eingibt, werden sechs Blumen mit zwanzig Blüte
 nebeneinander gezeichnet.
 
 
+
+
+
+

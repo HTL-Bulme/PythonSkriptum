@@ -113,7 +113,7 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 38
+### 📝 Übung 39
 
 Schreibe ein Programm, bei dem der Benutzer die Länge und die Breite
 eines Rechtecks eingeben soll.
@@ -123,7 +123,7 @@ soll "Fehler: Falsche Eingabe" ausgegeben werden.
 Falls die Länge und die Breite größer als `0` sind, soll
 der Umfang und der Flächeninhalt berechnet und ausgegeben werden.
 
-### 📝 Übung 39
+### 📝 Übung 40
 
 Schreibe ein Programm, bei dem der Benutzer sein Geburtsjahr eingeben kann.
 Falls das Geburtsjahr größer oder gleich `2020` ist,
@@ -131,12 +131,12 @@ soll "Du solltest noch keinen Computer benutzen 😉" ausgegeben werden.
 Falls das Geburtsjahr kleiner als `2020` soll das ungefähre Alter in Tagen
 berechnet und ausgegeben werden.
 
-### 📝 Übung 40
+### 📝 Übung 41
 
 Schreibe ein Programm, bei dem der Benutzer drei Zahlen eingeben kann.
 Das Programm soll die größte der drei Zahlen ausgeben.
 
-### 📝 Übung 41
+### 📝 Übung 42
 Schreibe ein Programm, bei dem der Benutzer die drei Seiten eines Dreiecks eingeben kann.
 
 Das Programm soll ausgeben, ob es sich um ein:
@@ -146,7 +146,7 @@ Das Programm soll ausgeben, ob es sich um ein:
 * rechtwinkeliges
 * oder allgemeines Dreieck handelt
 
-### 📝 Übung 42
+### 📝 Übung 43
 Schreibe ein Programm, bei dem der Benutzer eine Jahreszahl eingeben.
 Das Programm gibt aus, ob es sich um ein Schaltjahr handelt oder nicht.
 
@@ -155,5 +155,8 @@ Die Regel ist die folgende:
 * Die durch 4 ganzzahlig teilbaren Jahre sind, abgesehen von den folgenden Ausnahmen, Schaltjahre.
 * Säkularjahre, also die Jahre, die ein Jahrhundert abschließen (z. B. 1800, 1900, 2100 und 2200), sind, abgesehen von der folgenden Ausnahme, keine Schaltjahre.
 * Die durch 400 ganzzahlig teilbaren Säkularjahre, zum Beispiel das Jahr 2000, sind jedoch Schaltjahre.
+
+
+
 
 

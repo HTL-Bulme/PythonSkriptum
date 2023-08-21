@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="210_Listen.html" />
+    <link rel="next" href="170_mehrfachverzweigung.html" />
     
     
     <link rel="prev" href="150_flowcharts.html" />
@@ -316,6 +316,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.6" data-path="170_mehrfachverzweigung.html">
+            
+                <a href="170_mehrfachverzweigung.html">
+            
+                    
+                    Mehrfachverzweigungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="175_mathematik.html">
+            
+                <a href="175_mathematik.html">
+            
+                    
+                    Weitere mathematische Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -406,16 +432,85 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="verschachtelung-von-verzweigungen">Verschachtelung von Verzweigungen</h1>
-<p>Mit logischen Operatoren können wir mehrere Bedingungen zu einer zusammenfassen.
-Diese Bedingung können wir mit einer <code>if</code>-Verzweigung überprüfen.
-Falls die Bedingung zutrifft, wird der <code>if</code>-Teil der Verzweigung ausgeführt,
-falls die Bedingung nicht zutrifft, wird der <code>else</code>-Teil ausgeführt.</p>
 <p>In diesem Kapitel sehen wir uns an, wie wir eine weitere <code>if</code>-Verzweigung
 in den <code>if</code>-Teil oder in den <code>else</code>-Teil einer <code>if</code>-Verzweigung packen können.
-Wir nennen das eine verschachtelte Verzweigung.
+Wir nennen das eine <strong>verschachtelte Verzweigung</strong>.
 Flussdiagramme, die wir im letzten Kapitel kennengelernt haben,
 helfen uns jetzt Verschachtelungen schön darzustellen und
 damit leichter zu verstehen.</p>
+<h2 id="💡-beispiel-als-flussdiagramm">💡 Beispiel als Flussdiagramm</h2>
+<p>Nehmen wir an wir möchten ein Programm schreiben,
+bei dem der Benutzer die Seitenlängen eines Rechtecks eingeben kann,
+und das Programm berechnet den Flächeninhalt und gibt ihn aus.</p>
+<p>Wir möchten nach der Eingabe der Seite <code>a</code> prüfen, ob die Länge positiv ist.
+Falls die Seite <code>a</code> positiv ist, fragen wir den Benutzer nach der Seite <code>b</code>.
+Falls die Seite <code>a</code> nicht positiv ist, so beenden wir das Programm.</p>
+<p>In der folgenden Abbildung siehst du ein Flussdiagramm des oben
+beschriebenen Programms:</p>
+<p><img src="images/beispiel4.png" alt="Flussdiagramm zur Berechnung des Flächeninhalts eines Rechtecks"></p>
+<p>In der obigen Abbildung sehen wir, dass die erste Verzweigung zwei &quot;Ausgänge&quot; hat.
+Der Pfeil nach rechts wird ausgeführt, wenn die Bedingung nicht zutrifft,
+die Seite <code>a</code> also nicht positiv ist. Hier wird eine Fehlermeldung ausgegeben und
+das Programm beendet.</p>
+<p>Falls die Bedingung aber stimmt, die Seite <code>a</code> also positiv ist, so wird die Seite <code>b</code>
+eingelesen und danach geprüft, ob die Seite <code>b</code> positiv ist.
+Auch diese Verzweigung hat wieder zwei mögliche Ausgänge.
+Entweder die Seite <code>b</code> ist positiv, dann wird die Fläche berechnet,
+ansonsten wird wieder eine Fehlermeldung ausgegeben.</p>
+<p>Was wir klar erkennen können, ist dass die zweite Verzweigung in der ersten enthalten ist.
+Genauer gesagt ist die zweite Verzweigung im <code>if</code>-Teil der ersten Verzweigung.</p>
+<p>Im folgenden Codebeispiel siehst du wie man Verzweigungen in Python verschachtelt.</p>
+<h2 id="💡-codebeispiel">💡 Codebeispiel</h2>
+<p>Im folgenden Codebeispiel siehst du,
+wie du eine <code>if</code>-Verzweigung in einer anderen verschachtelst.
+Wichtig ist, dass die &quot;innere&quot; Verzweigung eingrückt ist.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    seite_a = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Seite a eingeben: &quot;</span>))
+
+    <span class="hljs-keyword">if</span> (seite_a &gt; <span class="hljs-number">0</span>):
+        seite_b = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Seite b eingeben: &quot;</span>))
+
+        <span class="hljs-keyword">if</span> (seite_b &gt; <span class="hljs-number">0</span>):
+            flaeche = seite_a * seite_b
+
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Die Fläche ist&quot;</span>, flaeche)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Fehler: Seite b ist nicht postiv&quot;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Fehler: Seite a ist nicht postiv&quot;</span>)
+
+main()
+</code></pre>
+<h2 id="übungen">Übungen</h2>
+<h3 id="📝-übung-44">📝 Übung 44</h3>
+<p>Zeichne zuerst ein Flussdiagramm und schreibe ein Programm,
+bei dem der Benutzer zuerst die aktuelle Temperatur
+eingeben kann und danach seinen aktuellen Kontostand.</p>
+<ul>
+<li>Falls die Temperatur größer als 20 Grad ist <strong>und</strong> der Kontostand größer als 10€ ist,
+so soll: &quot;Ich gehe ein Eis essen&quot; ausgegeben werden.</li>
+<li>Falls <strong>nur</strong> die Temperatur kleiner oder gleich 20 Grad ist, so soll:
+&quot;Kein Eis, es ist zu kalt.&quot; ausgegeben werden</li>
+<li>Falls <strong>nur</strong> der Kontostand kleiner oder gleich 10€ ist, so soll:
+&quot;Kein Eis, ich habe kein Geld&quot; augegeben werden</li>
+<li>Falls die Temperatur kleiner oder gleich 20 Grad
+<strong>und</strong> der Kontostand kleiner oder gleich 10€ ist,
+so soll: &quot;Es ist zu kalt für ein Eis und ich habe kein Geld&quot; ausgegeben werden.</li>
+</ul>
+<h3 id="📝-übung-45">📝 Übung 45</h3>
+<p>Schreibe ein Programm bei dem der Benutzer zuerst drei Zahlen <code>a</code>, <code>b</code> und <code>c</code> eingeben kann.
+Das Programm soll die größte der drei zahlen ausgeben.</p>
+<p>Zeichne wieder zuerst ein Flussdiagramm und schreibe dann ein Programm.</p>
+<h3 id="📝-übung-46">📝 Übung 46</h3>
+<p>Schreibe ein Programm bei dem der Benutzer eine Zahl eingeben kann.</p>
+<ul>
+<li>Falls die Zahl positiv ist, soll &quot;Zahl ist positiv&quot; ausgegeben werden</li>
+<li>Falls die Zahl negativ ist, soll &quot;Zahl ist negativ&quot; ausgegeben werden</li>
+<li>Falls die Zahl gleich <code>0</code> ist, soll &quot;Zahl ist 0&quot; ausgegeben werden</li>
+</ul>
+<p>Verwenden Sie zwei verschachtelte Schleifen.</p>
+<p><strong>Tipp:</strong> Die erste Schleifenbedingung muss <code>&gt; 0</code> sein,
+die zweite Schleifenbedingung muss <code>&lt; 0</code> sein.</p>
 
                                 
                                 </section>
@@ -448,7 +543,7 @@ damit leichter zu verstehen.</p>
                 </a>
                 
                 
-                <a href="210_Listen.html" class="navigation navigation-next " aria-label="Next page: Listen 📜">
+                <a href="170_mehrfachverzweigung.html" class="navigation navigation-next " aria-label="Next page: Mehrfachverzweigungen">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -459,7 +554,7 @@ damit leichter zu verstehen.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Verschachtelung von Verzweigungen","level":"1.3.5","depth":2,"next":{"title":"Listen 📜","level":"1.4","depth":1,"path":"210_Listen.md","ref":"210_Listen.md","articles":[]},"previous":{"title":"Grafische Darstellung von Programmen","level":"1.3.4","depth":2,"path":"150_flowcharts.md","ref":"150_flowcharts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"160_verschachtelung.md","mtime":"2023-08-20T20:38:42.189Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-20T20:40:09.120Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Verschachtelung von Verzweigungen","level":"1.3.5","depth":2,"next":{"title":"Mehrfachverzweigungen","level":"1.3.6","depth":2,"path":"170_mehrfachverzweigung.md","ref":"170_mehrfachverzweigung.md","articles":[]},"previous":{"title":"Grafische Darstellung von Programmen","level":"1.3.4","depth":2,"path":"150_flowcharts.md","ref":"150_flowcharts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"160_verschachtelung.md","mtime":"2023-08-21T18:12:07.823Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T18:13:22.037Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

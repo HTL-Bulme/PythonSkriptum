@@ -83,3 +83,7 @@ und wie du interessante Grafiken mit der Turtle zeichnen kannst.
 
 
 
+
+
+
+

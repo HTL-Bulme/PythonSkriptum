@@ -151,3 +151,7 @@ Nach der Variablendefinition soll ein Rechteck mit den Seitenlängen
 + Typen sind bspw. Integer (Ganzzahl), Float (Gleitkommazahl) und String (Text)
 
 
+
+
+
+
