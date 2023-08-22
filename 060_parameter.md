@@ -81,7 +81,7 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 32
+### 📝 Übung 34
 <img style="float: right; width:33%" src="./images/quadrate.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
@@ -89,7 +89,7 @@ Die Turtle soll 10 Quadrate zeichnen. Die Seitenlänge des ersten Quadrats ist 8
 <div style="clear:both;"></div>
 
 
-### 📝 Übung 33
+### 📝 Übung 35
 <img style="float: right; width:33%" src="./images/quadrate_schief.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
@@ -97,7 +97,7 @@ Du kannst in einer Dialogbox die Seitenlänge des grössten Quadrats eingeben. D
 <div style="clear:both;"></div>
 
 
-### 📝 Übung 34	
+### 📝 Übung 36	
 <img style="float: right; width:33%" src="./images/circles.png">
 Definiere eine Funktion circle(s, c), mit dem die Turtle gefüllte Kreise mit gegebener Füllfarbe zeichnet und erstelle damit die nebenstehende Zeichnung.
 
@@ -109,12 +109,13 @@ repeat 120:
 ```
 <div style="clear:both;"></div>
 
-### 📝 Übung 35
+### 📝 Übung 37
 <img style="float: right; width:33%" src="./images/trompete.png">
 Du definiert eine Funktion circle(s), die einen Kreis zeichnet. Die nebenstehende Figur entsteht, indem du 30 Kreise zeichnest, s nach jedem gezeichneten Kreis verkleinerst (s = s *0.9) und die Turtle 5 Schritte vorwärts bewegst.
 <div style="clear:both;"></div>	
 
 ## 🧭 Zusammenfassung
+
 
 
 

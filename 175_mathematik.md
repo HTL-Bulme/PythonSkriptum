@@ -111,7 +111,7 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 51
+### 📝 Übung 53
 
 Schreibe ein Programm bei dem der Benutzer zuerst wählen kann ob er
 das Volumen eines Zylinders (1) oder das Volumen einer Kugel (2) berechnen möchte.
@@ -123,7 +123,7 @@ ausgegeben werden.
 Falls der Benutzer `2` eingibt, soll anch dem Radius der Kugel gefragt werden,
 das Volumen der Kugel berechnet und ausgegeben werden.
 
-### 📝 Übung 52
+### 📝 Übung 54
 
 Schreibe ein Programm, bei dem der Benutzer die Wurzel einer Zahl berechnen kann.
 Zuerst soll die Zahl vom Benutzer eingegeben werden.
@@ -131,6 +131,7 @@ Falls die Zahl kleiner als `0` ist, so soll eine Fehlermeldung ausgegeben werden
 Ansonsten soll die Wurzel mit der `sqrt`-Funktion berechnet und ausgegeben werden.
 
 ## 🧭 Zusammenfassung
+
 
 
 

@@ -93,29 +93,29 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 36
+### 📝 Übung 38
 
 Schreibe ein Programm bei dem der Benutzer seine Punkteanzahl vom 
 SWP-Test eingeben kann. Falls die Punkteanzahl größer oder gleich 16 ist,
 soll "Positive Note" werden.
 Ansonsten soll "Negative Note" ausgegeben werden.
 
-### 📝 Übung 37
+### 📝 Übung 39
 
 Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die Zahl positiv, negativ oder Null ist.
 
 **Tipp:** Du wirst mehr als eine if-Verzweigung brauchen.
 
-### 📝 Übung 38
+### 📝 Übung 40
 Schreibe ein Programm bei dem der Benutzer zwei Ganzzahlen eingeben kann.
 Das Programm soll ausgeben, ob die erste Zahl größer als die zweite Zahl ist.
 
-### 📝 Übung 39
+### 📝 Übung 41
 Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die zahl eine gerade Zahl ist, oder nicht.
 
-### 📝 Übung 40
+### 📝 Übung 42
 Schreibe ein Programm bei dem der Benutzer einen String eingeben kann.
 Prüfe ob der eingegebene Wert gleich "Sesam öffne dich" ist.
 Falls ja, soll "Du hast das Passwort erraten" ausgegeben werden.
@@ -144,6 +144,7 @@ else:
     falls Bedingung NICHT erfüllt
 ```
  
+
 
 
 

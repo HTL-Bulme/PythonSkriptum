@@ -71,43 +71,43 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 19
+### 📝 Übung 21
 <img style="float: right; width:33%" src="./images/stern.png">
 Zeichne die nebenstehende Figur. Dazu brauchst du auch die Funktionen bk() und dot().
 <div style="clear:both;"></div>
 
-### 📝 Übung 20
+### 📝 Übung 22
 <img style="float: right; width:33%" src="./images/ring.png">
 Zeichne eine Perlenkette, die aus 18 Perlen (dots) besteht. Zwischen den Perlen muss die Turtle jeweils einige Schritte vorwärts gehen und um einen kleinen Winkel (z.B. 20°) nach links drehen.
 <div style="clear:both;"></div>
 
-### 📝 Übung 21
+### 📝 Übung 23
 <img style="float: right; width:33%" src="./images/pyramid.png">
 Zeichne die Treppenfigur in der nebenstehenden Abbildung.
 Verwende dazu die for-Schleife.
 <div style="clear:both;"></div>
 
-### 📝 Übung 22
+### 📝 Übung 24
 <img style="float: right; width:33%" src="./images/pentagram.png">
 Zeichne das Pentagramm in der nebenstehenden Abbildung.
 Überlege dir zuerst, wie die Drehwinkel lauten
 und verwende wieder die for-Schleife um die Figur zu zeichnen.
 <div style="clear:both;"></div>
 
-### 📝 Übung 23
+### 📝 Übung 25
 <img style="float: right; width:33%" src="./images/star.png">
 Zeichne den Stern in der nebenstehenden Abbildung.
 Überlege dir zuerst, welche Teile wiederholt werden 
 und verwende wieder die for-Schleife um die Figur zu zeichnen.
 <div style="clear:both;"></div>
 
-### 📝 Übung 24
+### 📝 Übung 26
 Schreibe ein Programm, bei dem der Benutzer eine Ganzzahl eingeben kann.
 Gibt der Benutzer die Zahl 3 ein, so wird ein regelmäßiges Dreieck gezeichnet.
 Gibt der Benutzer die Zahl 4 ein, so wird ein regelmäßiges Viereck gezeichnet,
 und so weiter.
 
-### 📝 Übung 25
+### 📝 Übung 27
 
 Schreibe ein Programm, beim der Benutzer eine positive Zahl eingeben muss. Das Programm
 soll dann in einer for-Schleife alle Teiler der eingegeben Zahl ermitteln und ausgeben.
@@ -117,7 +117,7 @@ soll dann in einer for-Schleife alle Teiler der eingegeben Zahl ermitteln und au
 * Eingabe: 24
 * Ausgabe: 1, 2, 3, 4, 6, 8, 12
 
-### 📝 Übung 26
+### 📝 Übung 28
 Schreibe ein Programm, welches die Wurzeln aller Zahlen von 1 bis 20 ausgibt.
 
 **Ausgabe:** 1, 1.4142, 1.7320, 2, ...., 4.3588, 4.4721
@@ -134,6 +134,7 @@ for i in range(anzahl):
     wiederholt
     werden sollen 
 ```
+
 
 
 

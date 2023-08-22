@@ -67,7 +67,8 @@ Die Variablen `s` und `v` sind aber nicht mehr sichtbar, da sie aus einer andere
 stammen. Jede Funktion kann nur die Variablen sehen,
 die in der Funktion selbst definiert sind,
 oder die als Parameter übergeben wurden.
-(Streng genommen gibt es noch globale Variablen, diese können von überall aus zugegriffen werden. Das würde aber hier den Rahmen sprengen.)
+
+ℹ️ Streng genommen gibt es noch globale Variablen, diese können von überall aus zugegriffen werden. Das würde aber hier den Rahmen sprengen.
 
 ![Sprung in berechneDauer-Funktion](./images/distancestep3.png)
 

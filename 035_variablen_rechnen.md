@@ -143,7 +143,7 @@ Schreibe ein Programm, bei dem der Benutzer den Flächeninhalt
 eines Quadrats eingeben kann. Das Programm soll die Seitenlänge des Quadrats
 berechnen und das Quadrat zeichnen.
 
-### 📝 Übung 18
+### 📝 Übung 19
 Überlege dir was das Programm ausgibt.
 Teste deine Überlegung, indem du das Programm
 in WebTigerJython kopierst und ausführst.
@@ -162,7 +162,7 @@ print(b)
 print(c)
 ```
 
-### 📝 Übung 18
+### 📝 Übung 20
 Überlege dir was das Programm ausgibt.
 Teste deine Überlegung, indem du das Programm
 in WebTigerJython kopierst und ausführst.
@@ -184,6 +184,7 @@ Du kannst ihren Wert jederzeit durch eine neue Zuweisung ändern und dabei sogar
 Eine Zuweisung wird in der Form `Variable = Ausdruck` geschrieben,
 wobei der Ausdruck eine Variable,
 eine Zahl, eine Berechnung oder ein Funktionsaufruf sein kann.
+
 
 
 
