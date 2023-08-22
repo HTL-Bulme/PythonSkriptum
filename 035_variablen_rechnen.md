@@ -132,7 +132,7 @@ die Diagonale eines Displays) in cm umrechnet.
 ### 📝 Übung 17
 Schreibe ein Programm, welches die Hypotenuse eines rechtwinkeligen
 Dreiecks berechnet. Der Benutzer soll die Längen a und b eingeben können
-und das Programm berechet die Länge der Hypotenuse mit dem Satz von Pythagoras.
+und das Programm berechnet die Länge der Hypotenuse mit dem Satz von Pythagoras.
 Gib das Ergebnis mit `print` aus.
 
 **Tipp:** Die Wurzel einer Zahl x, kannst du mit `x ** 0.5` berechnen.

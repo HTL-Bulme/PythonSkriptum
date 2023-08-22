@@ -4,7 +4,7 @@ Sehr häufig kommt es beim Programmieren vor,
 dass genau eine von vielen Bedingungen zutreffen kann.
 
 Nehmen wir zum Beispiel die letzte Übung aus dem letzten Kapitel,
-hier wurde geprüft, ob die Zahl postiv, negativ oder gleich `0` ist.
+hier wurde geprüft, ob die Zahl positiv, negativ oder gleich `0` ist.
 Es kann nur eine der drei Bedingungen zutreffen.
 
 Falls es mehrere Bedingungen gibt, bei der nur eine zutreffen kann,
@@ -46,7 +46,7 @@ _________________
 ### 📝 Übung 51
 
 Bei einem Test kann man 100 Punkte erlangen.
-Schreibe ein Progamm, welches die erreichte Note ausgibt.
+Schreibe ein Programm, welches die erreichte Note ausgibt.
 
 * über 87 Punkte: Sehr Gut
 * über 75 Punkte: Gut

@@ -3,9 +3,9 @@
 Du hast bereits die `for`-Schleife kennengelernt, mit der du einen Codeblock mehrmals wiederholen kannst. Die `for`-Schleife setzt du dann ein, wenn du schon vorher weißt,
 wie oft der Codeblock wiederholt werden soll.
 
-Häufig weiß man aber das im vorhinein nicht. Nehmen wir zum Beispiel eine Passwortabfrage.
+Häufig weiß man aber das im Vorhinein nicht. Nehmen wir zum Beispiel eine Passwortabfrage.
 Wir möchten den Benutzer nach dem Passwort fragen, bis er es richtig eingibt.
-Hier weiß man im vorhinein nicht wie viele Anläufe der Benutzer benötigt.
+Hier weiß man im Vorhinein nicht wie viele Anläufe der Benutzer benötigt.
 
 In Fällen in denen wir einen Codeblock wiederholen solange eine Bedingung gilt, verwenden wir die `while`-Schleife.
 
@@ -45,9 +45,9 @@ while (i < 100):
     i += 1
 ```
 
-Diese Schleife wird 100 Mal wiederholt, da zur Zahl `0` solange `1` dazuaddiert wird,
+Diese Schleife wird 100 Mal wiederholt, da zur Zahl `0` solange `1` dazu addiert wird,
 solange die Zahl kleiner 100 ist. In diesem Beispiel haben wir also
-das Verhalten einer `for`-Schleife mit einer `while`-Schleife nachprogrammiert.
+das Verhalten einer `for`-Schleife mit einer `while`-Schleife nach programmiert.
 
 ## Ähnlichkeit zur Verzweigung
 

@@ -42,7 +42,7 @@ Im folgenden Codebeispiel siehst du wie man Verzweigungen in Python verschachtel
 
 Im folgenden Codebeispiel siehst du,
 wie du eine `if`-Verzweigung in einer anderen verschachtelst.
-Wichtig ist, dass die "innere" Verzweigung eingrückt ist.
+Wichtig ist, dass die "innere" Verzweigung eingerückt ist.
 
 ```python
 def main():
@@ -77,7 +77,7 @@ so soll: "Ich gehe ein Eis essen" ausgegeben werden.
 * Falls **nur** die Temperatur kleiner oder gleich 20 Grad ist, so soll:
 "Kein Eis, es ist zu kalt." ausgegeben werden
 * Falls **nur** der Kontostand kleiner oder gleich 10€ ist, so soll:
-"Kein Eis, ich habe kein Geld" augegeben werden
+"Kein Eis, ich habe kein Geld" ausgegeben werden
 * Falls die Temperatur kleiner oder gleich 20 Grad
 **und** der Kontostand kleiner oder gleich 10€ ist,
 so soll: "Es ist zu kalt für ein Eis und ich habe kein Geld" ausgegeben werden.

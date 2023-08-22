@@ -82,7 +82,7 @@ Es macht aber auch die Fehlersuche schwieriger, da wir mit dem Schauen
 ab einer gewissen Geschwindigkeit nicht mehr mitkommen.
 
 Zeile 4 ist eine Leerzeile. Wir dürfen beliebig viele Leerzeilen
-an beliebeigen Stellen einfügen. Das wird häufig gemacht um das
+an beliebigen Stellen einfügen. Das wird häufig gemacht um das
 Programm in Form zu bringen und leichter lesbar zu machen.
 
 In Zeile 5 bis inkl. 7 fährt die Turtle 100 Pixel nach vorne,
@@ -104,7 +104,7 @@ In Zeile 16 versteckt sie die Turtle, damit ist sie im finalen Bild nicht mehr s
 Wir haben uns die wichtigsten Funktionen der Turtle angesehen.
 Funktionen haben am Ende zwei runde Klammern.
 Zwischen den runden Klammern können Argumente stehen,
-das sind weitere Angaben zum Funktionsauruf,
+das sind weitere Angaben zum Funktionsaufruf,
 beispielsweise die Anzahl der Pixel bei der Funktion `fd`
 
 Im nächsten Abschnitt sollst du selbst Programme schreiben,

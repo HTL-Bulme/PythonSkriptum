@@ -74,7 +74,7 @@ und dann auf "Open Folder" (Ordner öffnen) und wähle den gerade erstellten Ord
 Wähle dann unter "File" (Datei) den Menüpunkt "New File" (Neue Datei) und 
 nenne die neue Datei "ersterVersuch.py".
 
-Tippe das kleine Testprogramm ein, speichere es mit dem Menüpunt "File" und "Save"
+Tippe das kleine Testprogramm ein, speichere es mit dem Menüpunkt "File" und "Save"
 (oder mit der Tastenkombination `STRG + S`).
 
 ```python
@@ -97,7 +97,7 @@ und nach einer Lösung zu suchen.
 Die Chance, dass du der einzige mit einem gewissen Problem bist,
 ist sehr gering, weshalb du fast immer Hilfestellungen im Internet findest.
 
-Falls auch das nicht weiterhilft, dann darst du gerne deinen Lehrer fragen. 😉
+Falls auch das nicht weiterhilft, dann darfst du gerne deinen Lehrer fragen. 😉
 
 
 

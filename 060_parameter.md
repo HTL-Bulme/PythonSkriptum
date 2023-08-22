@@ -43,14 +43,14 @@ main()
 
 Eine Funktion kann auch mehrere Parameter haben.
 Die einzelnen Parameter müssen dann mit einem Beistrich getrennt werden.
-In deinem Beispel definierst du eine Funktion `polygon(n, c)` mit zwei Parametern: 
+In deinem Beispiel definierst du eine Funktion `polygon(n, c)` mit zwei Parametern: 
 `n` für die Anzahl Ecken, `c` für die Stiftfarbe.
 Die Funktion zeichnet regelmässige Vielecke mit der gegebenen Anzahl Ecken und Farbe.
 Im Hauptprogramm wird die Funktion 6 mal aufgerufen
 und zeichnet dabei ein Dreieck, Quadrat, 5-Eck, 6-Eck,
 8-Eck und 10 Eck und in verschiedenen Farben.
 
-Der Drewinkel, den du zum Zeichnen benötigst, lässt sich mit 360 / n berechnen.
+Der Drehwinkel, den du zum Zeichnen benötigst, lässt sich mit 360 / n berechnen.
 
 ```python
 from gturtle import *

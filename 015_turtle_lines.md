@@ -10,7 +10,7 @@ Versuche die Turtle anzuleiten, ein gleichseitiges Dreieck mit der Seitenlänge 
 <img style="float: right; width:33%" src="./images/bsp03.png">
 Zeichne die Figur auf der rechten Seite.
 Die Verbindungslinien haben eine Länge von 100.
-Beachte, dass die Turtle zum schluss wieder in der Mitte
+Beachte, dass die Turtle zum Schluss wieder in der Mitte
 der Figur sitzt.
 <div style="clear:both;"></div>
 

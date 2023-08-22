@@ -5,7 +5,7 @@ nochmals ganz genau Schritt-für-Schritt unter die Lupe nehmen.
 
 Nehmen wir an, wir möchten ein Programm schreiben,
 welches die Fahrtdauer für eine gewisse Strecke berechnet,
-wobei Distanz und Gewschwindigkeit bekannt sind.
+wobei Distanz und Geschwindigkeit bekannt sind.
 Aus der Physik wissen wir, dass wir die
 Fahrtdauer mit *t = s / v* berechnen können.
 Folgendes Programm berechnet die Fahrtdauer in einer eigenen Funktion.

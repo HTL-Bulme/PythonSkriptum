@@ -7,7 +7,7 @@ In diesem Kapitel sehen wir uns einige dieser Funktionen an.
 
 ## Importieren des Mathematik-Moduls
 
-Das importoren von Modulen kenn wir bereits von der Turtle.
+Das importieren von Modulen kennen wir bereits von der Turtle.
 Für die Turtle mussten wir `from gturtle import *` schreiben,
 wobei `gturtle` gerade der Name des Turtle-Moduls war.
 
@@ -41,8 +41,8 @@ werden soll, und der zweite Parameter ist die Anzahl der gewünschten Nachkommas
 
 Manchmal möchte man auch eine Zahl zur nächsten ganzen Zahl auf- oder abrunden.
 hierzu gibt es die beiden Funktionen `floor` und `ceil`.
-Die Funktione `floor` (engl. Boden) rundet eine Gleitkommazahl ab,
-die Funktione `ceil` (von ceiling engl. Decke) rundet eine Gleitkommazahl auf.
+Die Funktion `floor` (engl. Boden) rundet eine Gleitkommazahl ab,
+die Funktion `ceil` (von ceiling engl. Decke) rundet eine Gleitkommazahl auf.
 
 ```python
 from math import * 
@@ -91,7 +91,7 @@ meinEigenesE  = 2.71828
 Dann müssten wir die Variable aber bei jedem Programm neu definieren.
 Das ist umständlich und birgt die Gefahr, dass wir uns vertippen.
 Glücklicherweise werden die Konstanten bereits vom Mathematik-Modul 
-mit einer Genauigkeit von **15** Nachkommstellen mitgeliefert.
+mit einer Genauigkeit von **15** Nachkommastellen mitgeliefert.
 
 ```python
 from math import * 
@@ -120,7 +120,7 @@ Falls der Benutzer `1` eingibt, so soll er nach dem Radius und nach der Höhe
 des Zylinders gefragt werden. Danach soll das Volumen berechnet werden und
 ausgegeben werden.
 
-Falls der Benutzer `2` eingibt, soll anch dem Radius der Kugel gefragt werden,
+Falls der Benutzer `2` eingibt, soll nach dem Radius der Kugel gefragt werden,
 das Volumen der Kugel berechnet und ausgegeben werden.
 
 ### 📝 Übung 54

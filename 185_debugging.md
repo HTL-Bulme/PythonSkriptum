@@ -5,7 +5,7 @@ mit denen wir Fehler in Programmen finden können.
 
 Einen Fehler nennen wir beim Programmieren auch **Bug**, englisch für Käfer.
 Dieser Begriff hat sich in der Informatik durchgesetzt, da es bei den ersten Computern,
-welche raumgroße Maschinen waren, manachmal Insekten gab, welche sich in den Relais
+welche raumgroße Maschinen waren, manchmal Insekten gab, welche sich in den Relais
 verfingen und dadurch Fehlfunktionen verursachten.
 
 Das Beheben eines Fehlers, nennt man auch **Debugging**, also zu deutsch etwa *entkäfern*. 😉
@@ -96,7 +96,7 @@ Ab dieser Zeile werden wir das Programm Schritt-für-Schritt ausführen.
 Klicke, wie in folgender Abbildung sichtbar, mit der Maus auf den 
 linken Bereich neben der Codezeile.
 Es sollte ein roter Punkt entstehen.
-Dier Punkt, aucht Haltepunkt genannt, sagt aus, dass das Programm
+Der Punkt, auch **Haltepunkt** genannt, sagt aus, dass das Programm
 an dieser Stelle unterbrochen wird.
 
 ![Haltepunkt setzen](./images/debug.png)
@@ -137,7 +137,7 @@ Die Zeilen 4, 5 und 6 wurden also bereits ausgeführt.
 Auf der linken Seite (2) sehen wir eine Liste aller zurzeit verfügbaren Variablen
 und deren Wert.
 
-Wenn wir scharf draufschauen, dann erkennen wir, dass bei **radius** und **raduis** etwas 
+Wenn wir scharf drauf schauen, dann erkennen wir, dass bei **radius** und **raduis** etwas 
 nicht stimmen kann.
 
 ![Variablenwerte auslesen](./images/watches.png)

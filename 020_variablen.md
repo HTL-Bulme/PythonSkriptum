@@ -61,7 +61,7 @@ Die Variable mit dem Namen `a` kann nun überall dort verwendet werden,
 wo normalerweise der Wert `50` steht.
 
 Wir könnten also ein neues Programm schreiben,
-bei dem die Seitenlänge deutlich einfacher gändert werden kann,
+bei dem die Seitenlänge deutlich einfacher geändert werden kann,
 da die Zahl `50` nur an einer Stelle vorkommt.
 
 ```python
@@ -105,7 +105,7 @@ wie "ß" oder "ö", sollten vermieden werden.
 
 
 **Typ**: Eine Variable kann verschiedene Arten von Werten beinhalten.
-Wir unterschreiden hier drei grundlegende Typen:
+Wir unterscheiden hier drei grundlegende Typen:
 
 + Integer: Ganzzahlige Werte, wie beispielsweise: 1, 2, 3 aber auch 0 und -1, -2 etc.
 + Float: Zahlen in Gleitkommadarstellung: 1.001, 3.2, 8.9293 oder -1130.23

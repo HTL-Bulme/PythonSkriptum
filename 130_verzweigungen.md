@@ -28,7 +28,7 @@ Diese sind uns bereits aus der Mathematik bekannt,
 müssen aber beim Programmieren anders geschrieben werden,
 da Spezialzeichen wie "≤" nicht auf der Tastatur vorhanden sind.
 
-**⚠️ Vorischt:** Bei "ist gleich" benötigst du unbedingt zwei Gleichheitszeichen!
+**⚠️ Vorsicht:** Bei "ist gleich" benötigst du unbedingt zwei Gleichheitszeichen!
 Ein Gleichheitszeichen ist der Zuweisungsoperator und damit eine
 komplett andere Operation.
 

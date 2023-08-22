@@ -2,7 +2,7 @@
 
 Mit Variablen haben wir unsere Programme bereits flexibler gemacht.
 Jedoch möchten wir noch, dass der Benutzer des Programms,
-jdes mal andere Variablenwerte verwenden kann.
+jedes Mal andere Variablenwerte verwenden kann.
 
 In diesem Kapitel sehen wir uns an, wie Benutzer Werte für Variablen eingeben können.
 
@@ -43,7 +43,7 @@ In der folgenden Abbildung ist das Eingabefenster zu sehen:
 
 **Wichtig:** Falls der Benutzer keine Zahl eingibt und
 wir versuchen dennoch den String mit `int` oder `float`
-umzuwandeln gibt stürzt das Programm mit einer Fehlermeldung ab.
+umzuwandeln, stürzt das Programm mit einer Fehlermeldung ab.
 Im Kapitel über Strings werden wir dieses Problem beheben.
 Bis dahin müssen wir davon ausgehen, dass der Benutzer nur gültige Werte eingibt.
 

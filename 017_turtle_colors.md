@@ -41,7 +41,7 @@ Das Programm erzeugt folgende Grafik:
 Um eine Fläche auszufüllen, sagst du zuerst der Turtle mit `startPath()`,
 dass sie sich ausgehend vom aktuellen Ort die nachfolgend gezeichnete Figur merken soll.
 Mit dem Befehl `fillPath()` wird der jetzige Ort mit dem Startort verbunden 
-und die eingeschlossene Fläche ausgefärbt. Mit `setFillColor()`
+und die eingeschlossene Fläche eingefärbt. Mit `setFillColor()`
 kannst du die Füllfarbe angeben (sagst du nichts, so ist sie standardmässig schwarz).
 
 ```python
