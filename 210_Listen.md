@@ -16,3 +16,15 @@ Die einzelnen Werte nennen wir **Elemente**.
 Damit die Elemente unterschieden werden können, bekommt jedes Element,
 einen eindeutigen **Index**. Das ist eine fortlaufende Zahl,
 welche bei 0 zu zählen beginnt, und jedem Element eine eindeutige Nummer zuweist.
+
+![Darstellung einer Liste mit sechs Elementen](./images/lists.png)
+
+In der obigen Abbildung siehst du eine Liste mit sechs Elementen.
+Jedes Element hat einen eindeutigen Index.
+Der Plural von Index lautet Indizes.
+Indizes beginnen bei 0, beim ersten Element und werden bis zum letzten
+Element hochgezählt.
+Die Anzahl der Elemente einer Liste nennt man auch die Länge.
+
+Wie man Listen erstellt, befüllt, wie man sie sortiert und darin sucht,
+findest du in den folgenden Kapiteln.

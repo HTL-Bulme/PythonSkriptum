@@ -94,3 +94,4 @@ Am Ende wird noch die Zeit in Minuten ausgegeben.
 ![Rücksprung in die main-Funktion](./images/distancestep4.png)
 
 ## 🧭 Zusammenfassung
+

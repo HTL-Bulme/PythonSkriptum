@@ -80,3 +80,4 @@ bzw. angeben, ob die Temperatur genau am Gefrierpunkt oder am Siedepunkt ist.
 
 
 
+
