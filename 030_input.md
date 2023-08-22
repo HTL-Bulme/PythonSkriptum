@@ -47,6 +47,8 @@ umzuwandeln gibt stürzt das Programm mit einer Fehlermeldung ab.
 Im Kapitel über Strings werden wir dieses Problem beheben.
 Bis dahin müssen wir davon ausgehen, dass der Benutzer nur gültige Werte eingibt.
 
+_________________
+
 ## Übungen
 
 
@@ -71,11 +73,20 @@ Je nachdem welchen Wert der Benutzer eingibt, kommt ein anderes Haus dabei raus.
 Erweitere das Programm von Übung 12 um eine weitere Eingabe.
 Der Benutzer soll zusätzlich die Größe der Fenster eingeben können.
 
-## Zusammenfassung
+## 🧭 Zusammenfassung
 
 Unsere Programme können nun Zahlenwerte als Eingabe vom Benutzer entgegennehmen.
 Hierzu nutzen sie die Funktionen `inputInt` und `inputFloat`.
 Dadurch sind die Programme flexibler einsetzbar.
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,8 @@
 cp *.md ./../ebook/src -f
+cp tablefilter ./../ebook/src -f
 cp images/* ./../ebook/images -f
+
 find ./../ebook/src -type f -exec sed -i 's/📝/![](.\/images\/pencil-svgrepo-com.svg){ width=16px }/gI' {} \;
-find ./../ebook/src -type f -exec sed -i 's/✅/![](.\/images\/check-mark-button-svgrepo-com.svg){ width=16px }/gI' {} \;
 find ./../ebook/src -type f -exec sed -i 's/🐢/![](.\/images\/turtle-svgrepo-com.svg){ width=16px }/gI' {} \;
 find ./../ebook/src -type f -exec sed -i 's/💡/![](.\/images\/lightbulb-svgrepo-com.svg){ width=16px }/gI' {} \;
 find ./../ebook/src -type f -exec sed -i 's/🧭/![](.\/images\/compass-svgrepo-com.svg){ width=16px }/gI' {} \;

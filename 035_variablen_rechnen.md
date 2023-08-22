@@ -39,7 +39,7 @@ Dabei musst du dir vorstellen, dass schrittweise Folgendes geschieht:
 + die Zahl 50 wird dazugezählt
 + der neue Wert 370 wird wieder in die Variable `laenge` gespeichert
 
-**Vorsicht:** Du darfst die dabei verwendete Schreibweise nicht mit einer mathematischen Gleichung verwechseln. Die Programmanweisung:
+**⚠️ Vorsicht:** Du darfst die dabei verwendete Schreibweise nicht mit einer mathematischen Gleichung verwechseln. Die Programmanweisung:
 `n = n + 1`
 hat nichts mit einer mathematischen Gleichung zu tun, also mit der Aufgabe,
 n so zu bestimmen, dass sich links und rechts von Gleichheitszeichen derselbe Wert ergibt.
@@ -143,7 +143,40 @@ Schreibe ein Programm, bei dem der Benutzer den Flächeninhalt
 eines Quadrats eingeben kann. Das Programm soll die Seitenlänge des Quadrats
 berechnen und das Quadrat zeichnen.
 
-## Zusammenfassung
+### 📝 Übung 18
+Überlege dir was das Programm ausgibt.
+Teste deine Überlegung, indem du das Programm
+in WebTigerJython kopierst und ausführst.
+
+```python
+a = 4
+b = 3 * a
+c = 2 * b
+print(a)
+print(b)
+print(c)
+a = 5
+c = c + 1
+print(a)
+print(b)
+print(c)
+```
+
+### 📝 Übung 18
+Überlege dir was das Programm ausgibt.
+Teste deine Überlegung, indem du das Programm
+in WebTigerJython kopierst und ausführst.
+
+```python
+a = 7
+b = 9
+b = a
+a = b
+print(a)
+print(b)
+```
+
+## 🧭 Zusammenfassung
 
 Eine Variable entsteht dann, wenn du ihr mit dem Gleichheitszeichen einen Wert zuweist.
 Du kannst ihren Wert jederzeit durch eine neue Zuweisung ändern und dabei sogar ihren eigenen (alten) Wert gebrauchen.
@@ -151,6 +184,15 @@ Du kannst ihren Wert jederzeit durch eine neue Zuweisung ändern und dabei sogar
 Eine Zuweisung wird in der Form `Variable = Ausdruck` geschrieben,
 wobei der Ausdruck eine Variable,
 eine Zahl, eine Berechnung oder ein Funktionsaufruf sein kann.
+
+
+
+
+
+
+
+
+
 
 
 

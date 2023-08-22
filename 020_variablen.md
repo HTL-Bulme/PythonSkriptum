@@ -80,7 +80,7 @@ fd(a)
 rt(90)
 ```
 
-**Vorsicht**: Der Name der Variable muss auf der linken Seite des `=` Zeichens stehen
+**⚠️ Vorsicht:** Der Name der Variable muss auf der linken Seite des `=` Zeichens stehen
 und auf der rechten Seite der Wert, welcher der Variable zugewiesen werden soll.
 Die Zeile `50 = a` führt zu einem Fehler.
 
@@ -114,6 +114,8 @@ Wir unterschreiden hier drei grundlegende Typen:
 **Wert**: Jede Variable hat einen Wert. Der Wert der Variable kann
 im Programm laufend geändert werden. 
 
+_________________
+
 ## Übungen
 
 ### 📝 Übung 9
@@ -142,13 +144,19 @@ Nach der Variablendefinition soll ein Rechteck mit den Seitenlängen
 **Wichtig:** Beachte, dass du die Zahlen `60` und `80` nur einmal im Programm benötigst. 
 
 
-## Zusammenfassung
+## 🧭 Zusammenfassung
 
 + Variablen sind benannte Speicherplätze für Werte
 + Variablen müssen vor der Verwendung angelegt (definiert) werden
 + Dabei steht der Name der Variablen immer links vom Gleichheitszeichen = und der Wert rechts davon. Beispiel `seite_a = 23`
 + Variablen haben drei Eigenschaften: Name, Typ und Wert
 + Typen sind bspw. Integer (Ganzzahl), Float (Gleitkommazahl) und String (Text)
+
+
+
+
+
+
 
 
 

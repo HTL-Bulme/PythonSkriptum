@@ -55,6 +55,10 @@ Weitere Funktionen, welche die Turtle ausführen kann sind:
 | ht  | Abkürzung für **h**ide **t**urtle, Turtle wird unsichtbar  | `ht()`  |
 | st  | Abkürzung für **s**how **t**urtle, Turtle wird sichtbar  | `st()`  |
 
+<!---
+your comment goes here
+-->
+
 ## Ein größeres Programm
 
 In der folgenden Abbildung siehst du bereits ein größeres Programm
@@ -96,7 +100,7 @@ und geht dann wieder 50 Pixel nach vorne.
 
 In Zeile 16 versteckt sie die Turtle, damit ist sie im finalen Bild nicht mehr sichtbar.
 
-## Zusammenfassung
+## 🧭 Zusammenfassung
 Wir haben uns die wichtigsten Funktionen der Turtle angesehen.
 Funktionen haben am Ende zwei runde Klammern.
 Zwischen den runden Klammern können Argumente stehen,
@@ -105,6 +109,15 @@ beispielsweise die Anzahl der Pixel bei der Funktion `fd`
 
 Im nächsten Abschnitt sollst du selbst Programme schreiben,
 um vorgegebene Grafiken zu erzeugen.
+
+
+
+
+
+
+
+
+
 
 
 

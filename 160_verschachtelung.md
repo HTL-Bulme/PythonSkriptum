@@ -62,11 +62,11 @@ def main():
 
 main()
 ```
-
+_________________
 
 ## Übungen
 
-### 📝 Übung 44
+### 📝 Übung 46
 
 Zeichne zuerst ein Flussdiagramm und schreibe ein Programm,
 bei dem der Benutzer zuerst die aktuelle Temperatur
@@ -82,14 +82,14 @@ so soll: "Ich gehe ein Eis essen" ausgegeben werden.
 **und** der Kontostand kleiner oder gleich 10€ ist,
 so soll: "Es ist zu kalt für ein Eis und ich habe kein Geld" ausgegeben werden.
 
-### 📝 Übung 45
+### 📝 Übung 47
 
 Schreibe ein Programm bei dem der Benutzer zuerst drei Zahlen `a`, `b` und `c` eingeben kann.
 Das Programm soll die größte der drei zahlen ausgeben.
 
 Zeichne wieder zuerst ein Flussdiagramm und schreibe dann ein Programm.
 
-### 📝 Übung 46
+### 📝 Übung 48
 
 Schreibe ein Programm bei dem der Benutzer eine Zahl eingeben kann.
 
@@ -101,5 +101,14 @@ Verwende zwei verschachtelte Verzweigungen.
 
 **Tipp:** Die erste Schleifenbedingung muss `> 0` sein,
 die zweite Schleifenbedingung muss `< 0` sein.
+
+
+## 🧭 Zusammenfassung
+
+
+
+
+
+
 
 

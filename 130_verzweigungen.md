@@ -28,7 +28,7 @@ Diese sind uns bereits aus der Mathematik bekannt,
 müssen aber beim Programmieren anders geschrieben werden,
 da Spezialzeichen wie "≤" nicht auf der Tastatur vorhanden sind.
 
-**Vorsicht:** Bei "ist gleich" benötigst du unbedingt zwei Gleichheitszeichen!
+**⚠️ Vorischt:** Bei "ist gleich" benötigst du unbedingt zwei Gleichheitszeichen!
 Ein Gleichheitszeichen ist der Zuweisungsoperator und damit eine
 komplett andere Operation.
 
@@ -50,13 +50,21 @@ da eine Wurzel aus einer negativen Zahl nicht existiert.
 
 ```python
 def main():
-    flaeche = float(input("Geben Sie die Fläche ein"))
+    flaeche = float(input("Geben Sie die Fläche ein: "))
     if (flaeche >= 0):
         seite = flaeche ** 0.5
         print(seite)
 
 main()
 ```
+
+**⚠️ Vorsicht:** Im VS Code startest du das Programm mit dem Play-Button
+rechts oben (1). Ausgaben erscheinen im Terminal-Fenster unter dem Code.
+In diesem Fenster (2) müssen auch die Eingaben getätigt werden.
+Siehe dazu die folgende Abbildung:
+
+![Ein- und Ausgabe in VS Code](./images/inputvscode.png)
+
 
 Das Programm gibt die Seitenlänge aus, falls die Fläche größer oder gleich 0 ist.
 Das Programm gibt aber nichts aus, falls die Zahl negativ ist.
@@ -85,29 +93,29 @@ _________________
 
 ## Übungen
 
-### 📝 Übung 34
+### 📝 Übung 36
 
 Schreibe ein Programm bei dem der Benutzer seine Punkteanzahl vom 
 SWP-Test eingeben kann. Falls die Punkteanzahl größer oder gleich 16 ist,
 soll "Positive Note" werden.
 Ansonsten soll "Negative Note" ausgegeben werden.
 
-### 📝 Übung 35
+### 📝 Übung 37
 
 Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die Zahl positiv, negativ oder Null ist.
 
 **Tipp:** Du wirst mehr als eine if-Verzweigung brauchen.
 
-### 📝 Übung 36
+### 📝 Übung 38
 Schreibe ein Programm bei dem der Benutzer zwei Ganzzahlen eingeben kann.
 Das Programm soll ausgeben, ob die erste Zahl größer als die zweite Zahl ist.
 
-### 📝 Übung 37
+### 📝 Übung 39
 Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die zahl eine gerade Zahl ist, oder nicht.
 
-### 📝 Übung 38
+### 📝 Übung 40
 Schreibe ein Programm bei dem der Benutzer einen String eingeben kann.
 Prüfe ob der eingegebene Wert gleich "Sesam öffne dich" ist.
 Falls ja, soll "Du hast das Passwort erraten" ausgegeben werden.
@@ -136,6 +144,15 @@ else:
     falls Bedingung NICHT erfüllt
 ```
  
+
+
+
+
+
+
+
+
+
 
 
 

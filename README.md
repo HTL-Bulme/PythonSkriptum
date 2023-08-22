@@ -5,6 +5,7 @@ date: "2023-08-20"
 subject: "Python"
 keywords: [Bulme, Python]
 book: true
+geometry: left=1.5cm,right=1.5cm,top=2cm,bottom=2.5cm
 classoption: [oneside]
 lang: "de"
 ...
@@ -70,7 +71,7 @@ unteren Teil des Ausgabefensters. Versuche diese zu verstehen und den Fehler zu 
 alles selber aus!** Je mehr Programme du selber schreibst, umso mehr
 wirst du verstehen und beherrschen.
 
-## Zusammenfassung
+## 🧭 Zusammenfassung
 Wir haben unsere  erste Umgebung zum Programmieren kennengelernt und
 ein erstes Programm eingetippt.
 Im nächsten Kapitel erfährst du, welche Anweisungen die Turtle versteht
@@ -79,6 +80,15 @@ und wie du interessante Grafiken mit der Turtle zeichnen kannst.
 ## Quellen
 * https://python-online.ch
 * https://programmierkonzepte.ch
+
+
+
+
+
+
+
+
+
 
 
 

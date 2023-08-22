@@ -77,7 +77,9 @@ die mathematische Konstante, die das Verhältnis des Umfangs eines Kreises zu se
 Durchmesser angibt. Sie ist näherungsweise 3.141592.
 
 Die eulersche Zahl ist ebenfalls eine mathematische Konstante,
-die in den folgenden Jahren noch häufig vorkommen wird.
+die in den folgenden Jahren noch häufig im Mathematikunterricht vorkommen wird.
+Sie wird benutzt um Wachstumsprozesse, wie das Wachstum von Bäumen
+oder das Wachstum von Bakterienkulturen zu beschreiben.
 Ihr Wert ist näherungswiese 2.71828.
 
 Um mit pi und e zu rechnen könnten wir eine eigene Variable anlegen:
@@ -100,13 +102,16 @@ print(e)
 ## Weitere Funktionen
 
 Python bietet noch viele weitere mathematische Funktionen an.
-Diese sind aber bis jetzt in Mathematik noch nicht vorgekommen.
+Diese sind aber bis jetzt in Mathematik in eurer Klasse noch nicht vorgekommen.
 
-Eine vollständige Liste findest du hier: https://docs.python.org/3/library/math.html
+Eine vollständige Liste aller Funktionen
+findest du hier: https://docs.python.org/3/library/math.html
+
+_________________
 
 ## Übungen
 
-### 📝 Übung 49
+### 📝 Übung 51
 
 Schreibe ein Programm bei dem der Benutzer zuerst wählen kann ob er
 das Volumen eines Zylinders (1) oder das Volumen einer Kugel (2) berechnen möchte.
@@ -118,10 +123,14 @@ ausgegeben werden.
 Falls der Benutzer `2` eingibt, soll anch dem Radius der Kugel gefragt werden,
 das Volumen der Kugel berechnet und ausgegeben werden.
 
-### 📝 Übung 50
+### 📝 Übung 52
 
 Schreibe ein Programm, bei dem der Benutzer die Wurzel einer Zahl berechnen kann.
 Zuerst soll die Zahl vom Benutzer eingegeben werden.
 Falls die Zahl kleiner als `0` ist, so soll eine Fehlermeldung ausgegeben werden.
 Ansonsten soll die Wurzel mit der `sqrt`-Funktion berechnet und ausgegeben werden.
+
+## 🧭 Zusammenfassung
+
+
 

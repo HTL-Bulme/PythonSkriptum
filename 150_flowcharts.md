@@ -46,7 +46,6 @@ Der Pfeil verbindet die Symbole untereinander.
 ## 💡 Beispiele
 
 
-
 ### Passworteingabe
 
 In diesem Beispiel soll der Benutzer eine Geheimnummer eingeben.
@@ -55,14 +54,14 @@ Die Geheimnummer ist 1735.
 Falls die Eingabe richtig ist, soll das Programm: "Okay!" ausgeben.
 Falls die Nummer falsch ist, soll das Programm: "ACCESS DENIED!" ausgeben.
 
-![Flussdiagramm einer einfachen Passworteingabe](./images/beispiel1.png)
+![Flussdiagramm einer einfachen Passworteingabe](./images/beispiel1_small.png)
 
 ### Rabatt ab 1000€
 
 In diesem Beispiel soll ein Rabatt von 150€ gewährt werden,
 falls der Einkaufswert mehr als 1000€ beträgt.
 
-![Flussdiagramm des Rabattberechnungsprogramms](./images/beispiel2.png)
+![Flussdiagramm des Rabattberechnungsprogramms](./images/beispiel2_small.png)
 
 ### Flächenberechnung Quadrat
 
@@ -72,7 +71,10 @@ so soll eine Fehlermeldung ausgegeben werden.
 Ist die Seite größer oder gleich `0`, soll die Fläche berechnet
 werden und danach ausgegeben werden. 
 
-![Flussdiagramm der Flächenberechnung](./images/beispiel3.png)
+![Flussdiagramm der Flächenberechnung](./images/beispiel3_small.png)
+
+
+## 🧭 Zusammenfassung
 
 
 

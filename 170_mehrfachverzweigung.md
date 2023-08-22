@@ -39,10 +39,11 @@ elif (zahl == 0):
 else:
     print("Das ist unmöglich :)")
 ```
+_________________
 
 ## Übungen
 
-### 📝 Übung 47
+### 📝 Übung 49
 
 Bei einem Test kann man 100 Punkte erlangen.
 Schreibe ein Progamm, welches die erreichte Note ausgibt.
@@ -53,7 +54,7 @@ Schreibe ein Progamm, welches die erreichte Note ausgibt.
 * über 50 Punkte: Genügend
 * sonst: Nicht Genügend
 
-### 📝 Übung 48
+### 📝 Übung 50
 
 Schreibe ein Programm bei dem der Benutzer eine Temperatur eingeben kann.
 Das Programm soll ausgeben, welchen Aggregatzustand das Wasser bei dieser Temperatur hat,
@@ -66,6 +67,15 @@ bzw. angeben, ob die Temperatur genau am Gefrierpunkt oder am Siedepunkt ist.
 * `temp > 0 and temp < 100`: Wasser
 * `temp == 100`: Siedepunkt
 * `temp > 100`: Dampf
+
+
+
+## 🧭 Zusammenfassung
+
+
+
+
+
 
 
 

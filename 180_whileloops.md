@@ -1,4 +1,4 @@
-# Wiederholungen mit While Schleifen
+# Wiederholungen mit while-Schleifen
 
 Du hast bereits die `for`-Schleife kennengelernt, mit der du einen Codeblock mehrmals wiederholen kannst. Die `for`-Schleife setzt du dann ein, wenn du schon vorher weißt,
 wie oft der Codeblock wiederholt werden soll.
@@ -35,7 +35,6 @@ Die `while`-Schleife wird mit dem Schlüsselwort while eingeleitet, gefolgt von 
 
 Wir wollen nun die while schleife benutzen, um eine
 Variable so lange um 1 zu erhöhen, solange sie kleiner als 100 ist.
-
 Nehmen wir an die Variable heißt `i`, dann lautet die Schleifenbedingung `i < 100`.
 
 ```python
@@ -46,7 +45,7 @@ while (i < 100):
     i += 1
 ```
 
-Diese Schleife wird 100 mal wiederholt, da zur Zahl `0` solange `1` dazuaddiert wird,
+Diese Schleife wird 100 Mal wiederholt, da zur Zahl `0` solange `1` dazuaddiert wird,
 solange die Zahl kleiner 100 ist. In diesem Beispiel haben wir also
 das Verhalten einer `for`-Schleife mit einer `while`-Schleife nachprogrammiert.
 
@@ -54,13 +53,114 @@ das Verhalten einer `for`-Schleife mit einer `while`-Schleife nachprogrammiert.
 
 Die `while`-Schleife hat eine gewisse Ähnlichkeit zur `if`-Verzweigung.
 
-* Die `if`-Verzweigung wird **ein Mal** ausgeführt, **falls** die Bedingung erfüllt ist
+* Die `if`-Verzweigung wird **einmal** ausgeführt, **falls** die Bedingung erfüllt ist
 * Die `while`-Schleife wird **solange** ausgeführt, **solange** die Bedingung erfüllt ist
 
-## Die Endlosschleife
+Sehen wir uns die beiden folgenden Programme an.
 
+Die beiden Programme sind, bis auf die Schlüsselwörter `if` und `while`, gleich.
+Der erste Programm überprüft mit der `if`-Verzweigung ob die Bedingung 
+`i < 100` gilt, wenn ja werden die zwei Zeilen im Codeblock **einmal** ausgeführt.
+
+```python
+i = 0
+
+if (i < 100):
+    print(i)
+    i += 1
+```
+
+Das zweite Programm enthält eine `while`-Schleife.
+Diese prüft ebenfalls,  ob die Bedingung `i < 100` gilt.
+Der Unterschied ist aber, dass der Codeblock **solange** ausgeführt wird,
+solange die Bedingung gilt. Der Codeblock in der Schleife
+wird also in diesem Fall **100 Mal** ausgeführt.
+
+```python
+i = 0
+
+while (i < 100):
+    print(i)
+    i += 1
+```
+
+## Flussdiagramm der while-Schleife
+
+Den Unterschied kannst du auch im Flussdiagramm klar erkennen.
+Die unterschiedlichen Pfeile sind fett hervorgehoben.
+
+![Flussdiagramm der beiden obigen Programme](./images/ifvswhile.png)
+
+## ⚠️ Die Endlosschleife 
+
+_________________
 
 ## Übungen
 
-### 📝 Übung 51
+### 📝 Übung 53
+Schreibe ein Programm bei dem der Benutzer eine Zahl eingeben kann.
+Das Programm soll die Zahl solange verdoppeln,
+solange die Zahl kleiner als 100 ist.
+
+**Beispiel: **
+```
+Geben Sie eine Zahl ein: 5
+Ausgabe:
+5
+10
+20
+40
+80
+```
+
+### 📝 Übung 54
+Schreibe ein Programm, bei dem der Benutzer so lange eine Zahl eingeben muss,
+bis er eine Zahl eingibt die größer als 1000 ist.
+
+**⚠️ Vorsicht:** In diesem Beispiel wurde die Schleifenbedingung mit dem
+Wort **bis** angegeben. Das Wort **bis** ist aber genau das Gegenteil von **solange**.
+
+Wenn du eine Schleife wiederholen möchtest, **bis die Zahl größer als 1000** ist,
+so das äquivalent zu: **solange die Zahl kleiner oder gleich 1000** ist.
+
+Du brauchst also eine Schleife in der Form: `while (zahl <= 1000)`
+
+### 📝 Übung 55
+Schreibe ein Programm, bei dem der Benutzer solange eine Zahl
+eingeben muss, bis die Summe aller bis dahin eingegeben Zahlen
+den Wert 1000 übersteigt.
+
+### 📝 Übung 56
+
+Schreibe ein Programm, beim der Benutzer eine positive Zahl eingeben kann. Falls die Zahl
+negativ ist, soll die Eingabe *solange* wiederholt werden, bis die Zahl positiv ist.
+Das Programm soll dann in einer `for`-Schleife alle Teiler der
+eingegeben Zahl ermitteln und ausgeben.
+
+**Beispiel:**
+
+* Eingabe: 24
+* Ausgabe: 1, 2, 3, 4, 6, 8, 12
+
+### 📝 Übung 57
+
+Schreibe ein Programm bei der Zuerst eine Zufallszahl zwischen 1 und 100 generiert wird.
+Der folgende Code demonstriert wie das funktioniert.
+
+```python
+from random import *
+randint(1,100)
+```
+Der Benutzer muss solange eine Zahl eingeben, bis er die Zufallszahl errät.
+Falls der Benutzer eine zu kleine Zahl eingibt, gibst du "zu niedrig" aus.
+Falls die Eingabe zu hoch ist, gibst du "zu hoch" aus.
+So unterstützt du den Benutzer deines Programms.
+
+## 🧭 Zusammenfassung
+
+
+
+
+
+
 

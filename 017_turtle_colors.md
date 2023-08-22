@@ -69,3 +69,12 @@ Das Programm erzeugt folgende Grafik:
 
 
 
+
+
+
+
+
+
+
+
+

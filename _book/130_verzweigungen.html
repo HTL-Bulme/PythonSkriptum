@@ -347,7 +347,7 @@
                 <a href="180_whileloops.html">
             
                     
-                    Wiederholungen mit While Schleifen
+                    Wiederholungen mit while-Schleifen
             
                 </a>
             
@@ -368,7 +368,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" data-path="190_kapiteltest.html">
+        <li class="chapter " data-level="1.3.10" data-path="188_funktionen_return.html">
+            
+                <a href="188_funktionen_return.html">
+            
+                    
+                    Funktionen mit Rückgabewert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="189_funktionen_debug.html">
+            
+                <a href="189_funktionen_debug.html">
+            
+                    
+                    Der Funktionsaufruf unter der Lupe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="190_kapiteltest.html">
             
                 <a href="190_kapiteltest.html">
             
@@ -504,7 +530,7 @@ Eine <strong>Bedingung</strong> ist ein Ausdruck, der entweder <strong>wahr</str
 Diese sind uns bereits aus der Mathematik bekannt,
 müssen aber beim Programmieren anders geschrieben werden,
 da Spezialzeichen wie &quot;≤&quot; nicht auf der Tastatur vorhanden sind.</p>
-<p><strong>Vorsicht:</strong> Bei &quot;ist gleich&quot; benötigst du unbedingt zwei Gleichheitszeichen!
+<p><strong>⚠️ Vorischt:</strong> Bei &quot;ist gleich&quot; benötigst du unbedingt zwei Gleichheitszeichen!
 Ein Gleichheitszeichen ist der Zuweisungsoperator und damit eine
 komplett andere Operation.</p>
 <table>
@@ -547,13 +573,18 @@ und das Programm berechnet die Seitenlänge mithilfe der Quadratwurzel.
 Das ist jedoch nur möglich, wenn der Flächeninhalt positiv ist,
 da eine Wurzel aus einer negativen Zahl nicht existiert.</p>
 <pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
-    flaeche = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Fläche ein&quot;</span>))
+    flaeche = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Fläche ein: &quot;</span>))
     <span class="hljs-keyword">if</span> (flaeche &gt;= <span class="hljs-number">0</span>):
         seite = flaeche ** <span class="hljs-number">0.5</span>
         <span class="hljs-built_in">print</span>(seite)
 
 main()
 </code></pre>
+<p><strong>⚠️ Vorsicht:</strong> Im VS Code startest du das Programm mit dem Play-Button
+rechts oben (1). Ausgaben erscheinen im Terminal-Fenster unter dem Code.
+In diesem Fenster (2) müssen auch die Eingaben getätigt werden.
+Siehe dazu die folgende Abbildung:</p>
+<p><img src="images/inputvscode.png" alt="Ein- und Ausgabe in VS Code"></p>
 <p>Das Programm gibt die Seitenlänge aus, falls die Fläche größer oder gleich 0 ist.
 Das Programm gibt aber nichts aus, falls die Zahl negativ ist.
 Besser wäre es, wenn das Programm eine Fehlermeldung ausgeben würde,
@@ -574,22 +605,22 @@ main()
 </code></pre>
 <hr>
 <h2 id="übungen">Übungen</h2>
-<h3 id="📝-übung-34">📝 Übung 34</h3>
+<h3 id="📝-übung-36">📝 Übung 36</h3>
 <p>Schreibe ein Programm bei dem der Benutzer seine Punkteanzahl vom 
 SWP-Test eingeben kann. Falls die Punkteanzahl größer oder gleich 16 ist,
 soll &quot;Positive Note&quot; werden.
 Ansonsten soll &quot;Negative Note&quot; ausgegeben werden.</p>
-<h3 id="📝-übung-35">📝 Übung 35</h3>
+<h3 id="📝-übung-37">📝 Übung 37</h3>
 <p>Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die Zahl positiv, negativ oder Null ist.</p>
 <p><strong>Tipp:</strong> Du wirst mehr als eine if-Verzweigung brauchen.</p>
-<h3 id="📝-übung-36">📝 Übung 36</h3>
+<h3 id="📝-übung-38">📝 Übung 38</h3>
 <p>Schreibe ein Programm bei dem der Benutzer zwei Ganzzahlen eingeben kann.
 Das Programm soll ausgeben, ob die erste Zahl größer als die zweite Zahl ist.</p>
-<h3 id="📝-übung-37">📝 Übung 37</h3>
+<h3 id="📝-übung-39">📝 Übung 39</h3>
 <p>Schreibe ein Programm bei dem der Benutzer eine Ganzzahl eingeben kann.
 Das Programm soll ausgeben, ob die zahl eine gerade Zahl ist, oder nicht.</p>
-<h3 id="📝-übung-38">📝 Übung 38</h3>
+<h3 id="📝-übung-40">📝 Übung 40</h3>
 <p>Schreibe ein Programm bei dem der Benutzer einen String eingeben kann.
 Prüfe ob der eingegebene Wert gleich &quot;Sesam öffne dich&quot; ist.
 Falls ja, soll &quot;Du hast das Passwort erraten&quot; ausgegeben werden.
@@ -655,7 +686,7 @@ Dieser <code>else</code>-Teil wird ausgeführt, falls die Bedingung nicht erfül
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Verzweigungen","level":"1.3.2","depth":2,"next":{"title":"Logische Operatoren","level":"1.3.3","depth":2,"path":"140_logische_operatoren.md","ref":"140_logische_operatoren.md","articles":[]},"previous":{"title":"Installation von VS Code und Python","level":"1.3.1","depth":2,"path":"120_Installation.md","ref":"120_Installation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"130_verzweigungen.md","mtime":"2023-08-21T18:12:07.815Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Verzweigungen","level":"1.3.2","depth":2,"next":{"title":"Logische Operatoren","level":"1.3.3","depth":2,"path":"140_logische_operatoren.md","ref":"140_logische_operatoren.md","articles":[]},"previous":{"title":"Installation von VS Code und Python","level":"1.3.1","depth":2,"path":"120_Installation.md","ref":"120_Installation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"130_verzweigungen.md","mtime":"2023-08-22T10:32:27.755Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-22T13:29:16.656Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

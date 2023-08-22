@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Wiederholungen mit While Schleifen · HonKit</title>
+        <title>Wiederholungen mit while-Schleifen · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.0.0">
@@ -347,7 +347,7 @@
                 <a href="180_whileloops.html">
             
                     
-                    Wiederholungen mit While Schleifen
+                    Wiederholungen mit while-Schleifen
             
                 </a>
             
@@ -368,7 +368,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" data-path="190_kapiteltest.html">
+        <li class="chapter " data-level="1.3.10" data-path="188_funktionen_return.html">
+            
+                <a href="188_funktionen_return.html">
+            
+                    
+                    Funktionen mit Rückgabewert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="189_funktionen_debug.html">
+            
+                <a href="189_funktionen_debug.html">
+            
+                    
+                    Der Funktionsaufruf unter der Lupe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="190_kapiteltest.html">
             
                 <a href="190_kapiteltest.html">
             
@@ -468,7 +494,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Wiederholungen mit While Schleifen</a>
+        <a href="." >Wiederholungen mit while-Schleifen</a>
     </h1>
 </div>
 
@@ -483,7 +509,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="wiederholungen-mit-while-schleifen">Wiederholungen mit While Schleifen</h1>
+                                <h1 id="wiederholungen-mit-while-schleifen">Wiederholungen mit while-Schleifen</h1>
 <p>Du hast bereits die <code>for</code>-Schleife kennengelernt, mit der du einen Codeblock mehrmals wiederholen kannst. Die <code>for</code>-Schleife setzt du dann ein, wenn du schon vorher weißt,
 wie oft der Codeblock wiederholt werden soll.</p>
 <p>Häufig weiß man aber das im vorhinein nicht. Nehmen wir zum Beispiel eine Passwortabfrage.
@@ -508,26 +534,96 @@ oder in Kurzschreibweise: <code>eingabe != 13</code>.</p>
 <p>Die <code>while</code>-Schleife wird mit dem Schlüsselwort while eingeleitet, gefolgt von einer Schleifenbedingung. Die Anweisungen im Codeblock werden wiederholt, so lange die Bedingung erfüllt ist. Nach Ende der Wiederholungen wird das Programm mit der nächsten Anweisung nach dem Schleifenblock fortgesetzt.</p>
 <h2 id="💡-beispiel-mit-while-schleife-zählen">💡 Beispiel: Mit while-Schleife zählen</h2>
 <p>Wir wollen nun die while schleife benutzen, um eine
-Variable so lange um 1 zu erhöhen, solange sie kleiner als 100 ist.</p>
-<p>Nehmen wir an die Variable heißt <code>i</code>, dann lautet die Schleifenbedingung <code>i &lt; 100</code>.</p>
+Variable so lange um 1 zu erhöhen, solange sie kleiner als 100 ist.
+Nehmen wir an die Variable heißt <code>i</code>, dann lautet die Schleifenbedingung <code>i &lt; 100</code>.</p>
 <pre><code class="lang-python">i = <span class="hljs-number">0</span>
 
 <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">100</span>):
     <span class="hljs-built_in">print</span>(i)
     i += <span class="hljs-number">1</span>
 </code></pre>
-<p>Diese Schleife wird 100 mal wiederholt, da zur Zahl <code>0</code> solange <code>1</code> dazuaddiert wird,
+<p>Diese Schleife wird 100 Mal wiederholt, da zur Zahl <code>0</code> solange <code>1</code> dazuaddiert wird,
 solange die Zahl kleiner 100 ist. In diesem Beispiel haben wir also
 das Verhalten einer <code>for</code>-Schleife mit einer <code>while</code>-Schleife nachprogrammiert.</p>
 <h2 id="ähnlichkeit-zur-verzweigung">Ähnlichkeit zur Verzweigung</h2>
 <p>Die <code>while</code>-Schleife hat eine gewisse Ähnlichkeit zur <code>if</code>-Verzweigung.</p>
 <ul>
-<li>Die <code>if</code>-Verzweigung wird <strong>ein Mal</strong> ausgeführt, <strong>falls</strong> die Bedingung erfüllt ist</li>
+<li>Die <code>if</code>-Verzweigung wird <strong>einmal</strong> ausgeführt, <strong>falls</strong> die Bedingung erfüllt ist</li>
 <li>Die <code>while</code>-Schleife wird <strong>solange</strong> ausgeführt, <strong>solange</strong> die Bedingung erfüllt ist</li>
 </ul>
-<h2 id="die-endlosschleife">Die Endlosschleife</h2>
+<p>Sehen wir uns die beiden folgenden Programme an.</p>
+<p>Die beiden Programme sind, bis auf die Schlüsselwörter <code>if</code> und <code>while</code>, gleich.
+Der erste Programm überprüft mit der <code>if</code>-Verzweigung ob die Bedingung 
+<code>i &lt; 100</code> gilt, wenn ja werden die zwei Zeilen im Codeblock <strong>einmal</strong> ausgeführt.</p>
+<pre><code class="lang-python">i = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">if</span> (i &lt; <span class="hljs-number">100</span>):
+    <span class="hljs-built_in">print</span>(i)
+    i += <span class="hljs-number">1</span>
+</code></pre>
+<p>Das zweite Programm enthält eine <code>while</code>-Schleife.
+Diese prüft ebenfalls,  ob die Bedingung <code>i &lt; 100</code> gilt.
+Der Unterschied ist aber, dass der Codeblock <strong>solange</strong> ausgeführt wird,
+solange die Bedingung gilt. Der Codeblock in der Schleife
+wird also in diesem Fall <strong>100 Mal</strong> ausgeführt.</p>
+<pre><code class="lang-python">i = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">100</span>):
+    <span class="hljs-built_in">print</span>(i)
+    i += <span class="hljs-number">1</span>
+</code></pre>
+<h2 id="flussdiagramm-der-while-schleife">Flussdiagramm der while-Schleife</h2>
+<p>Den Unterschied kannst du auch im Flussdiagramm klar erkennen.
+Die unterschiedlichen Pfeile sind fett hervorgehoben.</p>
+<p><img src="images/ifvswhile.png" alt="Flussdiagramm der beiden obigen Programme"></p>
+<h2 id="⚠️-die-endlosschleife">⚠️ Die Endlosschleife</h2>
+<hr>
 <h2 id="übungen">Übungen</h2>
-<h3 id="📝-übung-49">📝 Übung 49</h3>
+<h3 id="📝-übung-53">📝 Übung 53</h3>
+<p>Schreibe ein Programm bei dem der Benutzer eine Zahl eingeben kann.
+Das Programm soll die Zahl solange verdoppeln,
+solange die Zahl kleiner als 100 ist.</p>
+<p><strong>Beispiel: </strong></p>
+<pre><code>Geben Sie eine Zahl ein: 5
+Ausgabe:
+5
+10
+20
+40
+80
+</code></pre><h3 id="📝-übung-54">📝 Übung 54</h3>
+<p>Schreibe ein Programm, bei dem der Benutzer so lange eine Zahl eingeben muss,
+bis er eine Zahl eingibt die größer als 1000 ist.</p>
+<p><strong>⚠️ Vorsicht:</strong> In diesem Beispiel wurde die Schleifenbedingung mit dem
+Wort <strong>bis</strong> angegeben. Das Wort <strong>bis</strong> ist aber genau das Gegenteil von <strong>solange</strong>.</p>
+<p>Wenn du eine Schleife wiederholen möchtest, <strong>bis die Zahl größer als 1000</strong> ist,
+so das äquivalent zu: <strong>solange die Zahl kleiner oder gleich 1000</strong> ist.</p>
+<p>Du brauchst also eine Schleife in der Form: <code>while (zahl &lt;= 1000)</code></p>
+<h3 id="📝-übung-55">📝 Übung 55</h3>
+<p>Schreibe ein Programm, bei dem der Benutzer solange eine Zahl
+eingeben muss, bis die Summe aller bis dahin eingegeben Zahlen
+den Wert 1000 übersteigt.</p>
+<h3 id="📝-übung-56">📝 Übung 56</h3>
+<p>Schreibe ein Programm, beim der Benutzer eine positive Zahl eingeben kann. Falls die Zahl
+negativ ist, soll die Eingabe <em>solange</em> wiederholt werden, bis die Zahl positiv ist.
+Das Programm soll dann in einer <code>for</code>-Schleife alle Teiler der
+eingegeben Zahl ermitteln und ausgeben.</p>
+<p><strong>Beispiel:</strong></p>
+<ul>
+<li>Eingabe: 24</li>
+<li>Ausgabe: 1, 2, 3, 4, 6, 8, 12</li>
+</ul>
+<h3 id="📝-übung-57">📝 Übung 57</h3>
+<p>Schreibe ein Programm bei der Zuerst eine Zufallszahl zwischen 1 und 100 generiert wird.
+Der folgende Code demonstriert wie das funktioniert.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
+randint(<span class="hljs-number">1</span>,<span class="hljs-number">100</span>)
+</code></pre>
+<p>Der Benutzer muss solange eine Zahl eingeben, bis er die Zufallszahl errät.
+Falls der Benutzer eine zu kleine Zahl eingibt, gibst du &quot;zu niedrig&quot; aus.
+Falls die Eingabe zu hoch ist, gibst du &quot;zu hoch&quot; aus.
+So unterstützt du den Benutzer deines Programms.</p>
+<h2 id="🧭-zusammenfassung">🧭 Zusammenfassung</h2>
 
                                 
                                 </section>
@@ -571,7 +667,7 @@ das Verhalten einer <code>for</code>-Schleife mit einer <code>while</code>-Schle
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Wiederholungen mit While Schleifen","level":"1.3.8","depth":2,"next":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"path":"185_debugging.md","ref":"185_debugging.md","articles":[]},"previous":{"title":"Weitere mathematische Funktionen","level":"1.3.7","depth":2,"path":"175_mathematik.md","ref":"175_mathematik.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"180_whileloops.md","mtime":"2023-08-21T19:12:05.360Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Wiederholungen mit while-Schleifen","level":"1.3.8","depth":2,"next":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"path":"185_debugging.md","ref":"185_debugging.md","articles":[]},"previous":{"title":"Weitere mathematische Funktionen","level":"1.3.7","depth":2,"path":"175_mathematik.md","ref":"175_mathematik.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"180_whileloops.md","mtime":"2023-08-22T10:32:27.763Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-22T13:29:16.656Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

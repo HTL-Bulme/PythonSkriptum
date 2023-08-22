@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="190_kapiteltest.html" />
+    <link rel="next" href="188_funktionen_return.html" />
     
     
     <link rel="prev" href="180_whileloops.html" />
@@ -347,7 +347,7 @@
                 <a href="180_whileloops.html">
             
                     
-                    Wiederholungen mit While Schleifen
+                    Wiederholungen mit while-Schleifen
             
                 </a>
             
@@ -368,7 +368,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" data-path="190_kapiteltest.html">
+        <li class="chapter " data-level="1.3.10" data-path="188_funktionen_return.html">
+            
+                <a href="188_funktionen_return.html">
+            
+                    
+                    Funktionen mit Rückgabewert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="189_funktionen_debug.html">
+            
+                <a href="189_funktionen_debug.html">
+            
+                    
+                    Der Funktionsaufruf unter der Lupe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="190_kapiteltest.html">
             
                 <a href="190_kapiteltest.html">
             
@@ -484,6 +510,117 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="fehler-in-programmen-finden">Fehler in Programmen finden</h1>
+<p>In diesem Kapitel wollen wir uns einige Techniken ansehen,
+mit denen wir Fehler in Programmen finden können.</p>
+<p>Einen Fehler nennen wir beim Programmieren auch <strong>Bug</strong>, englisch für Käfer.
+Dieser Begriff hat sich in der Informatik durchgesetzt, da es bei den ersten Computern,
+welche raumgroße Maschinen waren, manachmal Insekten gab, welche sich in den Relais
+verfingen und dadurch Fehlfunktionen verursachten.</p>
+<p>Das Beheben eines Fehlers, nennt man auch <strong>Debugging</strong>, also zu deutsch etwa <em>entkäfern</em>. 😉</p>
+<h2 id="debugging-mit-der-print-funktion">Debugging mit der print-Funktion</h2>
+<p>Nehmen wir an wir haben folgendes Programm geschrieben,
+welches das Volumen eines <strong>Quaders</strong> berechnen soll.
+Wir wollen die Formel für gerade Prismen benutzen: <em>Volumen = Grundfläche x Höhe</em>.
+In das Programm habe ich absichtlich einen Fehler eingebaut.
+Ich habe nämlich in die Formel der Grundfläche ein <code>+</code> statt einem <code>*</code> eingebaut.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    a = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge a ein: &quot;</span>))
+    b = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge b ein: &quot;</span>))
+    hoehe = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Höhe ein: &quot;</span>))
+    flaeche = a + b
+    volumen = flaeche * hoehe
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Das Volumen beträgt&quot;</span>, volumen)
+
+main()
+</code></pre>
+<p>Wenn wir das Programm starten, merken wir, dass das Ergebnis nicht stimmt.
+Eine Möglichkeit dem Problem auf die Schliche zu kommen,
+ist Zwischenergebnisse mit <code>print</code> auszugeben.</p>
+<p>Im folgenden Programm werden alle Variablen mit <code>print</code> ausgegeben:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    a = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge a ein: &quot;</span>))
+    b = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge b ein: &quot;</span>))
+    hoehe = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Höhe ein: &quot;</span>))
+    <span class="hljs-built_in">print</span>(a,b,hoehe)
+    flaeche = a + b
+    <span class="hljs-built_in">print</span>(flaeche)
+    volumen = flaeche * hoehe
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Das Volumen beträgt&quot;</span>, volumen)
+
+main()
+</code></pre>
+<p>Das Programm gibt jetzt auch die Zwischenwerte aus und
+es fällt uns nun sicher leichter den Fehler zu entdecken und
+das Programm in die endgültig richtige Version zu verwandeln:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    a = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge a ein: &quot;</span>))
+    b = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Seitenlänge b ein: &quot;</span>))
+    hoehe = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie die Höhe ein: &quot;</span>))
+    flaeche = a * b
+    volumen = flaeche * hoehe
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Das Volumen beträgt&quot;</span>, volumen)
+
+main()
+</code></pre>
+<h2 id="schritt-für-schritt-ausführung-von-programmen">Schritt-für-Schritt Ausführung von Programmen</h2>
+<p>Nehmen wir wieder an, wir haben ein fehlerhaftes Programm.
+Wir wollten eigentlich ein Programm schreiben,
+welches das Volumen einer Kugel berechnet.
+Jedoch wird immer <code>0</code> ausgegeben, obwohl wir die richtige Formel haben.
+Findest du den Fehler?</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    radius = <span class="hljs-number">0</span>
+    raduis = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Geben Sie den Radius ein: &quot;</span>))
+    volumen = <span class="hljs-number">4</span>/<span class="hljs-number">3</span> * pi * radius**<span class="hljs-number">3</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Das Volumen beträgt&quot;</span>, volumen)
+
+main()
+</code></pre>
+<p>Wie du vielleicht gesehen hast, habe wurde einmal rad<strong>iu</strong>s und einmal rad<strong>ui</strong>s geschrieben.
+Wir können den Fehler aber auch finden, indem wir das Programm Schritt-für-Schritt ausführen.
+Das Vorgehen dafür ist in den folgenden Abschnitten beschrieben.</p>
+<h3 id="setzen-des-haltepunkts">Setzen des Haltepunkts</h3>
+<p>Wähle eine Zeile in der du ungefähr den Fehler vermutest.
+Ab dieser Zeile werden wir das Programm Schritt-für-Schritt ausführen.
+Klicke, wie in folgender Abbildung sichtbar, mit der Maus auf den 
+linken Bereich neben der Codezeile.
+Es sollte ein roter Punkt entstehen.
+Dier Punkt, aucht Haltepunkt genannt, sagt aus, dass das Programm
+an dieser Stelle unterbrochen wird.</p>
+<p><img src="images/debug.png" alt="Haltepunkt setzen"></p>
+<h3 id="aktivieren-des-debug-modus">Aktivieren des Debug Modus</h3>
+<p>Klicke zuerst mit der Maus auf das kleine Dreieck neben dem Play-Button (1).
+Wähle aus dem Drop-Down die Option &quot;Debug Python File&quot; (2).</p>
+<p><img src="images/start_debug.png" alt="Debug Modus aktivieren und Programm starten"></p>
+<h3 id="schrittweises-ausführen-des-programmcodes">Schrittweises Ausführen des Programmcodes</h3>
+<p>Beim Klick auf &quot;Debug Python File&quot; wird das Programm gestartet 
+und solange ausgeführt, bis ein Haltepunkt getroffen wird.
+Dann erscheint unten dargestellte Grafik.
+Die Codezeile, welche als nächstes ausgeführt werden soll,
+ist gelb hinterlegt.</p>
+<p>Es erscheinen zusätzlich folgende Optionen:</p>
+<ol>
+<li>Programm normal weiter ausführen</li>
+<li><strong>Einen Schritt ausführen</strong></li>
+<li>In eine Funktion reinspringen</li>
+<li>Aus einer Funktion rausspringen</li>
+<li>Programm neu starten</li>
+<li>Programm beenden</li>
+</ol>
+<p>Wir klicken drei Mal auf den zweiten Button
+um die nächsten drei Zeilen Code auszuführen.</p>
+<p><img src="images/debug_active.png" alt="Schrittweises Ausführen von Programmcode"></p>
+<h3 id="auslesen-von-aktuellen-variablenwerten">Auslesen von aktuellen Variablenwerten</h3>
+<p>Wir sehen, dass die nächste Zeile (1) nun die Zeile Nummer 7 ist.
+Die Zeilen 4, 5 und 6 wurden also bereits ausgeführt.
+Auf der linken Seite (2) sehen wir eine Liste aller zurzeit verfügbaren Variablen
+und deren Wert.</p>
+<p>Wenn wir scharf draufschauen, dann erkennen wir, dass bei <strong>radius</strong> und <strong>raduis</strong> etwas 
+nicht stimmen kann.</p>
+<p><img src="images/watches.png" alt="Variablenwerte auslesen"></p>
+<h2 id="🧭-zusammenfassung">🧭 Zusammenfassung</h2>
 
                                 
                                 </section>
@@ -511,12 +648,12 @@
 
             
                 
-                <a href="180_whileloops.html" class="navigation navigation-prev " aria-label="Previous page: Wiederholungen mit While Schleifen">
+                <a href="180_whileloops.html" class="navigation navigation-prev " aria-label="Previous page: Wiederholungen mit while-Schleifen">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="190_kapiteltest.html" class="navigation navigation-next " aria-label="Next page: Kapiteltest">
+                <a href="188_funktionen_return.html" class="navigation navigation-next " aria-label="Next page: Funktionen mit Rückgabewert">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -527,7 +664,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"next":{"title":"Kapiteltest","level":"1.3.10","depth":2,"path":"190_kapiteltest.md","ref":"190_kapiteltest.md","articles":[]},"previous":{"title":"Wiederholungen mit While Schleifen","level":"1.3.8","depth":2,"path":"180_whileloops.md","ref":"180_whileloops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"185_debugging.md","mtime":"2023-08-21T18:36:41.901Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-21T19:14:38.006Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"next":{"title":"Funktionen mit Rückgabewert","level":"1.3.10","depth":2,"path":"188_funktionen_return.md","ref":"188_funktionen_return.md","articles":[]},"previous":{"title":"Wiederholungen mit while-Schleifen","level":"1.3.8","depth":2,"path":"180_whileloops.md","ref":"180_whileloops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"185_debugging.md","mtime":"2023-08-22T13:13:09.850Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-22T13:29:16.656Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

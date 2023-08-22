@@ -9,7 +9,7 @@ Auch selbst definierte Funktionen können Parameter haben.
 
 Die Parametrisierung von Funktionen ist von großer Wichtigkeit,
 denn damit erhalten die Funktionen erst die
-Flexibilität, sich "anpasst" zu verhalten.
+Flexibilität, sich "angepasst" zu verhalten.
 
 ## Beispiel mit einem Parameter
 
@@ -77,10 +77,11 @@ main()
 
 ![Ausgabe des Programms](./images/polygone.png)
 
+_________________
 
 ## Übungen
 
-### 📝 Übung 30
+### 📝 Übung 32
 <img style="float: right; width:33%" src="./images/quadrate.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
@@ -88,20 +89,15 @@ Die Turtle soll 10 Quadrate zeichnen. Die Seitenlänge des ersten Quadrats ist 8
 <div style="clear:both;"></div>
 
 
-### 📝 Übung 31
+### 📝 Übung 33
 <img style="float: right; width:33%" src="./images/quadrate_schief.png">
 Schreibe zuerst eine Funktion `square(s)`, welche eine Quadrat mit der 
 Seitenlänge s zeichnet. 
 Du kannst in einer Dialogbox die Seitenlänge des grössten Quadrats eingeben. Die Turtle zeichnet dann 20 Quadrate. Nach jedem Quadrat wird die Seitenlänge um den Faktor 0.9 kleiner und die Turtle dreht um den Winkel 10° nach links. 
 <div style="clear:both;"></div>
 
-### 📝 Übung 32
 
-<img style="float: right; width:33%" src="./images/trompete.png">
-Du definiert eine Funktion circle(s), die einen Kreis zeichnet. Die nebenstehende Figur entsteht, indem du 30 Kreise zeichnest, s nach jedem gezeichneten Kreis verkleinerst (s = s *0.9) und die Turtle 5 Schritte vorwärts bewegst.
-<div style="clear:both;"></div>	
-
-### 📝 Übung 33	
+### 📝 Übung 34	
 <img style="float: right; width:33%" src="./images/circles.png">
 Definiere eine Funktion circle(s, c), mit dem die Turtle gefüllte Kreise mit gegebener Füllfarbe zeichnet und erstelle damit die nebenstehende Zeichnung.
 
@@ -112,6 +108,20 @@ repeat 120:
     right(3) 
 ```
 <div style="clear:both;"></div>
+
+### 📝 Übung 35
+<img style="float: right; width:33%" src="./images/trompete.png">
+Du definiert eine Funktion circle(s), die einen Kreis zeichnet. Die nebenstehende Figur entsteht, indem du 30 Kreise zeichnest, s nach jedem gezeichneten Kreis verkleinerst (s = s *0.9) und die Turtle 5 Schritte vorwärts bewegst.
+<div style="clear:both;"></div>	
+
+## 🧭 Zusammenfassung
+
+
+
+
+
+
+
 
 
 

@@ -46,7 +46,7 @@ Wir verwenden für Einrückungen grundsätzlich vier Leerschläge.
 
 Die Variable `i` ist die Zählvariable, die mitzählt bei welcher Wiederholung wir sind.
 
-**Vorsicht:** die Zählvariable beginnt bei `0` zu zählen,
+**⚠️ Vorsicht:** die Zählvariable beginnt bei `0` zu zählen,
 wie überall in der Informatik üblich.
 Deshalb zählt sie bei vier Wiederholungen von 0 bis 3.
 
@@ -67,7 +67,10 @@ for i in range(9):
     rt(40)
 ```
 
+_________________
+
 ## Übungen
+
 ### 📝 Übung 19
 <img style="float: right; width:33%" src="./images/stern.png">
 Zeichne die nebenstehende Figur. Dazu brauchst du auch die Funktionen bk() und dot().
@@ -104,9 +107,22 @@ Gibt der Benutzer die Zahl 3 ein, so wird ein regelmäßiges Dreieck gezeichnet.
 Gibt der Benutzer die Zahl 4 ein, so wird ein regelmäßiges Viereck gezeichnet,
 und so weiter.
 
- 	
+### 📝 Übung 25
 
-## Zusammenfassung
+Schreibe ein Programm, beim der Benutzer eine positive Zahl eingeben muss. Das Programm
+soll dann in einer for-Schleife alle Teiler der eingegeben Zahl ermitteln und ausgeben.
+
+**Beispiel:** 
+
+* Eingabe: 24
+* Ausgabe: 1, 2, 3, 4, 6, 8, 12
+
+### 📝 Übung 26
+Schreibe ein Programm, welches die Wurzeln aller Zahlen von 1 bis 20 ausgibt.
+
+**Ausgabe:** 1, 1.4142, 1.7320, 2, ...., 4.3588, 4.4721
+
+## 🧭 Zusammenfassung
 Mit `for i in range(anzahl):` gibst du der Turtle
 an, sie soll einen oder mehrere Anweisungen `anzahl`-mal wiederholen,
 bevor sie mit neuen Anweisungen weitermacht.
@@ -118,6 +134,15 @@ for i in range(anzahl):
     wiederholt
     werden sollen 
 ```
+
+
+
+
+
+
+
+
+
 
 
 
