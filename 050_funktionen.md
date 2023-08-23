@@ -79,7 +79,7 @@ def main():
 main()
 ```
 
-In Zukunft sollten alle deine Programme eine `main` Funktion haben 😉.
+In Zukunft sollten alle deine Programme eine `main` Funktion haben. 😉
 
 _________________
 
@@ -129,6 +129,7 @@ Wir gewöhnen uns daran, die Funktionsdefinitionen
 im Programmkopf anzuordnen, da diese vor ihrem Aufruf definiert sein müssen.
 
 ![Funktionsblöcke](./images/block.png)
+
 
 
 

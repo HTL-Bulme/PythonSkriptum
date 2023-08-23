@@ -1,4 +1,5 @@
-cp *.md ./../ebook/src -f
+rm ./../ebook/src/*
+cp *.md ./../ebook/src -f -v
 cp tablefilter ./../ebook/src -f
 cp images/* ./../ebook/images -f
 

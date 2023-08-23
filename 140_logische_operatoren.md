@@ -12,7 +12,7 @@ Mit diesen lassen sich zwei oder mehrere
 Bedingungen zu einer Bedingung kombinieren.
 In diesem Kapitel lernen wir die Operatoren `and`, `or` und `not` in Python kennen.
 Diese Operatoren werden dir bekannt vorkommen,
-denn du kennst sie bereits aus *NWES* 😉.
+denn du kennst sie bereits aus *NWES*. 😉
 
 ## and, or, not
 
@@ -160,6 +160,7 @@ Die Regel ist die folgende:
 
 
 ## 🧭 Zusammenfassung
+
 
 
 

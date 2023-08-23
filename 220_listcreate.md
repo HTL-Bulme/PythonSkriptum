@@ -34,6 +34,8 @@ meineListe = [24, 13, -5, 102, 74, -87]
 print(meineListe[2])
 ```
 
+### Verändern von Elementen
+
 Es ist auch möglich die Elemente einer Liste zu verändern.
 Um das Element mit dem Index `4` auf die Zahl `1000` zu ändern,
 können wir folgendes schreiben.
@@ -44,6 +46,10 @@ meineListe[4] = 1000
 print(meineListe)
 ```
 
+Das Programm gibt `[24, 13, -5, 102, 1000, -87]` aus.
+Die Zahl, die vorher am Index 4 war (74),
+wurde durch 1000 **ersetzt**.
+
 **⚠️ Vorsicht:** Der Index beginnt bei `0`.
 Wenn die Liste `n` Elemente hat, geht der Index also von `0` bis `n-1`.
 Wenn du also beispielsweise das 4. Element
@@ -53,7 +59,7 @@ sondern das 5.
 
 ## Übungen
 
-### 📝 Übung 55
+### 📝 Übung 63
 
 In der folgenden Abbildung siehst du eine Liste.
 
@@ -66,7 +72,7 @@ Beantworte folgende Fragen:
 
 ![Darstellung einer Liste](./images/listsBeispiel.png)
 
-### 📝 Übung 55
+### 📝 Übung 64
 Schreibe ein Python Programm, welches die oben 
 abgebildete Liste erstellt.
 
