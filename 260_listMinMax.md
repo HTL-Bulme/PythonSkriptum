@@ -1,1 +1,1 @@
-# Suchen von Elementen
+# Minimum und Maximum berechnen

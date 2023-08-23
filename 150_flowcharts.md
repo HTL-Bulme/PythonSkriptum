@@ -24,7 +24,7 @@ oder eine Wertzuweisung zu einer Variable.
 <div style="clear:both;"></div>
 
 ### Eingabe / Ausgabe
-<img style="float: right; width:33%" src="./images/input_output.jpg">
+<img style="float: right; width:33%" src="./images/input_output.png">
 Beschreibt das Einlesen von Werten vom Benutzer oder die 
 Ausgabe von Werten. Dieses Symbol entspricht den Funktionen `input` bzw. `print`.
 <div style="clear:both;"></div>
@@ -32,7 +32,7 @@ Ausgabe von Werten. Dieses Symbol entspricht den Funktionen `input` bzw. `print`
 ### Verzweigung
 <img style="float: right; width:33%" src="./images/decision.png">
 Dieses Symbol repräsentiert die `if`-Verzweigung.
-Es enhält eine Bedingung und zwei Ausgänge.
+Es enthält eine Bedingung und zwei Ausgänge.
 Je nachdem, ob die Bedingung erfüllt ist, wird entweder
 zum einen Ausgang oder zum anderen verzweigt.
 <div style="clear:both;"></div>
