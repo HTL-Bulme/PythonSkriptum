@@ -106,7 +106,7 @@ so beendest du die Hauptfunktion und damit das Programm.
 Das wird im obigen Programm benutzt, um bei einer ungültigen Eingabe das
 Programm sofort zu beenden.
 
-_________________
+
 
 ## Übungen
 
@@ -124,6 +124,14 @@ Funktion min zu verwenden.
 Schreibe eine Funktion `quaderOberflaeche(a)`, welche die Oberfläche eines Quaders zurückgibt.
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

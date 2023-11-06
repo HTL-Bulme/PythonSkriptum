@@ -2,7 +2,7 @@
 
 Die Turtle ist eine kleine Schildkröte, die eine Spur zeichnet, wenn sie
 sich bewegt. Du kannst ihr sagen, sie soll vorwärts gehen oder sich nach
-links oder rechts abdrehen. Indem du diese Anweisungen geschickt
+links oder rechts drehen. Indem du diese Anweisungen geschickt
 kombinierst, entstehen Zeichnungen und Bilder.
 
 ## Minimalprogramm
@@ -20,12 +20,12 @@ makeTurtle()
 
 Die Fähigkeiten der Turtle, bezeichnen wir in der Programmierung als **Funktionen**.
 Um der Turtle zu sagen, dass sie etwas tun soll,
-müssen wir diese Funktionen aufrufen.
+müssen wir diese Funktionen **aufrufen**.
  
 Funktionsaufrufe der Turtle sind Abkürzungen für englische Begriffe und enden immer mit 
 einer öffnenden und einer schließenden **runden** Klammer.
 Zwischen den Klammern können weitere Angaben zum Funktionsaufruf stehen.
-Diese Angaben nennt man auch *Argumente*.
+Diese Angaben nennt man auch **Argumente**.
 Selbst wenn keine Argumente nötig sind, muss ein leeres Klammerpaar vorhanden sein.
 
 In der folgenden Grafik siehst du die wichtigsten Funktionen:
@@ -36,8 +36,11 @@ In der folgenden Grafik siehst du die wichtigsten Funktionen:
 | ------------- | ------------- | ------------- |
 | fd  | Abkürzung für **f**orwar**d**, Anzahl Pixel nach vorne gehen  | `fd(50)`  |
 | bk  | Abkürzung für **b**ac**k**, Anzahl Pixel nach hinten gehen  | `bk(18)`  |
-| rt  | Abkürzung für **r**igh**t**, Angegebenen Winkel nach **rechts** drehen  | `rt(39.5)`  |
-| lt  | Abkürzung für **l**ef**t**, Angegebenen Winkel nach **links** drehen  | `lt(20)`  |
+| rt  | Abkürzung für **r**igh**t**, Angegebenen Winkel (in Grad) nach **rechts** drehen  | `rt(39.5)`  |
+| lt  | Abkürzung für **l**ef**t**, Angegebenen Winkel (in Grad) nach **links** drehen  | `lt(45)`  |
+
+**Zusatz:** Die Einheit für Distanzen ist hier Pixel.
+Ein Pixel entspricht einem einzelnen Bildpunkt auf deinem Bildschirm.
 
 **Tipp:** Du kannst auch Zahlen mit Nachkommastellen verwenden.
 Jedoch ist das Dezimaltrennzeichen in Python der Punkt "." und nicht das Komma ",".
@@ -55,9 +58,6 @@ Weitere Funktionen, welche die Turtle ausführen kann sind:
 | ht  | Abkürzung für **h**ide **t**urtle, Turtle wird unsichtbar  | `ht()`  |
 | st  | Abkürzung für **s**how **t**urtle, Turtle wird sichtbar  | `st()`  |
 
-<!---
-your comment goes here
--->
 
 ## Ein größeres Programm
 
@@ -109,6 +109,14 @@ beispielsweise die Anzahl der Pixel bei der Funktion `fd`
 
 Im nächsten Abschnitt sollst du selbst Programme schreiben,
 um vorgegebene Grafiken zu erzeugen.
+
+
+
+
+
+
+
+
 
 
 

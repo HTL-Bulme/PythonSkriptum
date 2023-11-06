@@ -109,7 +109,7 @@ die Bedingung ist erfüllt, falls A entweder 0, -1, -2, -3, -4, -5 und so weiter
 **Deshalb** gilt bei Bedingungen, und beim Programmieren allgemein:
 "Lieber ein paar Klammern zu viel, als eine zu wenig!".
 
-_________________
+
 
 ## Übungen
 
@@ -160,6 +160,14 @@ Die Regel ist die folgende:
 
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

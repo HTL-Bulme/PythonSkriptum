@@ -114,7 +114,7 @@ Wir unterscheiden hier drei grundlegende Typen:
 **Wert**: Jede Variable hat einen Wert. Der Wert der Variable kann
 im Programm laufend geändert werden. 
 
-_________________
+
 
 ## Übungen
 
@@ -151,6 +151,14 @@ Nach der Variablendefinition soll ein Rechteck mit den Seitenlängen
 + Dabei steht der Name der Variablen immer links vom Gleichheitszeichen = und der Wert rechts davon. Beispiel `seite_a = 23`
 + Variablen haben drei Eigenschaften: Name, Typ und Wert
 + Typen sind bspw. Integer (Ganzzahl), Float (Gleitkommazahl) und String (Text)
+
+
+
+
+
+
+
+
 
 
 

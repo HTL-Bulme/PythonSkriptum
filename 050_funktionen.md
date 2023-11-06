@@ -2,7 +2,7 @@
 
 Je größer deine Programme werden, desto wichtiger wird es die Programme zu strukturieren.
 In diesem Kapitel lernst du wie du mit benannten Programmblöcken,
-in Python Funktionen genannt, deine Programme strukturieren kannst.
+in Python **Funktionen** genannt, deine Programme strukturieren kannst.
 Die Verwendung von Funktionen ist von großer Wichtigkeit, denn du vermeidest dadurch,
 dass du gleichen Code mehrmals im Programm hinschreiben musst (Codeduplikation) 
 und du kannst damit Probleme in kleinere, leichter zu lösende Teilprobleme zerlegen.
@@ -48,7 +48,7 @@ aufgerufen werden.
 
 ## Strukturierung von Code
 
-Bei der Strukturierung von Code mittels Funktionen spricht man auch vom Prinzip von Teile und Herrsche, wo man versucht, eine grössere Komplexität durch Einteilung in wohldefinierte Teilschritte bzw. Einzelaufgaben zu beherrschen. Wenn man die Teilschritte wieder in Teilschritte einteilt, spricht man auch von schrittweiser Verfeinerung oder dem Top-Down-Programmieren.
+Bei der Strukturierung von Code mittels Funktionen spricht man auch vom Prinzip **Teile und Herrsche**, wo man versucht, eine grössere Komplexität durch Einteilung in wohldefinierte Teilschritte bzw. Einzelaufgaben zu beherrschen. Wenn man die Teilschritte wieder in Teilschritte einteilt, spricht man auch von schrittweiser Verfeinerung oder dem Top-Down-Programmieren.
 
 Das obere Programm hat bereits eine Funktion, in der professionellen Python Programmierung
 ist es aber üblich, das gesamte Hauptprogramm in einer Funktion zu haben.
@@ -81,7 +81,7 @@ main()
 
 In Zukunft sollten alle deine Programme eine `main` Funktion haben. 😉
 
-_________________
+
 
 ## Übungen
 
@@ -112,8 +112,8 @@ Erweitere das Programm mit der Funktion blume() so, dass eine 8-blättrige Blume
 
 ## 🧭 Zusammenfassung
 
-Mit `def bezeichner():` definierst du einen neuen Befehl. Wähle einen Namen,
-der die Tätigkeit wiederspiegelt. Alle Anweisungen, die zum neuen Befehl gehören,
+Mit `def bezeichner():` definierst du einen neue Funktion. Wähle einen Namen,
+der die Tätigkeit wiederspiegelt. Alle Anweisungen, die zur neuen Funktion gehören,
 müssen eingerückt sein.
 
 ```python
@@ -121,7 +121,6 @@ def bezeichner():
     Anweisungen
 ```
 Vergiss die Klammern und den Doppelpunkt nach dem Bezeichner nicht!
-In Python nennt man neue Befehle auch Funktionen.
 Wenn du die Funktion `quadrat()` verwendest,
 sagt man auch, die Funktion werde "aufgerufen".
 
@@ -129,6 +128,14 @@ Wir gewöhnen uns daran, die Funktionsdefinitionen
 im Programmkopf anzuordnen, da diese vor ihrem Aufruf definiert sein müssen.
 
 ![Funktionsblöcke](./images/block.png)
+
+
+
+
+
+
+
+
 
 
 

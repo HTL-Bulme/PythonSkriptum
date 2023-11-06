@@ -5,16 +5,16 @@ Die Turtle kann sowohl farbige Linien als auch farbige Flächen zeichnen.
 
 ## Farbe des Stifts ändern
 
-Über den Befehl setPenColor kannst du die Farbe des Stifts auswählen.
-Wichtig ist, dass du den Farbnamen in Gänsefüsschen setzt.
+Über die Funktion `setPenColor("farbname")` kannst du die Farbe des Stifts auswählen.
+Wichtig ist, dass du den Farbnamen doppelte Hochkomma (Umschalttaste + 2) setzt.
 Wie immer beim Programmieren kennt die Turtle nur englische Farbnamen.
 Die folgende Liste ist zwar nicht vollständig, aber doch ein erster Anhaltspunkt: yellow, gold, orange, red, maroon, violet, magenta, purple, navy, blue, skyblue, cyan, turquoise, lightgreen, green, darkgreen, chocolate, brown, black, gray, white.
 
-Zusätzlich kannst du noch die Dicke der pen ändern.
-Mit dem Befehl setPenWidth setzt du die Dicke auf den gewünschten Wert.
+Zusätzlich kannst du noch die Dicke der des Stifts ändern.
+Mit der Funktion `setPenWidth(dicke)` setzt du die Dicke auf den gewünschten Wert.
 
-Das folgende Beispiel zeigt wie du die Befehle anwenden kannst.
-Wichtig ist bei setPenColor, dass du den Namen der Farbe in doppelte Hochkomma schreibst,
+Das folgende Beispiel zeigt wie du die Funktionen aufrufen kannst.
+Wichtig ist bei `setPenColor("farbname")`, dass du den Namen der Farbe in doppelte Hochkomma schreibst,
 da es sich um einen Text handelt.
 
 ```python
@@ -40,8 +40,8 @@ Das Programm erzeugt folgende Grafik:
 
 Um eine Fläche auszufüllen, sagst du zuerst der Turtle mit `startPath()`,
 dass sie sich ausgehend vom aktuellen Ort die nachfolgend gezeichnete Figur merken soll.
-Mit dem Befehl `fillPath()` wird der jetzige Ort mit dem Startort verbunden 
-und die eingeschlossene Fläche eingefärbt. Mit `setFillColor()`
+Mit der Funktion `fillPath()` wird der jetzige Ort mit dem Startort verbunden 
+und die eingeschlossene Fläche eingefärbt. Mit `setFillColor("farbname")`
 kannst du die Füllfarbe angeben (sagst du nichts, so ist sie standardmässig schwarz).
 
 ```python
@@ -61,6 +61,14 @@ fillPath()
 Das Programm erzeugt folgende Grafik:
 
 ![Ergebnis des Programms](./images/triangle.png)
+
+
+
+
+
+
+
+
 
 
 

@@ -13,8 +13,8 @@ Gedanken machen, welchen **Typ** die Variable haben soll.
 Der Benutzer kann über die Tastatur beliebige Texte eingeben,
 also ist die Benutzereingabe zunächst immer vom Typ **String**.
 
-Möchten wir etwas anderes als einen String, also einen Integer (Ganzzahl)
-oder einen Float (Gleitkommazahl), so müssen wir den Wert in den richtigen Typ umwandeln.
+Möchten wir etwas anderes als einen String, also einen **Integer** (Ganzzahl)
+oder einen **Float** (Gleitkommazahl), so müssen wir den Wert in den richtigen Typ umwandeln.
 Hierfür gibt es die beiden Funktionen `int()` und `float()`.
 
 Es gibt also drei Möglichkeiten um eine Eingabe vom Benutzer zu erhalten:
@@ -47,7 +47,7 @@ umzuwandeln, stürzt das Programm mit einer Fehlermeldung ab.
 Im Kapitel über Strings werden wir dieses Problem beheben.
 Bis dahin müssen wir davon ausgehen, dass der Benutzer nur gültige Werte eingibt.
 
-_________________
+
 
 ## Übungen
 
@@ -78,6 +78,14 @@ Der Benutzer soll zusätzlich die Größe der Fenster eingeben können.
 Unsere Programme können nun Zahlenwerte als Eingabe vom Benutzer entgegennehmen.
 Hierzu nutzen sie die Funktionen `inputInt` und `inputFloat`.
 Dadurch sind die Programme flexibler einsetzbar.
+
+
+
+
+
+
+
+
 
 
 

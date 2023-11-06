@@ -91,9 +91,9 @@ Die unterschiedlichen Pfeile sind fett hervorgehoben.
 
 ![Flussdiagramm der beiden obigen Programme](./images/ifvswhile.png)
 
-## ⚠️ Die Endlosschleife 
+## ⚠️ Die Endlosschleife und Abbruch mit break
 
-_________________
+
 
 ## Übungen
 
@@ -157,6 +157,14 @@ Falls die Eingabe zu hoch ist, gibst du "zu hoch" aus.
 So unterstützt du den Benutzer deines Programms.
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

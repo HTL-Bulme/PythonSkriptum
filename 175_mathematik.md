@@ -78,7 +78,7 @@ Durchmesser angibt. Sie ist näherungsweise 3.141592.
 
 Die eulersche Zahl ist ebenfalls eine mathematische Konstante,
 die in den folgenden Jahren noch häufig im Mathematikunterricht vorkommen wird.
-Sie wird benutzt um Wachstumsprozesse, wie das Wachstum von Bäumen
+Sie wird benutzt um Wachstumsprozesse, wie das Wachstum von Wäldern
 oder das Wachstum von Bakterienkulturen zu beschreiben.
 Ihr Wert ist näherungswiese 2.71828.
 
@@ -107,7 +107,7 @@ Diese sind aber bis jetzt in Mathematik in eurer Klasse noch nicht vorgekommen.
 Eine vollständige Liste aller Funktionen
 findest du hier: https://docs.python.org/3/library/math.html
 
-_________________
+
 
 ## Übungen
 
@@ -131,6 +131,14 @@ Falls die Zahl kleiner als `0` ist, so soll eine Fehlermeldung ausgegeben werden
 Ansonsten soll die Wurzel mit der `sqrt`-Funktion berechnet und ausgegeben werden.
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

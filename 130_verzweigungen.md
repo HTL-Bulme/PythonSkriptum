@@ -89,7 +89,7 @@ def main():
 main()
 ```
 
-_________________
+
 
 ## Übungen
 
@@ -144,6 +144,14 @@ else:
     falls Bedingung NICHT erfüllt
 ```
  
+
+
+
+
+
+
+
+
 
 
 

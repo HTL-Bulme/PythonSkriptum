@@ -77,3 +77,11 @@ Schreibe ein Python Programm, welches die oben
 abgebildete Liste erstellt.
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+

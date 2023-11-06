@@ -118,20 +118,31 @@ da es keine Elemente gibt die nachrücken müssen.
 ## 💡 Beispiel: Liste vom Benutzer füllen lassen
 
 
-_________________
+
 
 ## Übungen
 
 ### 📝 Übung 65
 Liste aller geraden Zahlen von 2 bis 100
 
-
 ### 📝 Übung 66
-Liste von 100 bis 0
+Liste der Quadratzahlen bis 100
 
 
 ### 📝 Übung 67
+Liste von 100 bis 0
+
+
+### 📝 Übung 68
 Liste aller Zahlen von 20 bis 50 erstellen
 Benutzer kann sagen welche Elemente er entfernen möchte
 bei negativer Zahl abbruch
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-# Installation
+# von VS Code und Python
 
 Die Umgebung WebTigerJython ist eine Cloud-Applikation,
 welche keine Installation benötigt.
@@ -98,6 +98,14 @@ Die Chance, dass du der einzige mit einem gewissen Problem bist,
 ist sehr gering, weshalb du fast immer Hilfestellungen im Internet findest.
 
 Falls auch das nicht weiterhilft, dann darfst du gerne deinen Lehrer fragen. 😉
+
+
+
+
+
+
+
+
 
 
 

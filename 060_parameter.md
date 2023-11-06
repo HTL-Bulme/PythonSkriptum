@@ -77,7 +77,7 @@ main()
 
 ![Ausgabe des Programms](./images/polygone.png)
 
-_________________
+
 
 ## Übungen
 
@@ -115,6 +115,14 @@ Du definiert eine Funktion circle(s), die einen Kreis zeichnet. Die nebenstehend
 <div style="clear:both;"></div>	
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

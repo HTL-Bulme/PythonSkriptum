@@ -39,7 +39,7 @@ elif (zahl == 0):
 else:
     print("Das ist unmöglich :)")
 ```
-_________________
+
 
 ## Übungen
 
@@ -71,6 +71,14 @@ bzw. angeben, ob die Temperatur genau am Gefrierpunkt oder am Siedepunkt ist.
 
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

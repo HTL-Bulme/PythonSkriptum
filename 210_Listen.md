@@ -29,3 +29,11 @@ Die Anzahl der Elemente einer Liste nennt man auch die Länge.
 Wie man Listen erstellt, befüllt, wie man sie sortiert und darin sucht,
 findest du in den folgenden Kapiteln.
 
+
+
+
+
+
+
+
+

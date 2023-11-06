@@ -62,7 +62,7 @@ def main():
 
 main()
 ```
-_________________
+
 
 ## Übungen
 
@@ -104,6 +104,14 @@ die zweite Schleifenbedingung muss `< 0` sein.
 
 
 ## 🧭 Zusammenfassung
+
+
+
+
+
+
+
+
 
 
 

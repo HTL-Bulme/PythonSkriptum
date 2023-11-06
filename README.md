@@ -6,24 +6,20 @@ subject: "Python"
 keywords: [Bulme, Python]
 book: true
 geometry: left=1.5cm,right=1.5cm,top=2cm,bottom=2.5cm
-classoption: [oneside]
+classoption: [openany]
 lang: "de"
 ...
-
-
-
 
 # Einführung
 
 In diesem Kurs lernst du, wie du einen Computer programmieren kannst.
 Dabei gehen wir davon aus, dass du noch kein
 Vorwissen mitbringst, und werden dir schrittweise alles erklären, was
-du dazu brauchst. Am Ende des Kurses hast du dann alles nötige zusammen,
-um z. B. ein kleines Chatprogramm oder Computerspiel zu programmieren.
+du dazu brauchst.
 
 ## Was heißt "Programmieren" überhaupt?
 
-Programmieren heißt, einer Maschine Anweisungen zu erteilen und sie damit zu steuern.
+Programmieren heißt, einer Maschine **Anweisungen** zu erteilen und sie damit zu steuern.
 Die erste solche Maschine, die du steuerst, ist eine kleine Schildkröte auf dem Bildschirm: Die Turtle. Die Schildkröte versteht verschiedene Anweisungen um sich zu bewegen,
 zu zeichnen oder sich zu verstecken.
 Welche Anweisungen existieren und wie diese Anweisungen geschrieben werden müssen,
@@ -45,7 +41,7 @@ Diese Umgebung findest du im Web unter: https://webtigerjython.ethz.ch
 Die Oberfläche ist einfach gestaltet und speziell für Einsteiger entwickelt worden.
 Sie besteht aus folgenden sechs Bereichen.
 
-1. Codeeingabe: Hier gibtst du den Python-Code ein
+1. Codeeingabe: Hier gibst du den Python-Code ein
 1. Ausgabefenster: Hier siehst du das Ergebnis deines Programms
 1. Ausführen: Bei einem Klick auf diesen Knopf wird das Programm ausgeführt
 1. Ausführen im Vollbild: Führt das Programm im Vollbild-Modus aus
@@ -83,6 +79,14 @@ und wie du interessante Grafiken mit der Turtle zeichnen kannst.
 ## Quellen
 * https://python-online.ch
 * https://programmierkonzepte.ch
+* https://tobiaskohn.ch/
+
+
+
+
+
+
+
 
 
 

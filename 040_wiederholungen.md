@@ -67,7 +67,7 @@ for i in range(9):
     rt(40)
 ```
 
-_________________
+
 
 ## Übungen
 
@@ -134,6 +134,14 @@ for i in range(anzahl):
     wiederholt
     werden sollen 
 ```
+
+
+
+
+
+
+
+
 
 
 

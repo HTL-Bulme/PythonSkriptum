@@ -37,13 +37,13 @@ Dabei musst du dir vorstellen, dass schrittweise Folgendes geschieht:
 
 + der alte Wert 20 von size wird in ein Rechenwerk übertragen
 + die Zahl 50 wird dazugezählt
-+ der neue Wert 70 wird wieder in die Variable `laenge` gespeichert
++ der neue Wert 370 wird wieder in die Variable `laenge` gespeichert
 
 **⚠️ Vorsicht:** Du darfst die dabei verwendete Schreibweise nicht mit einer mathematischen Gleichung verwechseln. Die Programmanweisung:
 `n = n + 1`
 hat nichts mit einer mathematischen Gleichung zu tun, also mit der Aufgabe,
 n so zu bestimmen, dass sich links und rechts von Gleichheitszeichen derselbe Wert ergibt.
-Für n = n + 1 gibt es noch die Kurzschreibweise n += 1 , die genau das Gleiche macht.
+Für `n = n + 1` gibt es noch die Kurzschreibweise `n += 1` , die genau dasselbe macht.
 
 ## Berechnungen
 
@@ -184,6 +184,14 @@ Du kannst ihren Wert jederzeit durch eine neue Zuweisung ändern und dabei sogar
 Eine Zuweisung wird in der Form `Variable = Ausdruck` geschrieben,
 wobei der Ausdruck eine Variable,
 eine Zahl, eine Berechnung oder ein Funktionsaufruf sein kann.
+
+
+
+
+
+
+
+
 
 
 

@@ -3,7 +3,8 @@
 
 ## 📝 Übung 2
 <img style="float: right; width:33%" src="./images/bsp02.png">
-Versuche die Turtle anzuleiten, ein gleichseitiges Dreieck mit der Seitenlänge 100 zu zeichnen. Findest du den richtigen Drehwinkel?
+Versuche die Turtle anzuleiten, ein gleichseitiges Dreieck mit der Seitenlänge 100 zu zeichnen.
+Findest du den richtigen Drehwinkel?
 <div style="clear:both;"></div>
 
 ## 📝 Übung 3
@@ -11,7 +12,7 @@ Versuche die Turtle anzuleiten, ein gleichseitiges Dreieck mit der Seitenlänge 
 Zeichne die Figur auf der rechten Seite.
 Die Verbindungslinien haben eine Länge von 100.
 Beachte, dass die Turtle zum Schluss wieder in der Mitte
-der Figur sitzt.
+der Figur sitzt und nach Norden schaut.
 <div style="clear:both;"></div>
 
 
@@ -23,7 +24,7 @@ die Verbindungslinien eine Länge von 50.
 
 **Tipps:** 
 
-+ Du wirst die Funktion `dot` benötigen.
++ Du wirst die Funktion `dot(groesse)` benötigen.
 + Die Turtle ist am Ende nicht mehr sichtbar.
 
 <div style="clear:both;"></div>
@@ -44,6 +45,11 @@ einer Seitenlänge von 150 Pixeln.
 ## 📝 Übung 6
 <img style="float: right; width:33%" src="./images/bsp06.png" alt="Beispiel 6">
 Zeichne mit der Turtle zwei Quadrate ineinander.
+
+**Tipp:**
+
+* Versuche die Länge der Diagonalen mit dem Satz des Pythagoras zu bestimmen
+* Du wirst an einer Stelle die Wurzel von 2, also ungefähr 1.4142 benötigen.
 <div style="clear:both;"></div>
 
 ## 📝 Übung 7
@@ -58,20 +64,6 @@ Zeichne das Haus vom Nikolaus mithilfe der Turtle.
 <img style="float: right; width:33%" src="./images/bsp08.png">
 Zeichne die Schneeflocke, wie rechts abgebildet.
 <div style="clear:both;"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

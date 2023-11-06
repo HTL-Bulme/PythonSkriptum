@@ -1,17 +1,25 @@
 # Weitere Listen-Funktionen
 
-in
+## in - Prüfen ob Element in Liste vorhanden
 
-index
+## liste.index(x) - Element suchen und Index zurückgeben
 
-count
+## liste.count(x) - Anzahl von der Elemente gleich x suchen
 
-sort
+## liste.sort() - Liste sortieren
 
-min
+## min(liste) - Minimum berechnen
 
-max
+## max(liste) - Maximum berechnen
 
-clear
 
-reverse
+## liste.clear() - Alle Elemente entfernen
+
+
+## liste.reverse() - Liste "umdrehen"
+
+
+
+
+
+
