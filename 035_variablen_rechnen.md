@@ -37,7 +37,7 @@ Dabei musst du dir vorstellen, dass schrittweise Folgendes geschieht:
 
 + der alte Wert 20 von size wird in ein Rechenwerk übertragen
 + die Zahl 50 wird dazugezählt
-+ der neue Wert 370 wird wieder in die Variable `laenge` gespeichert
++ der neue Wert 70 wird wieder in die Variable `laenge` gespeichert
 
 **⚠️ Vorsicht:** Du darfst die dabei verwendete Schreibweise nicht mit einer mathematischen Gleichung verwechseln. Die Programmanweisung:
 `n = n + 1`
