@@ -6,7 +6,7 @@
         <title>Suchen von Elementen · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -620,9 +736,150 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="suchen-von-elementen">Suchen von Elementen</h1>
-<p>len</p>
-<p>for loop</p>
-<p>flag variable</p>
+<p>In den vorhergegangenen Kapiteln haben wir Listen angelegt,
+Elemente hinzugefügt und entfernt.
+Jedoch haben wir beim Entfernen gesehen,
+dass das Programm mit einer Fehlermeldung abstürzt,
+wenn das Element, welches wir entfernen möchten, nicht existiert.</p>
+<p>Uns fehlt also noch eine Möglichkeit zu prüfen, ob Elemente existieren.
+Diesen Prozess nennen wir &quot;Suchen&quot; und 
+das werden wir in diesem Kapitel Schritt-für-Schritt erarbeiten.</p>
+<h2 id="liste-mit-schleife-durchlaufen">Liste mit Schleife durchlaufen</h2>
+<p>Um zu überprüfen, ob ein gewisses Element in einer Liste existiert,
+bleibt uns nichts anderes übrig, als jedes Element einzeln zu überprüfen.
+Sehen wir uns nochmals die bereits bekannte Liste an:</p>
+<p><img src="images/lists.png" alt="Darstellung einer Liste mit sechs Elementen"></p>
+<p>Nehmen wir an, wir möchten überprüfen, ob die zahl <code>74</code> existiert,
+so könnten wir folgendes schreiben:</p>
+<pre><code class="lang-python">meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+wert = <span class="hljs-number">74</span>
+
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">0</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">1</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">2</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">3</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">4</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+<span class="hljs-keyword">if</span> (meineListe[<span class="hljs-number">5</span>] == wert):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+</code></pre>
+<p>Das wäre etwas umständlich, würde aber funktionieren,
+solange die Liste immer 6 Elemente hat.
+Wenn wir aber einmal scharf auf den Code draufschauen,
+dann sehen wir, dass wir 6 mal denselben Code,
+nur mit einem anderen Index ausführen.
+Hier ergibt sich also die Möglichkeit die <strong>for-Schleife</strong> einzusetzen,
+um den Code kürzer zu machen.</p>
+<pre><code class="lang-python">meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+wert = <span class="hljs-number">74</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">6</span>):
+    <span class="hljs-keyword">if</span> (meineListe[i] == wert):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+</code></pre>
+<p>Wir haben also eine <code>for</code>-Schleife erstellt,
+die von 0 bis inklusive 5 läuft.
+Bei jedem Schleifendurchlauf,
+wird die Variable <code>i</code> um <code>1</code> erhöht.
+Beim ersten Mal hat <code>i</code> den Wert <code>0</code>,
+beim zweiten Mal <code>1</code>, und so weiter.
+Die Schleife läuft, solange <code>i</code> kleiner als <code>6</code> ist,
+also von <code>0</code> bis <code>5</code>.</p>
+<p>Dieses Programm ist nun schon viel eleganter,
+da es keine Code Duplikate enthält.
+Jedoch funktioniert es noch immer nur
+für Listen der Länge 6.</p>
+<p>Wir können aber die Länge einer Liste auch
+von Python mit der <code>len</code>-Funktion berechnen lassen.
+Die Funktion <code>len</code> verlangt als Argument eine Liste
+und gibt die Länge der Liste zurück.
+Wenn wir die Zahl <code>5</code> im obigen Programm durch <code>len(meineListe)</code>
+ersetzen, funktioniert das Programm für Listen beliebiger Länge:</p>
+<pre><code class="lang-python">meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+wert = <span class="hljs-number">74</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(meineListe)):
+    <span class="hljs-keyword">if</span> (meineListe[i] == wert):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+</code></pre>
+<p>Das obige Programm wirst du häufig wiedersehen.
+Es ist ein Muster, welches immer wieder vorkommt.
+Man möchte eine Aussage über die Liste treffen,
+und dafür muss man mit jedem einzelnen Element etwas machen.
+Man sagt auch man <strong>durchläuft</strong> die Liste mit einer <code>for</code>-Schleife.</p>
+<h2 id="resultat-der-suche-in-flag-variable-speichern">Resultat der Suche in Flag-Variable speichern</h2>
+<p>Das folgende Programm macht schon fast was es soll.
+Es überprüft, ob ein Element in einer Liste vorkommt.
+Falls es vorkommt, gibt das Programm den Text &quot;gefunden&quot; aus.</p>
+<pre><code class="lang-python">meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+wert = <span class="hljs-number">74</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(meineListe)):
+    <span class="hljs-keyword">if</span> (meineListe[i] == wert):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;gefunden&quot;</span>)
+</code></pre>
+<p>Die Text-Ausgabe ist für uns ungünstig, da wir auf diesen später nicht
+mehr im Programm zugreifen können.
+Besser wäre eine Variable, die speichert, ob das Element vorhanden war oder nicht. 
+Soche Variablen, die angeben ob eine Bedingung zutrifft oder eben nicht zutrifft, 
+nennen wir <strong>Flag</strong>-Variablen oder kurz ein Flag. Der Name rührt von einer Fahne (engl. Flag) her,
+die im bildlichen Sinne gehisst wird, falls eine Bedingung zutrifft,
+bzw. gesenkt wird, falls eine Bedingung nicht zutrifft.
+Flags können nur zwei verschiedene Werte haben <code>True</code> oder <code>False</code>.</p>
+<p>In unserem Beispiel müssen wir zuerst davon ausgehen, dass der Wert nicht vorhanden ist,
+also setzen wir das Flag auf <code>False</code>. Falls wir ein Element finden, setzen wir das Flag auf <code>True</code>.</p>
+<p>Im folgenden Code wird das Flag <code>gefunden</code> genannt und standardmässig auf <code>False</code> gesetzt.</p>
+<pre><code class="lang-python">meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+wert = <span class="hljs-number">74</span>
+
+gefunden = <span class="hljs-literal">False</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(meineListe)):
+    <span class="hljs-keyword">if</span> (meineListe[i] == wert):
+        gefunden = <span class="hljs-literal">True</span>
+</code></pre>
+<h2 id="suche-als-funktion-definieren">Suche als Funktion definieren</h2>
+<p>Die Suche nach einem Element in einer Liste,
+ist etwas, dass wir sicher häufiger benötigen werden.
+Deshalb macht es Sinn diese Funktionalität in eine eigene Funktion zu packen.</p>
+<p>Die Funktion sollte zwei Parameter haben:</p>
+<ul>
+<li>die Liste die durchsucht werden soll</li>
+<li>die Zahl nach der gesucht werden soll</li>
+</ul>
+<p>Die Funktion sollte einen Rückgabewert haben,
+der angibt, ob das Element gefunden wurde, oder nicht.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">sucheElement</span>(<span class="hljs-params">liste, wert</span>):
+    gefunden = <span class="hljs-literal">False</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(liste)):
+        <span class="hljs-keyword">if</span> (liste[i] == wert):
+            gefunden = <span class="hljs-literal">True</span>
+    <span class="hljs-keyword">return</span> gefunden
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    meineListe = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+    <span class="hljs-built_in">print</span>(sucheElement(meineListe,<span class="hljs-number">13</span>))
+    <span class="hljs-built_in">print</span>(sucheElement(meineListe,<span class="hljs-number">555</span>))
+
+main()
+</code></pre>
+<p>Im obigen Programm wurde die Suche nach dem Element in eine eigene Funktion ausgelagert.
+In der Main Funktion wird die sucheElement Funktion zwei Mal aufgerufen.
+Beim ersten Mal wird <code>True</code> ausgegeben, da <code>13</code> ein Element der Liste ist.
+Beim zweiten Mal wird <code>False</code> ausgegeben, da <code>555</code> <strong>kein</strong> Element der Liste ist.</p>
+<h2 id="übungen">Übungen</h2>
+<h3 id="📝-übung-69">📝 Übung 69</h3>
+<p>neue funktione
+auf welchem index vorkommt</p>
+<h3 id="📝-übung-70">📝 Übung 70</h3>
+<p>zählen wie oft vorkommt</p>
+<h3 id="📝-übung-71">📝 Übung 71</h3>
+<p>ersetzen falls gefunden</p>
+<h3 id="📝-übung-72">📝 Übung 72</h3>
+<p>zählen wir viele gerade zahlen</p>
 
                                 
                                 </section>
@@ -666,7 +923,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Suchen von Elementen","level":"1.4.3","depth":2,"next":{"title":"Berechnungen auf Listen durchführen","level":"1.4.4","depth":2,"path":"240_listcalc.md","ref":"240_listcalc.md","articles":[]},"previous":{"title":"Hinzufügen und Löschen von Elementen","level":"1.4.2","depth":2,"path":"230_listappenddeletecopy.md","ref":"230_listappenddeletecopy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"235_listsearch.md","mtime":"2023-08-23T09:08:11.825Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Suchen von Elementen","level":"1.4.3","depth":2,"next":{"title":"Berechnungen auf Listen durchführen","level":"1.4.4","depth":2,"path":"240_listcalc.md","ref":"240_listcalc.md","articles":[]},"previous":{"title":"Hinzufügen und Löschen von Elementen","level":"1.4.2","depth":2,"path":"230_listappenddeletecopy.md","ref":"230_listappenddeletecopy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"235_listsearch.md","mtime":"2023-08-25T08:35:49.314Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

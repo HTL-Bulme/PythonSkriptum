@@ -1,0 +1,997 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Strings erstellen und auf Zeichen zugreifen · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="350_funktionen.html" />
+    
+    
+    <link rel="prev" href="310_Strings.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Einführung ✨
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="010_turtle.html">
+            
+                <a href="010_turtle.html">
+            
+                    
+                    Grafik mit der Turtle 🐢
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="015_turtle_lines.html">
+            
+                <a href="015_turtle_lines.html">
+            
+                    
+                    Übungen mit der Turtle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="017_turtle_colors.html">
+            
+                <a href="017_turtle_colors.html">
+            
+                    
+                    Farben verwenden
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="020_variablen.html">
+            
+                <a href="020_variablen.html">
+            
+                    
+                    Variablen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="030_input.html">
+            
+                <a href="030_input.html">
+            
+                    
+                    Eingabe von Werten
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="035_variablen_rechnen.html">
+            
+                <a href="035_variablen_rechnen.html">
+            
+                    
+                    Rechnen mit Variablen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="040_wiederholungen.html">
+            
+                <a href="040_wiederholungen.html">
+            
+                    
+                    Wiederholen von Codeblöcken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="050_funktionen.html">
+            
+                <a href="050_funktionen.html">
+            
+                    
+                    Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="060_parameter.html">
+            
+                <a href="060_parameter.html">
+            
+                    
+                    Funktionen mit Parametern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="070_kapiteltest.html">
+            
+                <a href="070_kapiteltest.html">
+            
+                    
+                    Kapiteltest 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="110_Berechnungsprogramme.html">
+            
+                <a href="110_Berechnungsprogramme.html">
+            
+                    
+                    Rechnen mit Python 🧮
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="120_Installation.html">
+            
+                <a href="120_Installation.html">
+            
+                    
+                    Installation von VS Code und Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="130_verzweigungen.html">
+            
+                <a href="130_verzweigungen.html">
+            
+                    
+                    Verzweigungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="140_logische_operatoren.html">
+            
+                <a href="140_logische_operatoren.html">
+            
+                    
+                    Logische Operatoren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="150_flowcharts.html">
+            
+                <a href="150_flowcharts.html">
+            
+                    
+                    Grafische Darstellung von Programmen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="160_verschachtelung.html">
+            
+                <a href="160_verschachtelung.html">
+            
+                    
+                    Verschachtelung von Verzweigungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="170_mehrfachverzweigung.html">
+            
+                <a href="170_mehrfachverzweigung.html">
+            
+                    
+                    Mehrfachverzweigungen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="175_mathematik.html">
+            
+                <a href="175_mathematik.html">
+            
+                    
+                    Weitere mathematische Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="180_whileloops.html">
+            
+                <a href="180_whileloops.html">
+            
+                    
+                    Wiederholungen mit while-Schleifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="185_debugging.html">
+            
+                <a href="185_debugging.html">
+            
+                    
+                    Fehler in Programmen finden
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="188_funktionen_return.html">
+            
+                <a href="188_funktionen_return.html">
+            
+                    
+                    Funktionen mit Rückgabewert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="189_funktionen_debug.html">
+            
+                <a href="189_funktionen_debug.html">
+            
+                    
+                    Der Funktionsaufruf unter der Lupe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="190_kapiteltest.html">
+            
+                <a href="190_kapiteltest.html">
+            
+                    
+                    Kapiteltest 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="210_Listen.html">
+            
+                <a href="210_Listen.html">
+            
+                    
+                    Listen 📜
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="220_listcreate.html">
+            
+                <a href="220_listcreate.html">
+            
+                    
+                    Erstellen und Auslesen von Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="230_listappenddeletecopy.html">
+            
+                <a href="230_listappenddeletecopy.html">
+            
+                    
+                    Hinzufügen und Löschen von Elementen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="235_listsearch.html">
+            
+                <a href="235_listsearch.html">
+            
+                    
+                    Suchen von Elementen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="240_listcalc.html">
+            
+                <a href="240_listcalc.html">
+            
+                    
+                    Berechnungen auf Listen durchführen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="260_listMinMax.html">
+            
+                <a href="260_listMinMax.html">
+            
+                    
+                    Minimum und Maximum berechnen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="270_listInsertionSort.html">
+            
+                <a href="270_listInsertionSort.html">
+            
+                    
+                    Sortieren von Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="275_listmethods.html">
+            
+                <a href="275_listmethods.html">
+            
+                    
+                    Weitere Listen-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
+            
+                <a href="280_kapiteltest.html">
+            
+                    
+                    Kapiteltest 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="310_Strings.html">
+            
+                <a href="310_Strings.html">
+            
+                    
+                    Texte in Python 🔤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="410_GUI.html">
+            
+                <a href="410_GUI.html">
+            
+                    
+                    Grafische Benutzeroberflächen (GUI) 🖱️
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="510_Loesungen.html">
+            
+                <a href="510_Loesungen.html">
+            
+                    
+                    Lösungen der Übungsbeispiele
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Strings erstellen und auf Zeichen zugreifen</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="strings-erstellen-und-auf-zeichen-zugreifen">Strings erstellen und auf Zeichen zugreifen</h1>
+<p>Strings können in Python wie Listen behandelt werden.
+In diesem Abschnitt lernst du sie erstellst und auf einzelne Zeichen zugreifst.</p>
+<h2 id="strings-erstellen">Strings erstellen</h2>
+<p>Wir erstellen einen String, indem wir einen Text in doppelte oder einfache
+Hochkomma schreiben. Beispielsweise können wir eine String-Variable wie folgt erstellen:</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann der Erste&quot;</span>
+<span class="hljs-built_in">print</span>(meinName)
+</code></pre>
+<p>Es ist auch möglich zwei oder mehrere Strings zu einem zu kombinieren.
+Wir können das mit dem Plus-Operator bewerkstelligen: </p>
+<pre><code class="lang-python">vorname = <span class="hljs-string">&quot;Max&quot;</span>
+nachname = <span class="hljs-string">&quot;Mustermann&quot;</span>
+vollerName = vorname + <span class="hljs-string">&quot; &quot;</span> + nachname
+
+<span class="hljs-built_in">print</span>(vollerName)
+</code></pre>
+<h2 id="auf-zeichen-zugreifen">Auf Zeichen zugreifen</h2>
+<p>Der Zugriff auf Zeichen, funktioniert wie bei Listen
+über einen Index, der in eckige Klammern geschrieben wird.</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann der Erste&quot;</span>
+zeichen = meinName[<span class="hljs-number">1</span>]
+<span class="hljs-built_in">print</span>(zeichen)
+</code></pre>
+<p><strong>Ausgabe: </strong> <code>a</code></p>
+<p>Das obige Programm gibt das Zeichen mit dem Index <code>1</code>, also
+das zweite Zeichen aus.
+Wir erinnern uns, das der Index bei <code>0</code> zu zählen beginnt,
+das zweite Zeichen also den Index <code>1</code> hat.</p>
+<p>Wie bei der Liste können wir auch die Länge mit der 
+Funktion <code>len(x)</code> ermitteln. Die Länge eines Strings,
+entspricht der Anzahl der Zeichen.</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann der Erste&quot;</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">len</span>(meinName))
+</code></pre>
+<p><strong>Ausgabe: </strong> <code>24</code></p>
+<h2 id="strings-mit-schleife-durchlaufen">Strings mit Schleife durchlaufen</h2>
+<p>Wie Listen können wir auch Strings mit einer Schleife durchlaufen.</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann der Erste&quot;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(meinName)):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Index:&quot;</span>,i,<span class="hljs-string">&quot;Zeichen&quot;</span>,meinName[i])
+</code></pre>
+<p><strong>Ausgabe:</strong></p>
+<pre><code>Index: 0 Zeichen M
+Index: 1 Zeichen a
+Index: 2 Zeichen x
+Index: 3 Zeichen  
+Index: 4 Zeichen M
+Index: 5 Zeichen u
+...
+</code></pre><p>Das obige Programm gibt jedes Zeichen des Namens
+ein einer eigenen Zeile und den zugehörigen Index
+des Buchstabens aus.</p>
+<p>Schön zu sehen ist, dass der Index bei <code>0</code> beginnt,
+und das Leerzeichen in Zeile <code>4</code> ein Zeichen wie jedes andere ist.</p>
+<h2 id="escape-sequenzen">Escape Sequenzen</h2>
+<p>Nehmen wir an, wir möchten wieder eine String-Variable erstellen,
+die dieses mal aber den Text &quot;Max Mustermann &quot;der Erste&quot;&quot; enthält,
+wobei die Phrase &quot;der Erste&quot; in doppelten Hochkommas steht.</p>
+<p>Der erste Versuch wäre:</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann &quot;</span>der Erste<span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-built_in">print</span>(meinName)
+</code></pre>
+<p>Das Ergebnis ist jedoch eine Fehlermeldung
+in der steht, dass die Syntax nicht passt.
+Python interpretiert die Hochkomma um &quot;der Erste&quot;,
+als Ende des Strings, bzw. als Anfang eines nächsten Strings.</p>
+<p>Deshalb müssen wir vor den Hochkommas, die zum Strings selbst gehören,
+einen Backslash (\) setzen. Damit weiss Python, dass es sich um ein gewöhnliches Zeichen
+handelt und nicht um das ende eines Strings.</p>
+<p>Korrekt ist also:</p>
+<pre><code class="lang-python">meinName = <span class="hljs-string">&quot;Max Mustermann \&quot;der Erste\&quot;&quot;</span>
+<span class="hljs-built_in">print</span>(meinName)
+</code></pre>
+<p>Den Backslash nennen wir auch das Escape (engl. Flucht) Zeichen,
+und der Backslash mit dem doppelten Hochkomma ist eine sogenannte
+Escape Sequenz.</p>
+<p>Von diesen Escape Sequenzen gibt es noch mehr:</p>
+<table>
+<thead>
+<tr>
+<th>Escape Sequenz</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\&quot;</code></td>
+<td>Doppeltes Hochkomma</td>
+<td><code>&quot;Hallo \&quot;Welt\&quot; &quot;</code></td>
+</tr>
+<tr>
+<td><code>\&apos;</code></td>
+<td>Einfaches Hochkomma</td>
+<td><code>&quot;Hallo \&apos;Welt\&apos; &quot;</code></td>
+</tr>
+<tr>
+<td><code>\\</code></td>
+<td>Backslash</td>
+<td><code>&quot;Backslash: \\&quot;</code></td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>Neue Zeile</td>
+<td><code>&quot;Zeile1 \n Zeile2&quot;</code></td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>Tabulator (Dickes Leerzeichen)</td>
+<td><code>&quot;Hallo \t Welt &quot;</code></td>
+</tr>
+<tr>
+<td><code>\Uxxxxxxxx</code></td>
+<td>Unicode Zeichen mit 8 Zeichen Hex-Code.</td>
+<td><code>&quot;\U0001F4AA&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Die Hex-Schreibweise von Zeichen ist besonders nützlich für Emojies.
+Alle Emojies und den zugehörigen Code findest du auf <a href="https://emojipedia.org" target="_blank">https://emojipedia.org</a>.
+Unter &quot;Technische Information&quot; findest du den Codepunkt,
+also die eindeutige Nummer als Hex-Zahl.
+Diese Zahl musst du mit führenden Nullen auf 8 Zeichen auffüllen.
+Aus 1F4AA wird also 0001F4AA.</p>
+<p>Wenn du deine Code-Datei als Utf-8 Datei speicherst,
+kannst du Emojies aber auch ganz einfach in den Code reinkopieren
+und benötigst die Hex-Schreibweise nicht.</p>
+<h2 id="übungen">Übungen</h2>
+<h3 id="📝-übung-80">📝 Übung 80</h3>
+<p>Benutzer muss namen, vorname, strasse und hausnummer eingeben
+in folgendem format ausgegeben:</p>
+<p>Max Mustermann
+Musterstrasse  83</p>
+<h3 id="📝-übung-81">📝 Übung 81</h3>
+<p>Rückwärts</p>
+<h3 id="📝-übung-82">📝 Übung 82</h3>
+<p>zähle wie oft das Zeichen a vorkommt</p>
+<h3 id="📝-übung-83">📝 Übung 83</h3>
+<p>Ist ein Wort ein Parlindrom oder nicht</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="310_Strings.html" class="navigation navigation-prev " aria-label="Previous page: Texte in Python 🔤">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="350_funktionen.html" class="navigation navigation-next " aria-label="Next page: String-Funktionen">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Strings erstellen und auf Zeichen zugreifen","level":"1.5.1","depth":2,"next":{"title":"String-Funktionen","level":"1.5.2","depth":2,"path":"350_funktionen.md","ref":"350_funktionen.md","articles":[]},"previous":{"title":"Texte in Python 🔤","level":"1.5","depth":1,"path":"310_Strings.md","ref":"310_Strings.md","articles":[{"title":"Strings erstellen und auf Zeichen zugreifen","level":"1.5.1","depth":2,"path":"320_erstellenzugriff.md","ref":"320_erstellenzugriff.md","articles":[]},{"title":"String-Funktionen","level":"1.5.2","depth":2,"path":"350_funktionen.md","ref":"350_funktionen.md","articles":[]},{"title":"Die Caesar-Verschlüsselung","level":"1.5.3","depth":2,"path":"360_crypto.md","ref":"360_crypto.md","articles":[]},{"title":"Kapiteltest 4","level":"1.5.4","depth":2,"path":"370_kapiteltest.md","ref":"370_kapiteltest.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"320_erstellenzugriff.md","mtime":"2023-08-25T08:35:49.322Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

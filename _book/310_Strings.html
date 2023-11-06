@@ -6,7 +6,7 @@
         <title>Texte in Python 🔤 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="410_GUI.html" />
+    <link rel="next" href="320_erstellenzugriff.html" />
     
     
     <link rel="prev" href="280_kapiteltest.html" />
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -620,6 +736,22 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="strings">Strings</h1>
+<p>Texte heißen beim Programmieren «Strings» oder «Zeichenketten». In
+diesem Kapitel geht es um einfache Textverarbeitung. Du lernst zum
+Beispiel, Texte zusammenzufügen, Texte umzudrehen oder zu Prüfen
+ob Texte Zahlen beinhalten.</p>
+<p>Ein wichtiges Ziel ist aber auch die Kryptographie – die Ver- und Entschlüsselung von Texten.
+So kannst du einen Text relativ einfach verschlüsseln, wenn du alle Buchstaben veränderst.
+Das Zählen von Buchstaben hingegen hilft dir, einen verschlüsselten Text zu knacken.</p>
+<p>Strings sind den bereits bekannten Listen nicht unähnlich.
+Einen String können wir uns quasi als Liste von Buchstaben vorstellen:</p>
+<p><img src="images/strings.png" alt="Ein String. Die Ähnlichkeiten zur Liste sind offensichtlich."></p>
+<p>Genau wie bei Listen wird auf die einzelnen Elemente mit einem Index zugegriffen.
+Die Elemente bei einem String nennen wir jedoch Zeichen.
+Als Zeichen sind alle gültigen Unicode-Zeichen zulässig,
+also beispielsweise Buchstaben, Ziffern, Sonderzeichen, chinesische Zeichen,
+arabische Zeichen und sogar Emojies.</p>
+<p>Wir sehen uns in den folgenden Abschnitten an, wie wir mit Strings in Python arbeiten können.</p>
 
                                 
                                 </section>
@@ -647,12 +779,12 @@
 
             
                 
-                <a href="280_kapiteltest.html" class="navigation navigation-prev " aria-label="Previous page: Kapiteltest">
+                <a href="280_kapiteltest.html" class="navigation navigation-prev " aria-label="Previous page: Kapiteltest 3">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="410_GUI.html" class="navigation navigation-next " aria-label="Next page: Grafische Benutzeroberflächen (GUI) 🖱️">
+                <a href="320_erstellenzugriff.html" class="navigation navigation-next " aria-label="Next page: Strings erstellen und auf Zeichen zugreifen">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -663,7 +795,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Texte in Python 🔤","level":"1.5","depth":1,"next":{"title":"Grafische Benutzeroberflächen (GUI) 🖱️","level":"1.6","depth":1,"path":"410_GUI.md","ref":"410_GUI.md","articles":[]},"previous":{"title":"Kapiteltest","level":"1.4.8","depth":2,"path":"280_kapiteltest.md","ref":"280_kapiteltest.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"310_Strings.md","mtime":"2023-08-23T09:08:11.833Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Texte in Python 🔤","level":"1.5","depth":1,"next":{"title":"Strings erstellen und auf Zeichen zugreifen","level":"1.5.1","depth":2,"path":"320_erstellenzugriff.md","ref":"320_erstellenzugriff.md","articles":[]},"previous":{"title":"Kapiteltest 3","level":"1.4.9","depth":2,"path":"280_kapiteltest.md","ref":"280_kapiteltest.md","articles":[]},"articles":[{"title":"Strings erstellen und auf Zeichen zugreifen","level":"1.5.1","depth":2,"path":"320_erstellenzugriff.md","ref":"320_erstellenzugriff.md","articles":[]},{"title":"String-Funktionen","level":"1.5.2","depth":2,"path":"350_funktionen.md","ref":"350_funktionen.md","articles":[]},{"title":"Die Caesar-Verschlüsselung","level":"1.5.3","depth":2,"path":"360_crypto.md","ref":"360_crypto.md","articles":[]},{"title":"Kapiteltest 4","level":"1.5.4","depth":2,"path":"370_kapiteltest.md","ref":"370_kapiteltest.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"310_Strings.md","mtime":"2023-08-25T08:35:49.322Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -6,7 +6,7 @@
         <title>Funktionen · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -622,7 +738,7 @@
                                 <h1 id="funktionen">Funktionen</h1>
 <p>Je größer deine Programme werden, desto wichtiger wird es die Programme zu strukturieren.
 In diesem Kapitel lernst du wie du mit benannten Programmblöcken,
-in Python Funktionen genannt, deine Programme strukturieren kannst.
+in Python <strong>Funktionen</strong> genannt, deine Programme strukturieren kannst.
 Die Verwendung von Funktionen ist von großer Wichtigkeit, denn du vermeidest dadurch,
 dass du gleichen Code mehrmals im Programm hinschreiben musst (Codeduplikation) 
 und du kannst damit Probleme in kleinere, leichter zu lösende Teilprobleme zerlegen.</p>
@@ -631,7 +747,7 @@ und du kannst damit Probleme in kleinere, leichter zu lösende Teilprobleme zerl
 Dies ist eine typische, in sich geschlossene Aufgabe und du kannst den dazu benötigten Code in einer Funktion zusammenfassen. </p>
 <p>Die Funktionsdefinition beginnt mit dem Keyword <code>def</code>. Dann folgt der Name, eine sogenannte Parameterklammer und ein Doppelpunkt.
 Die Anweisungen im Funktionskörper bilden einen Codeblock und sie müssen daher eingerückt sein.</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square</span>():</span>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">square</span>():
     repeat <span class="hljs-number">4</span>:
         fd(<span class="hljs-number">100</span>)
         rt(<span class="hljs-number">90</span>)
@@ -639,7 +755,7 @@ Die Anweisungen im Funktionskörper bilden einen Codeblock und sie müssen daher
 <p>Im Hauptprogramm rufst du die Funktion mit ihrem Namen auf.</p>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> gturtle <span class="hljs-keyword">import</span> *
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square</span>():</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">square</span>():
     repeat <span class="hljs-number">4</span>: 
         fd(<span class="hljs-number">60</span>) 
         lt(<span class="hljs-number">90</span>) 
@@ -657,7 +773,7 @@ rt(<span class="hljs-number">45</span>)
 <p>Die Funktion <code>square</code> wird also nur einmal definiert und kann dann beliebig oft
 aufgerufen werden.</p>
 <h2 id="strukturierung-von-code">Strukturierung von Code</h2>
-<p>Bei der Strukturierung von Code mittels Funktionen spricht man auch vom Prinzip von Teile und Herrsche, wo man versucht, eine grössere Komplexität durch Einteilung in wohldefinierte Teilschritte bzw. Einzelaufgaben zu beherrschen. Wenn man die Teilschritte wieder in Teilschritte einteilt, spricht man auch von schrittweiser Verfeinerung oder dem Top-Down-Programmieren.</p>
+<p>Bei der Strukturierung von Code mittels Funktionen spricht man auch vom Prinzip <strong>Teile und Herrsche</strong>, wo man versucht, eine grössere Komplexität durch Einteilung in wohldefinierte Teilschritte bzw. Einzelaufgaben zu beherrschen. Wenn man die Teilschritte wieder in Teilschritte einteilt, spricht man auch von schrittweiser Verfeinerung oder dem Top-Down-Programmieren.</p>
 <p>Das obere Programm hat bereits eine Funktion, in der professionellen Python Programmierung
 ist es aber üblich, das gesamte Hauptprogramm in einer Funktion zu haben.
 Man führt dazu eine Funktion namens <code>main</code> ein
@@ -665,12 +781,12 @@ und ruft die am Ende der eigenen Funktionsdefinition auf.</p>
 <p>Die saubere und damit professionellere Variante des Programms sieht also so aus:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> gturtle <span class="hljs-keyword">import</span> *
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square</span>():</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">square</span>():
     repeat <span class="hljs-number">4</span>: 
         fd(<span class="hljs-number">60</span>) 
         lt(<span class="hljs-number">90</span>) 
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>():</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
     makeTurtle()
 
     setPenColor(<span class="hljs-string">&quot;blue&quot;</span>)
@@ -684,7 +800,6 @@ und ruft die am Ende der eigenen Funktionsdefinition auf.</p>
 main()
 </code></pre>
 <p>In Zukunft sollten alle deine Programme eine <code>main</code> Funktion haben. 😉</p>
-<hr>
 <h2 id="übungen">Übungen</h2>
 <h3 id="📝-übung-29">📝 Übung 29</h3>
 <p><img style="float: right; width:33%" src="images/sechseck.png">
@@ -712,14 +827,13 @@ Erweitere das Programm mit der Funktion blume() so, dass eine 8-blättrige Blume
 <div style="clear:both;"></div>
 
 <h2 id="🧭-zusammenfassung">🧭 Zusammenfassung</h2>
-<p>Mit <code>def bezeichner():</code> definierst du einen neuen Befehl. Wähle einen Namen,
-der die Tätigkeit wiederspiegelt. Alle Anweisungen, die zum neuen Befehl gehören,
+<p>Mit <code>def bezeichner():</code> definierst du einen neue Funktion. Wähle einen Namen,
+der die Tätigkeit wiederspiegelt. Alle Anweisungen, die zur neuen Funktion gehören,
 müssen eingerückt sein.</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bezeichner</span>():</span>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">bezeichner</span>():
     Anweisungen
 </code></pre>
 <p>Vergiss die Klammern und den Doppelpunkt nach dem Bezeichner nicht!
-In Python nennt man neue Befehle auch Funktionen.
 Wenn du die Funktion <code>quadrat()</code> verwendest,
 sagt man auch, die Funktion werde &quot;aufgerufen&quot;.</p>
 <p>Wir gewöhnen uns daran, die Funktionsdefinitionen
@@ -768,7 +882,7 @@ im Programmkopf anzuordnen, da diese vor ihrem Aufruf definiert sein müssen.</p
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Funktionen","level":"1.2.7","depth":2,"next":{"title":"Funktionen mit Parametern","level":"1.2.8","depth":2,"path":"060_parameter.md","ref":"060_parameter.md","articles":[]},"previous":{"title":"Wiederholen von Codeblöcken","level":"1.2.6","depth":2,"path":"040_wiederholungen.md","ref":"040_wiederholungen.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"050_funktionen.md","mtime":"2023-08-23T09:08:11.801Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Funktionen","level":"1.2.7","depth":2,"next":{"title":"Funktionen mit Parametern","level":"1.2.8","depth":2,"path":"060_parameter.md","ref":"060_parameter.md","articles":[]},"previous":{"title":"Wiederholen von Codeblöcken","level":"1.2.6","depth":2,"path":"040_wiederholungen.md","ref":"040_wiederholungen.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"050_funktionen.md","mtime":"2023-08-25T20:17:31.132Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

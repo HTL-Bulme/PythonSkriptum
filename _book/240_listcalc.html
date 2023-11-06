@@ -6,7 +6,7 @@
         <title>Berechnungen auf Listen durchführen · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -620,6 +736,76 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="berechnungen-auf-listen-durchführen">Berechnungen auf Listen durchführen</h1>
+<p>Im vorhergehenden Kapitel haben wir gesehen,
+dass wir, um ein Element zu finden, alle Elemente mit einer Schleife durchgehen müssen.
+Man sagt auch, wir durchlaufen die Liste mit einer Schleife.</p>
+<h2 id="summenfunktion">Summenfunktion</h2>
+<p>Wenn wir Berechnungen auf Listen durchführen, müssen wir dasselbe machen.
+Nehmen wir an, wir möchten die Summe aller Elemente der Liste berechnen.</p>
+<p>Wir könnten, als ersten Versuch schreiben:</p>
+<pre><code class="lang-python">l = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+summe = l[<span class="hljs-number">0</span>] + l[<span class="hljs-number">1</span>] + l[<span class="hljs-number">2</span>] + l[<span class="hljs-number">3</span>] + l[<span class="hljs-number">4</span>] + l[<span class="hljs-number">5</span>]
+</code></pre>
+<p>Das würde zwar funktionieren, wäre aber umständlich,
+und würde wieder nur für Listen der Länge 6 funktionieren.</p>
+<p>Besser wäre es wieder eine <code>for</code>-Schleife zu machen,
+in der die summe der Elemente berechnet wird.
+Wir verwenden wieder das gleiche Muster wie im vorhergegangenen Kapitel:</p>
+<pre><code class="lang-python">l = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+
+summe = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(l)):
+    summe += l[i]
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Die Summe ist&quot;</span>, summe)
+</code></pre>
+<p>Wichtig ist bei diesem Beispiel, dass die Variable <code>summe</code>
+zuerst definiert wird und mit dem Wert <code>0</code> initialisiert wird.
+Zu diesem Wert wird bei jedem Schleifendurchlauf ein Element hinzuaddiert.</p>
+<p>Wir können dieses Programm auch wieder ordentlich
+mit main- und Summenfunktion schreiben:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">summieren</span>(<span class="hljs-params">l</span>):
+    summe = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(l)):
+        summe += l[i]
+    <span class="hljs-keyword">return</span> summe
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
+    l = [<span class="hljs-number">24</span>, <span class="hljs-number">13</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">102</span>, <span class="hljs-number">74</span>, -<span class="hljs-number">87</span>]
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Die Summe ist&quot;</span>, summieren(l))
+
+main()
+</code></pre>
+<h2 id="kurzvariante-der-for-schleife">Kurzvariante der for-Schleife</h2>
+<p>Das Muster, dass wir mit einer Schleife alle Elemente
+einer Liste durchlaufen, wird so häufig verwendet,
+dass es auch eine Kurzvariante davon gibt.</p>
+<p>Statt: </p>
+<pre><code class="lang-python">    summe = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-built_in">len</span>(l)):
+        summe += l[i]
+</code></pre>
+<p>können wir auch:</p>
+<pre><code class="lang-python">    summe = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> zahl <span class="hljs-keyword">in</span> l:
+        summe += zahl
+</code></pre>
+<p>schreiben. Bei dieser Variante fällt die Verwendung
+des Index weg und die Variable <code>zahl</code> enthält gleich
+den Wert des Elements am Index <code>i</code>.
+Diese Variante ist nur eine Kurzschreibweise,
+im Hintergrund passiert natürlich genau dasselbe.
+Der Vorteil ist, dass es ein bisschen weniger zu tippen ist,
+der Nachteil ist, dass man keinen Zugriff mehr auf die Index-Variable <code>i</code> hat.</p>
+<h2 id="übungen">Übungen</h2>
+<h3 id="📝-übung-73">📝 Übung 73</h3>
+<p>Mittelwert</p>
+<h3 id="📝-übung-74">📝 Übung 74</h3>
+<p>Produkt</p>
+<h3 id="📝-übung-75">📝 Übung 75</h3>
+<p>Summe aller geraden Zahlen</p>
+<h3 id="📝-übung-76">📝 Übung 76</h3>
+<p>True falls Summe größer 100</p>
 
                                 
                                 </section>
@@ -663,7 +849,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Berechnungen auf Listen durchführen","level":"1.4.4","depth":2,"next":{"title":"Minimum und Maximum berechnen","level":"1.4.5","depth":2,"path":"260_listMinMax.md","ref":"260_listMinMax.md","articles":[]},"previous":{"title":"Suchen von Elementen","level":"1.4.3","depth":2,"path":"235_listsearch.md","ref":"235_listsearch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"240_listcalc.md","mtime":"2023-08-23T09:08:11.829Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Berechnungen auf Listen durchführen","level":"1.4.4","depth":2,"next":{"title":"Minimum und Maximum berechnen","level":"1.4.5","depth":2,"path":"260_listMinMax.md","ref":"260_listMinMax.md","articles":[]},"previous":{"title":"Suchen von Elementen","level":"1.4.3","depth":2,"path":"235_listsearch.md","ref":"235_listsearch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"240_listcalc.md","mtime":"2023-08-25T08:35:49.318Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

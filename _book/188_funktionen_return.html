@@ -6,7 +6,7 @@
         <title>Funktionen mit Rückgabewert · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -638,7 +754,7 @@ und eine Zahl zurückgeben.</p>
 <p>Würden wir zum Beispiel die Funktion <code>quadrat</code> mit dem
 Argument <code>5</code> aufrufen, so sollte die Funktion das Resultat <code>25</code> zurückgeben.
 Hierfür gibt es das Schlüsselwort return:</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">quadrat</span>(<span class="hljs-params">zahl</span>):</span>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">quadrat</span>(<span class="hljs-params">zahl</span>):
     ergebnis = zahl * zahl
     <span class="hljs-keyword">return</span> zahl
 </code></pre>
@@ -656,12 +772,12 @@ eigene Funktionen verlagern.</p>
 <p>Wir schreiben zuerst die beiden Funktionen <code>volumenQuader</code> und <code>volumenZylinder</code>.
 Beachte, dass das <code>return</code> Schlüsselwort üblicherweise die letzte Anweisung 
 in einer Funktion ist, denn die Zeilen nach dem return werden ohnehin nicht mehr abgearbeitet.</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">volumenQuader</span>(<span class="hljs-params">seite_a, seite_b, hoehe</span>):</span>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">volumenQuader</span>(<span class="hljs-params">seite_a, seite_b, hoehe</span>):
     flaeche = seite_a * seite_b
     volumen = flaeche * hoehe
     <span class="hljs-keyword">return</span> volumen
 </code></pre>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">volumenZylinder</span>(<span class="hljs-params">radius, hoehe</span>):</span>
+<pre><code class="lang-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">volumenZylinder</span>(<span class="hljs-params">radius, hoehe</span>):
     flaeche = radius ** <span class="hljs-number">2</span> * pi
     volumen = flaeche * hoehe
     <span class="hljs-keyword">return</span> volumen
@@ -669,17 +785,17 @@ in einer Funktion ist, denn die Zeilen nach dem return werden ohnehin nicht mehr
 <p>Das gesamte Programm würde wie folgt aussehen:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> *
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">volumenQuader</span>(<span class="hljs-params">seite_a, seite_b, hoehe</span>):</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">volumenQuader</span>(<span class="hljs-params">seite_a, seite_b, hoehe</span>):
     flaeche = seite_a * seite_b
     volumen = flaeche * hoehe
     <span class="hljs-keyword">return</span>  volumen
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">volumenZylinder</span>(<span class="hljs-params">radius, hoehe</span>):</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">volumenZylinder</span>(<span class="hljs-params">radius, hoehe</span>):
     flaeche = radius ** <span class="hljs-number">2</span> * pi
     volumen = flaeche * hoehe
     <span class="hljs-keyword">return</span>  volumen
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>():</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():
     auswahl = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Wollen sie einen Quader (1) oder einen Zylinder(2) berechnen?: &quot;</span>))
 
     <span class="hljs-keyword">if</span> (auswahl == <span class="hljs-number">1</span>):
@@ -705,7 +821,6 @@ main()
 so beendest du die Hauptfunktion und damit das Programm.
 Das wird im obigen Programm benutzt, um bei einer ungültigen Eingabe das
 Programm sofort zu beenden.</p>
-<hr>
 <h2 id="übungen">Übungen</h2>
 <h3 id="📝-übung-60">📝 Übung 60</h3>
 <p>Schreibe eine Funktion <code>average(a, b)</code>, die den Durchschnitt der
@@ -760,7 +875,7 @@ Funktion min zu verwenden.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Funktionen mit Rückgabewert","level":"1.3.10","depth":2,"next":{"title":"Der Funktionsaufruf unter der Lupe","level":"1.3.11","depth":2,"path":"189_funktionen_debug.md","ref":"189_funktionen_debug.md","articles":[]},"previous":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"path":"185_debugging.md","ref":"185_debugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"188_funktionen_return.md","mtime":"2023-08-23T09:08:11.817Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Funktionen mit Rückgabewert","level":"1.3.10","depth":2,"next":{"title":"Der Funktionsaufruf unter der Lupe","level":"1.3.11","depth":2,"path":"189_funktionen_debug.md","ref":"189_funktionen_debug.md","articles":[]},"previous":{"title":"Fehler in Programmen finden","level":"1.3.9","depth":2,"path":"185_debugging.md","ref":"185_debugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"188_funktionen_return.md","mtime":"2023-08-25T08:35:49.310Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

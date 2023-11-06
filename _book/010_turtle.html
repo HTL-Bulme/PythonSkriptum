@@ -6,7 +6,7 @@
         <title>Grafik mit der Turtle 🐢 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.8">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -224,7 +224,7 @@
                 <a href="070_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 1
             
                 </a>
             
@@ -399,7 +399,7 @@
                 <a href="190_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 2
             
                 </a>
             
@@ -517,12 +517,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.8" data-path="280_kapiteltest.html">
+        <li class="chapter " data-level="1.4.8" data-path="278_assoziativeListen.html">
+            
+                <a href="278_assoziativeListen.html">
+            
+                    
+                    Assoziative Listen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="280_kapiteltest.html">
             
                 <a href="280_kapiteltest.html">
             
                     
-                    Kapiteltest
+                    Kapiteltest 3
             
                 </a>
             
@@ -546,6 +559,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="320_erstellenzugriff.html">
+            
+                <a href="320_erstellenzugriff.html">
+            
+                    
+                    Strings erstellen und auf Zeichen zugreifen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="350_funktionen.html">
+            
+                <a href="350_funktionen.html">
+            
+                    
+                    String-Funktionen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="360_crypto.html">
+            
+                <a href="360_crypto.html">
+            
+                    
+                    Die Caesar-Verschlüsselung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="370_kapiteltest.html">
+            
+                <a href="370_kapiteltest.html">
+            
+                    
+                    Kapiteltest 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="410_GUI.html">
@@ -558,6 +629,51 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="420_minimalprogramm.html">
+            
+                <a href="420_minimalprogramm.html">
+            
+                    
+                    Ein minimales GUI Programm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="430_einfacherTR.html">
+            
+                <a href="430_einfacherTR.html">
+            
+                    
+                    Ein einfacher Taschenrechner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="470_Kapiteltest.html">
+            
+                <a href="470_Kapiteltest.html">
+            
+                    
+                    Kapiteltest 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -622,7 +738,7 @@
                                 <h1 id="grafik-mit-der-turtle-🐢">Grafik mit der Turtle 🐢</h1>
 <p>Die Turtle ist eine kleine Schildkröte, die eine Spur zeichnet, wenn sie
 sich bewegt. Du kannst ihr sagen, sie soll vorwärts gehen oder sich nach
-links oder rechts abdrehen. Indem du diese Anweisungen geschickt
+links oder rechts drehen. Indem du diese Anweisungen geschickt
 kombinierst, entstehen Zeichnungen und Bilder.</p>
 <h2 id="minimalprogramm">Minimalprogramm</h2>
 <p>Bevor du die Turtle bewegen kannst musst du sie zuerst erstellen.
@@ -634,11 +750,11 @@ makeTurtle()
 <h2 id="bewegen-der-turtle">Bewegen der Turtle</h2>
 <p>Die Fähigkeiten der Turtle, bezeichnen wir in der Programmierung als <strong>Funktionen</strong>.
 Um der Turtle zu sagen, dass sie etwas tun soll,
-müssen wir diese Funktionen aufrufen.</p>
+müssen wir diese Funktionen <strong>aufrufen</strong>.</p>
 <p>Funktionsaufrufe der Turtle sind Abkürzungen für englische Begriffe und enden immer mit 
 einer öffnenden und einer schließenden <strong>runden</strong> Klammer.
 Zwischen den Klammern können weitere Angaben zum Funktionsaufruf stehen.
-Diese Angaben nennt man auch <em>Argumente</em>.
+Diese Angaben nennt man auch <strong>Argumente</strong>.
 Selbst wenn keine Argumente nötig sind, muss ein leeres Klammerpaar vorhanden sein.</p>
 <p>In der folgenden Grafik siehst du die wichtigsten Funktionen:</p>
 <p><img src="images/turtle.png" alt="Bewegen und drehen der Turtle"></p>
@@ -663,16 +779,18 @@ Selbst wenn keine Argumente nötig sind, muss ein leeres Klammerpaar vorhanden s
 </tr>
 <tr>
 <td>rt</td>
-<td>Abkürzung für <strong>r</strong>igh<strong>t</strong>, Angegebenen Winkel nach <strong>rechts</strong> drehen</td>
+<td>Abkürzung für <strong>r</strong>igh<strong>t</strong>, Angegebenen Winkel (in Grad) nach <strong>rechts</strong> drehen</td>
 <td><code>rt(39.5)</code></td>
 </tr>
 <tr>
 <td>lt</td>
-<td>Abkürzung für <strong>l</strong>ef<strong>t</strong>, Angegebenen Winkel nach <strong>links</strong> drehen</td>
-<td><code>lt(20)</code></td>
+<td>Abkürzung für <strong>l</strong>ef<strong>t</strong>, Angegebenen Winkel (in Grad) nach <strong>links</strong> drehen</td>
+<td><code>lt(45)</code></td>
 </tr>
 </tbody>
 </table>
+<p><strong>Zusatz:</strong> Die Einheit für Distanzen ist hier Pixel.
+Ein Pixel entspricht einem einzelnen Bildpunkt auf deinem Bildschirm.</p>
 <p><strong>Tipp:</strong> Du kannst auch Zahlen mit Nachkommastellen verwenden.
 Jedoch ist das Dezimaltrennzeichen in Python der Punkt &quot;.&quot; und nicht das Komma &quot;,&quot;.
 Das ist deshalb der Fall, da viele der wichtigen Entwicklungen der Informatik 
@@ -719,9 +837,6 @@ aus Nordamerika stammen, und dort der Punkt das gängige Dezimaltrennzeichen ist
 </tr>
 </tbody>
 </table>
-<!---
-your comment goes here
--->
 <h2 id="ein-größeres-programm">Ein größeres Programm</h2>
 <p>In der folgenden Abbildung siehst du bereits ein größeres Programm
 und daneben die Ausgabe des Programms.</p>
@@ -803,7 +918,7 @@ um vorgegebene Grafiken zu erzeugen.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Grafik mit der Turtle 🐢","level":"1.2","depth":1,"next":{"title":"Übungen mit der Turtle","level":"1.2.1","depth":2,"path":"015_turtle_lines.md","ref":"015_turtle_lines.md","articles":[]},"previous":{"title":"Einführung ✨","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"articles":[{"title":"Übungen mit der Turtle","level":"1.2.1","depth":2,"path":"015_turtle_lines.md","ref":"015_turtle_lines.md","articles":[]},{"title":"Farben verwenden","level":"1.2.2","depth":2,"path":"017_turtle_colors.md","ref":"017_turtle_colors.md","articles":[]},{"title":"Variablen","level":"1.2.3","depth":2,"path":"020_variablen.md","ref":"020_variablen.md","articles":[]},{"title":"Eingabe von Werten","level":"1.2.4","depth":2,"path":"030_input.md","ref":"030_input.md","articles":[]},{"title":"Rechnen mit Variablen","level":"1.2.5","depth":2,"path":"035_variablen_rechnen.md","ref":"035_variablen_rechnen.md","articles":[]},{"title":"Wiederholen von Codeblöcken","level":"1.2.6","depth":2,"path":"040_wiederholungen.md","ref":"040_wiederholungen.md","articles":[]},{"title":"Funktionen","level":"1.2.7","depth":2,"path":"050_funktionen.md","ref":"050_funktionen.md","articles":[]},{"title":"Funktionen mit Parametern","level":"1.2.8","depth":2,"path":"060_parameter.md","ref":"060_parameter.md","articles":[]},{"title":"Kapiteltest","level":"1.2.9","depth":2,"path":"070_kapiteltest.md","ref":"070_kapiteltest.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"010_turtle.md","mtime":"2023-08-23T09:08:11.793Z","type":"markdown"},"gitbook":{"version":"4.0.8","time":"2023-11-06T12:30:18.063Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Grafik mit der Turtle 🐢","level":"1.2","depth":1,"next":{"title":"Übungen mit der Turtle","level":"1.2.1","depth":2,"path":"015_turtle_lines.md","ref":"015_turtle_lines.md","articles":[]},"previous":{"title":"Einführung ✨","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"articles":[{"title":"Übungen mit der Turtle","level":"1.2.1","depth":2,"path":"015_turtle_lines.md","ref":"015_turtle_lines.md","articles":[]},{"title":"Farben verwenden","level":"1.2.2","depth":2,"path":"017_turtle_colors.md","ref":"017_turtle_colors.md","articles":[]},{"title":"Variablen","level":"1.2.3","depth":2,"path":"020_variablen.md","ref":"020_variablen.md","articles":[]},{"title":"Eingabe von Werten","level":"1.2.4","depth":2,"path":"030_input.md","ref":"030_input.md","articles":[]},{"title":"Rechnen mit Variablen","level":"1.2.5","depth":2,"path":"035_variablen_rechnen.md","ref":"035_variablen_rechnen.md","articles":[]},{"title":"Wiederholen von Codeblöcken","level":"1.2.6","depth":2,"path":"040_wiederholungen.md","ref":"040_wiederholungen.md","articles":[]},{"title":"Funktionen","level":"1.2.7","depth":2,"path":"050_funktionen.md","ref":"050_funktionen.md","articles":[]},{"title":"Funktionen mit Parametern","level":"1.2.8","depth":2,"path":"060_parameter.md","ref":"060_parameter.md","articles":[]},{"title":"Kapiteltest 1","level":"1.2.9","depth":2,"path":"070_kapiteltest.md","ref":"070_kapiteltest.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"010_turtle.md","mtime":"2023-08-25T19:39:00.372Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-11-06T16:17:02.705Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
